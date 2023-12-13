@@ -1,0 +1,512 @@
+1
+ 
+ 
+ 
+ 
+                      Warning: This computer program is protected by copyright law and international treaties.       
+                  Unauthorized use, reproduction or distribution of this computer program, or any portion of it, may 
+                                          result in severe civil and criminal penalties.                             
+                         Copyright (C) 2023 Hexagon AB and/or its subsidiaries. All rights reserved.                 
+ 
+ 
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * *                                 * *
+                                              * *           Hexagon AB            * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *      M S C   N a s t r a n      * *
+                                              * *                                 * *
+                                              * *  S T U D E N T   E D I T I O N  * *
+                                              * *                                 * *
+                                              * *     Version 2023.1-CL914096     * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *          MAR 30, 2023           * *
+                                              * *                                 * *
+                                              * *              Intel              * *
+                                              * *MODEL Intel(R) Core(TM) i7-8750H * *
+                                              * *    Windows 10 Home 6.2 9200     * *
+                                              * * Compiled for 8664 (SINGLE Mode) * *
+                                              * *                                 * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+
+ 
+ 
+                                                 This Student Edition version is  
+                                                    valid until MAR 15, 2025.     
+ 
+ 
+                  This program is being distributed as part of the Hexagon AB Student Edition. Use of this program   
+                     or its results at a commercial installation, for commercial purposes, or for production work    
+                                             I S   S T R I C T L Y  P R O H I B I T E D.                             
+                  ==================================== FOR EDUCATIONAL USE ONLY =====================================
+ 
+ 
+1News file - (February 21st, 2023)
+  
+               Welcome to MSC Nastran 2023.1
+  
+   MSC Nastran brings powerful new features and enhancements for engineering
+   solutions in several releases through the year. Key enhancements in
+   Version 2023.1 are summarized below. Addtional details can be found in
+   the MSC Nastran Version 2023.1 Release Guide.
+  
+     MSC Nastran 2023.1 Features and Enhancements
+  
+     HPC
+     - Reduced memory requirements for ACMS when large numbers of RBE3 elements
+       are present in the model
+     - Support for AMD AOCL libraries
+  
+     Documentation
+     - The complete documentation set is provided in a separate installer and
+       when installed is available at: MSC_DOC_DIR/doc/pdf_nastran directory,
+       where MSC_DOC_DIR is the directory where documentation was installed.
+       This help set includes cross references between documents, and links to
+       how-to videos, and example files
+  
+     Individual MSC Nastran documents are available for download from the
+       Simcompanion Website at:
+       http://simcompanion.hexagon.com/
+  
+     These documents were updated for the MSC Nastran 2023.1 Release
+  
+         1.  MSC Nastran 2023.1 Installation and Operations Guide
+         2.  MSC Nastran 2023.1 Quick Reference Guide
+         3.  MSC Nastran 2023.1 Release Guide
+         4.  MSC Nastran 2023.1 Linear Statics Analysis User's Guide
+         5.  MSC Nastran 2023.1 Dynamic Analysis User's Guide
+         6.  MSC Nastran 2023.1 Superelements User's Guide
+         7.  MSC Nastran 2023.1 Rotordynamics User's Guide
+         8.  MSC Nastran 2023.1 Demonstration Problems Manual
+         9.  MSC Nastran 2023.1 Nastran Embedded Fatigue User's Guide
+        10.  MSC Nastran 2023.1 Design Sensitivity and Optimization
+        11.  MSC Nastran 2023.1 Nonlinear User's Guide SOL 400
+        12.  MSC Nastran 2023.1 DMAP Programmer's Guide
+        13.  MSC Nastran 2023.1 High Performance Computing User's Guide
+        14.  MSC Nastran 2023.1 New Verification Manual
+        15.  MSC Nastran 2023.1 DEMATD Guide
+        16.  MSC Nastran 2023.1 Explicit Nonlinear (SOL 700) User's Guide
+        17.  MSC Nastran 2023.1 ACMS User's Guide
+  
+   Please refer to  MSC_DOC_DIR/doc/pdf_nastran/nastran_library.pdf
+   for the complete document set:
+  
+1 
+   Additional information about the release can be found at the MSC Nastran
+   Product Support page: http://simcompanion.hexagon.com
+  
+   The support page provides links to these valuable information:
+      * A searchable Knowledge Base containing examples and answers to thousands
+        of frequently asked questions written by MSC Software subject-matter
+        experts.
+      * Peer-to-peer Discussion Forums enabling you to post questions for your
+        MSC Software products and receive answers from other users worldwide.
+      * A list of known issues with the product and any workarounds.
+      * Instructions on how to contact technical support
+      * A mechanism for sending us product feedback or enhancement requests.
+      * Hardware and software requirements.
+      * Examples and Tutorials
+      * and much more.
+  
+   For information on training, please visit our Training web site
+  
+      https://www.mscsoftware.com/msc-training
+  
+1                                                       **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     NASTRAN BUFFSIZE=8193 $(D:/NASTRAN/NASTRAN/CONF/NAST20231.RCF[2])               
+     INIT MASTER(S)                                                                  
+     NASTRAN SYSTEM(319)=1                                                           
+1                                                       **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     ID GOLANDWING,FEMAP                                                                     
+     SOL SEFLUTTR                                                                            
+     CEND                                                                                    
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1        TITLE = FLUTTER                                                                       
+                  2        ECHO = NONE                                                                           
+                  3        DISPLACEMENT(PRINT) = ALL                                                             
+                  4        SPCFORCE(PRINT) = ALL                                                                 
+                  5        STRESS(PRINT,CORNER) = ALL                                                            
+                  6        AEROF = ALL                                                                           
+                  7        SPC = 1                                                                               
+                  8        CMETHOD = 1                                                                           
+                  9        METHOD = 1                                                                            
+                 10        FMETHOD = 1                                                                           
+                 11      BEGIN BULK                                                                              
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+                                        M O D E L   S U M M A R Y          BULK = 0
+                                   ENTRY NAME        NUMBER OF ENTRIES
+                                   ----------        -----------------
+                                         AERO                        1
+                                       CAERO1                        1
+                                         CBAR                       10
+                                        CONM2                       11
+                                       CORD2C                        1
+                                       CORD2S                        1
+                                         EIGC                        1
+                                        EIGRL                        1
+                                       FLFACT                        3
+                                      FLUTTER                        1
+                                         GRID                       33
+                                         MAT1                        1
+                                      MKAERO2                       20
+                                       PAERO1                        1
+                                        PARAM                        6
+                                         PBAR                        1
+                                         RBE2                       11
+                                         SET1                        1
+                                         SPC1                        1
+                                      SPLINE1                        1
+
+ ^^^     
+ ^^^ >>> IFP OPERATIONS COMPLETE <<< 
+ ^^^     
+ *** USER INFORMATION MESSAGE 4109 (OUTPX2)
+     THE LABEL IS XXXXXXXX FOR FORTRAN UNIT    12
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =          7 WORDS.)
+           (NUMBER OF FORTRAN RECORDS WRITTEN =          8 RECORDS.)
+                (TOTAL DATA WRITTEN FOR LABEL =         17 WORDS.)
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+                           O U T P U T   F R O M   G R I D   P O I N T   W E I G H T   G E N E R A T O R
+0                                                     REFERENCE POINT =        0
+                                                                M O
+                      *  2.176880E+02  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00 -6.635130E+02 *
+                      *  0.000000E+00  2.176880E+02  0.000000E+00  0.000000E+00  0.000000E+00  3.981514E+01 *
+                      *  0.000000E+00  0.000000E+00  2.176880E+02  6.635130E+02 -3.981514E+01  0.000000E+00 *
+                      *  0.000000E+00  0.000000E+00  6.635130E+02  2.696517E+03 -1.213565E+02  0.000000E+00 *
+                      *  0.000000E+00  0.000000E+00 -3.981514E+01 -1.213565E+02  5.267509E+01  0.000000E+00 *
+                      * -6.635130E+02  3.981514E+01  0.000000E+00  0.000000E+00  0.000000E+00  2.703799E+03 *
+                                                                 S
+                                           *  1.000000E+00  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  1.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  1.000000E+00 *
+                               DIRECTION
+                          MASS AXIS SYSTEM (S)     MASS              X-C.G.        Y-C.G.        Z-C.G.
+                                  X            2.176880E+02      0.000000E+00  3.048000E+00  0.000000E+00
+                                  Y            2.176880E+02      1.829000E-01  0.000000E+00  0.000000E+00
+                                  Z            2.176880E+02      1.829000E-01  3.048000E+00  0.000000E+00
+                                                                I(S)
+                                           *  6.741290E+02 -1.421085E-14  0.000000E+00 *
+                                           * -1.421085E-14  4.539290E+01  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  6.741290E+02 *
+                                                                I(Q)
+                                           *  6.741290E+02                             *
+                                           *                4.539290E+01               *
+                                           *                              6.741290E+02 *
+                                                                 Q
+                                           *  1.000000E+00  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  1.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  1.000000E+00 *
+
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ *** USER INFORMATION MESSAGE 5010 (LNCILS)
+     STURM SEQUENCE DATA FOR EIGENVALUE EXTRACTION.
+     TRIAL EIGENVALUE = 7.791735D+03, CYCLES = 1.404874D+01 THE STURM COUNT = 1
+     User information:
+     This message is automatic output during eigenvalue extraction.  This
+     can be used, along with the list of eigenvalues, to identify the modes
+     found. See the MSC NASTRAN Numerical Methods User's Guide.
+ *** USER INFORMATION MESSAGE 5010 (LNCILS)
+     STURM SEQUENCE DATA FOR EIGENVALUE EXTRACTION.
+     TRIAL EIGENVALUE = 2.574598D+05, CYCLES = 8.075601D+01 THE STURM COUNT = 6
+     User information:
+     This message is automatic output during eigenvalue extraction.  This
+     can be used, along with the list of eigenvalues, to identify the modes
+     found. See the MSC NASTRAN Numerical Methods User's Guide.
+
+ TABLE OF SHIFTS:  (LNNRIGL)
+ SHIFT #        SHIFT VALUE         FREQUENCY, CYCLES     # EIGENVALUES BELOW    # NEW EIGENVALUES FOUND
+     1.        7.7917354E+03          1.4048735E+01                 1                        7
+     2.        2.5745981E+05          8.0756010E+01                 6                        0
+
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+0
+
+
+                          E I G E N V A L U E  A N A L Y S I S   S U M M A R Y   (READ MODULE) 
+
+
+
+                                     BLOCK SIZE USED ......................     7
+
+                                     NUMBER OF DECOMPOSITIONS .............     2
+
+                                     NUMBER OF ROOTS FOUND ................     6
+
+                                     NUMBER OF SOLVES REQUIRED ............     5
+
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE     9
+                                                                                                                                    
+0                                                                                                                                   
+ 
+                                              R E A L   E I G E N V A L U E S
+                                         (BEFORE AUGMENTATION OF RESIDUAL VECTORS)
+   MODE    EXTRACTION      EIGENVALUE            RADIANS             CYCLES            GENERALIZED         GENERALIZED
+    NO.       ORDER                                                                       MASS              STIFFNESS
+        1         1        2.319998E+03        4.816636E+01        7.665914E+00        6.192384E+01        1.436632E+05
+        2         2        9.145025E+03        9.562963E+01        1.521993E+01        2.396858E+01        2.191933E+05
+        3         3        2.437773E+04        1.561337E+02        2.484945E+01        5.464242E+01        1.332058E+06
+        4         4        5.856992E+04        2.420122E+02        3.851744E+01        3.059110E+01        1.791718E+06
+        5         5        1.184307E+05        3.441377E+02        5.477121E+01        3.490675E+01        4.134031E+06
+        6         6        1.879873E+05        4.335751E+02        6.900562E+01        2.053517E+01        3.860352E+06
+  
+ *** SYSTEM INFORMATION MESSAGE 4159 (DFMSA)
+     THE DECOMPOSITION OF KYY      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    1.563299E+01
+ *** USER INFORMATION MESSAGE 5458 (REIG)
+     QL HOUSEHOLDER METHOD IS AUTOMATICALLY SELECTED .
+     User information:
+     Based upon automatic selection criteria the eigensolution was changed
+     to this method. To turn off this automatic selection, please set
+     system cell 359 to 0. In the case of an original Lanczos method
+     selection, setting the NE field to zero on the READ DMAP line will
+     also turn off this automatic option.
+ *** USER INFORMATION MESSAGE 5458 (REIG)
+     QL HOUSEHOLDER METHOD IS AUTOMATICALLY SELECTED .
+     User information:
+     Based upon automatic selection criteria the eigensolution was changed
+     to this method. To turn off this automatic selection, please set
+     system cell 359 to 0. In the case of an original Lanczos method
+     selection, setting the NE field to zero on the READ DMAP line will
+     also turn off this automatic option.
+ *** USER INFORMATION MESSAGE 5458 (REIG)
+     QL HOUSEHOLDER METHOD IS AUTOMATICALLY SELECTED .
+     User information:
+     Based upon automatic selection criteria the eigensolution was changed
+     to this method. To turn off this automatic selection, please set
+     system cell 359 to 0. In the case of an original Lanczos method
+     selection, setting the NE field to zero on the READ DMAP line will
+     also turn off this automatic option.
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE    10
+                                                                                                                                    
+0                                                                                                                                   
+ 
+                                              R E A L   E I G E N V A L U E S
+                                         (AFTER AUGMENTATION OF RESIDUAL VECTORS)
+   MODE    EXTRACTION      EIGENVALUE            RADIANS             CYCLES            GENERALIZED         GENERALIZED
+    NO.       ORDER                                                                       MASS              STIFFNESS
+        1         1        2.319998E+03        4.816636E+01        7.665914E+00        6.192384E+01        1.436632E+05
+        2         2        9.145025E+03        9.562963E+01        1.521993E+01        2.396858E+01        2.191933E+05
+        3         3        2.437773E+04        1.561337E+02        2.484945E+01        5.464242E+01        1.332058E+06
+        4         4        5.856992E+04        2.420122E+02        3.851744E+01        3.059110E+01        1.791718E+06
+        5         5        1.184307E+05        3.441377E+02        5.477121E+01        3.490675E+01        4.134031E+06
+        6         6        1.879873E+05        4.335751E+02        6.900562E+01        2.053517E+01        3.860352E+06
+        7         7        3.845959E+05        6.201579E+02        9.870120E+01        1.000000E+00        3.845959E+05
+        8         8        8.515619E+05        9.228011E+02        1.468684E+02        1.000000E+00        8.515619E+05
+        9         9        9.181376E+05        9.581949E+02        1.525015E+02        1.000000E+00        9.181376E+05
+       10        10        4.228148E+06        2.056246E+03        3.272617E+02        1.000000E+00        4.228148E+06
+       11        11        8.827773E+06        2.971157E+03        4.728743E+02        1.000000E+00        8.827773E+06
+       12        12        1.882905E+07        4.339246E+03        6.906124E+02        1.000000E+00        1.882905E+07
+ *** USER INFORMATION MESSAGE 7588 (GKAM)
+     BASED ON THE USER PARAMETERS LMODES, LFREQ OR HFREQ, ONLY        4 OF THE       12 COMPUTED STRUCTURE MODES
+     (MODES        1 THROUGH        4) WILL BE USED IN THIS MODAL COMPLEX EIGENVALUE ANALYSIS
+     (DETAILS OF THE EIGENVALUE DATA FOR THE MODES USED ARE GIVEN BELOW)
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE    11
+                                                                                                                                    
+0                                                                                                                                   
+ 
+                                              R E A L   E I G E N V A L U E S
+                                        (ACTUAL MODES USED IN THE DYNAMIC ANALYSIS)
+   MODE    EXTRACTION      EIGENVALUE            RADIANS             CYCLES            GENERALIZED         GENERALIZED
+    NO.       ORDER                                                                       MASS              STIFFNESS
+        1         1        2.319998E+03        4.816636E+01        7.665914E+00        6.192384E+01        1.436632E+05
+        2         2        9.145025E+03        9.562963E+01        1.521993E+01        2.396858E+01        2.191933E+05
+        3         3        2.437773E+04        1.561337E+02        2.484945E+01        5.464242E+01        1.332058E+06
+        4         4        5.856992E+04        2.420122E+02        3.851744E+01        3.059110E+01        1.791718E+06
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE    12
+                                                                                                                                    
+0                                                                                                                                   
+0                                                       FLUTTER  SUMMARY
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+       POINT =    1     METHOD = PKNL
+
+
+    KFREQ          1./KFREQ       DENSITY     MACH NO.      VELOCITY       DAMPING     FREQUENCY      COMPLEX   EIGENVALUE
+  14.4976       6.89770E-02   1.00000E+00   2.94000E-02   1.00000E+01  -1.89156E-02   7.57008E+00  -4.49854E-01   4.75642E+01
+   7.2550       1.37835E-01   1.00000E+00   5.88000E-02   2.00000E+01  -4.12331E-02   7.57660E+00  -9.81455E-01   4.76052E+01
+   4.8467       2.06328E-01   1.00000E+00   8.82000E-02   3.00000E+01  -6.39898E-02   7.59221E+00  -1.52626E+00   4.77033E+01
+   3.6455       2.74307E-01   1.00000E+00   1.17600E-01   4.00000E+01  -8.76779E-02   7.61426E+00  -2.09733E+00   4.78418E+01
+   2.9275       3.41591E-01   1.00000E+00   1.47100E-01   5.00000E+01  -1.12561E-01   7.64308E+00  -2.70276E+00   4.80229E+01
+   2.4513       4.07952E-01   1.00000E+00   1.76500E-01   6.00000E+01  -1.38962E-01   7.67976E+00  -3.35270E+00   4.82534E+01
+   2.1137       4.73096E-01   1.00000E+00   2.05900E-01   7.00000E+01  -1.67330E-01   7.72599E+00  -4.06141E+00   4.85438E+01
+   1.8634       5.36640E-01   1.00000E+00   2.35300E-01   8.00000E+01  -1.98290E-01   7.78417E+00  -4.84912E+00   4.89094E+01
+   1.6721       5.98052E-01   1.00000E+00   2.64700E-01   9.00000E+01  -2.32755E-01   7.85795E+00  -5.74589E+00   4.93729E+01
+   1.5231       6.56570E-01   1.00000E+00   2.94100E-01   1.00000E+02  -2.72144E-01   7.95287E+00  -6.79944E+00   4.99693E+01
+   1.4064       7.11057E-01   1.00000E+00   3.23500E-01   1.10000E+02  -3.18943E-01   8.07780E+00  -8.09386E+00   5.07543E+01
+   1.3162       7.59785E-01   1.00000E+00   3.52900E-01   1.20000E+02  -3.78334E-01   8.24699E+00  -9.80213E+00   5.18174E+01
+   1.2486       8.00904E-01   1.00000E+00   3.82400E-01   1.30000E+02  -4.64475E-01   8.47555E+00  -1.23675E+01   5.32535E+01
+   1.1856       8.43447E-01   1.00000E+00   4.11800E-01   1.40000E+02  -6.18729E-01   8.66713E+00  -1.68471E+01   5.44572E+01
+   1.0834       9.23032E-01   1.00000E+00   4.41200E-01   1.50000E+02  -8.47908E-01   8.48555E+00  -2.26036E+01   5.33163E+01
+   0.9587       1.04312E+00   1.00000E+00   4.70600E-01   1.60000E+02  -1.10797E+00   8.00922E+00  -2.78784E+01   5.03234E+01
+   0.8265       1.20986E+00   1.00000E+00   5.00000E-01   1.70000E+02  -1.42164E+00   7.33700E+00  -3.27686E+01   4.60997E+01
+   0.6852       1.45935E+00   1.00000E+00   5.29400E-01   1.80000E+02  -1.85405E+00   6.44049E+00  -3.75137E+01   4.04668E+01
+   0.5236       1.90979E+00   1.00000E+00   5.58800E-01   1.90000E+02  -2.59005E+00   5.19485E+00  -4.22698E+01   3.26402E+01
+   0.3032       3.29863E+00   1.00000E+00   5.88200E-01   2.00000E+02  -4.74096E+00   3.16593E+00  -4.71539E+01   1.98921E+01
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE    13
+                                                                                                                                    
+0                                                                                                                                   
+0                                                       FLUTTER  SUMMARY
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+       POINT =    2     METHOD = PKNL
+
+
+    KFREQ          1./KFREQ       DENSITY     MACH NO.      VELOCITY       DAMPING     FREQUENCY      COMPLEX   EIGENVALUE
+  29.0713       3.43982E-02   1.00000E+00   2.94000E-02   1.00000E+01  -1.23599E-02   1.51799E+01  -5.89433E-01   9.53782E+01
+  14.4967       6.89812E-02   1.00000E+00   5.88000E-02   2.00000E+01  -2.63829E-02   1.51393E+01  -1.25481E+00   9.51228E+01
+   9.6198       1.03953E-01   1.00000E+00   8.82000E-02   3.00000E+01  -4.15675E-02   1.50692E+01  -1.96786E+00   9.46827E+01
+   7.1660       1.39549E-01   1.00000E+00   1.17600E-01   4.00000E+01  -5.81143E-02   1.49671E+01  -2.73258E+00   9.40414E+01
+   5.6804       1.76045E-01   1.00000E+00   1.47100E-01   5.00000E+01  -7.59818E-02   1.48304E+01  -3.54007E+00   9.31821E+01
+   4.6780       2.13768E-01   1.00000E+00   1.76500E-01   6.00000E+01  -9.50737E-02   1.46559E+01  -4.37748E+00   9.20860E+01
+   3.9507       2.53123E-01   1.00000E+00   2.05900E-01   7.00000E+01  -1.15295E-01   1.44402E+01  -5.23035E+00   9.07302E+01
+   3.3941       2.94626E-01   1.00000E+00   2.35300E-01   8.00000E+01  -1.36514E-01   1.41783E+01  -6.08065E+00   8.90848E+01
+   2.9501       3.38972E-01   1.00000E+00   2.64700E-01   9.00000E+01  -1.58507E-01   1.38639E+01  -6.90370E+00   8.71092E+01
+   2.5831       3.87139E-01   1.00000E+00   2.94100E-01   1.00000E+02  -1.80764E-01   1.34877E+01  -7.65948E+00   8.47458E+01
+   2.2696       4.40598E-01   1.00000E+00   3.23500E-01   1.10000E+02  -2.02033E-01   1.30363E+01  -8.27423E+00   8.19096E+01
+   1.9932       5.01702E-01   1.00000E+00   3.52900E-01   1.20000E+02  -2.18877E-01   1.24894E+01  -8.58799E+00   7.84731E+01
+   1.7418       5.74117E-01   1.00000E+00   3.82400E-01   1.30000E+02  -2.20101E-01   1.18236E+01  -8.17561E+00   7.42896E+01
+   1.5217       6.57140E-01   1.00000E+00   4.11800E-01   1.40000E+02  -1.71560E-01   1.11244E+01  -5.99572E+00   6.98965E+01
+   1.3677       7.31162E-01   1.00000E+00   4.41200E-01   1.50000E+02  -8.05628E-02   1.07123E+01  -2.71124E+00   6.73073E+01
+   1.2551       7.96750E-01   1.00000E+00   4.70600E-01   1.60000E+02  -3.29513E-03   1.04858E+01  -1.08549E-01   6.58845E+01
+   1.1614       8.61023E-01   1.00000E+00   5.00000E-01   1.70000E+02   5.78718E-02   1.03095E+01   1.87438E+00   6.47768E+01
+   1.0797       9.26217E-01   1.00000E+00   5.29400E-01   1.80000E+02   1.07752E-01   1.01476E+01   3.43510E+00   6.37595E+01
+   1.0069       9.93170E-01   1.00000E+00   5.58800E-01   1.90000E+02   1.48997E-01   9.98930E+00   4.67588E+00   6.27646E+01
+   0.9414       1.06229E+00   1.00000E+00   5.88200E-01   2.00000E+02   1.82859E-01   9.83090E+00   5.64756E+00   6.17694E+01
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE    14
+                                                                                                                                    
+0                                                                                                                                   
+0                                                       FLUTTER  SUMMARY
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+       POINT =    3     METHOD = PKNL
+
+
+    KFREQ          1./KFREQ       DENSITY     MACH NO.      VELOCITY       DAMPING     FREQUENCY      COMPLEX   EIGENVALUE
+  47.5896       2.10130E-02   1.00000E+00   2.94000E-02   1.00000E+01   3.01021E-16   2.48494E+01   2.34997E-14   1.56134E+02
+  23.7948       4.20260E-02   1.00000E+00   5.88000E-02   2.00000E+01  -4.13244E-17   2.48494E+01  -3.22607E-15   1.56134E+02
+  15.8632       6.30390E-02   1.00000E+00   8.82000E-02   3.00000E+01   3.04394E-16   2.48494E+01   2.37631E-14   1.56134E+02
+  11.8974       8.40521E-02   1.00000E+00   1.17600E-01   4.00000E+01  -7.07952E-16   2.48494E+01  -5.52676E-14   1.56134E+02
+   9.5179       1.05065E-01   1.00000E+00   1.47100E-01   5.00000E+01   5.62933E-15   2.48494E+01   4.39464E-13   1.56134E+02
+   7.9316       1.26078E-01   1.00000E+00   1.76500E-01   6.00000E+01   2.33015E-15   2.48494E+01   1.81907E-13   1.56134E+02
+   6.7985       1.47091E-01   1.00000E+00   2.05900E-01   7.00000E+01  -1.18253E-15   2.48494E+01  -9.23163E-14   1.56134E+02
+   5.9487       1.68104E-01   1.00000E+00   2.35300E-01   8.00000E+01   2.81704E-15   2.48494E+01   2.19918E-13   1.56134E+02
+   5.2877       1.89117E-01   1.00000E+00   2.64700E-01   9.00000E+01   9.42926E-16   2.48494E+01   7.36113E-14   1.56134E+02
+   4.7590       2.10130E-01   1.00000E+00   2.94100E-01   1.00000E+02  -1.83517E-15   2.48494E+01  -1.43266E-13   1.56134E+02
+   4.3263       2.31143E-01   1.00000E+00   3.23500E-01   1.10000E+02   6.69872E-15   2.48494E+01   5.22948E-13   1.56134E+02
+   3.9658       2.52156E-01   1.00000E+00   3.52900E-01   1.20000E+02   1.86839E-15   2.48494E+01   1.45859E-13   1.56134E+02
+   3.6607       2.73169E-01   1.00000E+00   3.82400E-01   1.30000E+02   2.58565E-15   2.48494E+01   2.01853E-13   1.56134E+02
+   3.3993       2.94182E-01   1.00000E+00   4.11800E-01   1.40000E+02  -1.56923E-15   2.48494E+01  -1.22505E-13   1.56134E+02
+   3.1726       3.15195E-01   1.00000E+00   4.41200E-01   1.50000E+02  -3.59591E-15   2.48494E+01  -2.80721E-13   1.56134E+02
+   2.9743       3.36208E-01   1.00000E+00   4.70600E-01   1.60000E+02  -1.31825E-16   2.48494E+01  -1.02912E-14   1.56134E+02
+   2.7994       3.57221E-01   1.00000E+00   5.00000E-01   1.70000E+02   4.40643E-17   2.48494E+01   3.43996E-15   1.56134E+02
+   2.6439       3.78234E-01   1.00000E+00   5.29400E-01   1.80000E+02  -7.09406E-16   2.48494E+01  -5.53811E-14   1.56134E+02
+   2.5047       3.99247E-01   1.00000E+00   5.58800E-01   1.90000E+02  -8.99955E-16   2.48494E+01  -7.02566E-14   1.56134E+02
+   2.3795       4.20260E-01   1.00000E+00   5.88200E-01   2.00000E+02   4.52753E-16   2.48494E+01   3.53450E-14   1.56134E+02
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE    15
+                                                                                                                                    
+0                                                                                                                                   
+0                                                       FLUTTER  SUMMARY
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+       POINT =    4     METHOD = PKNL
+
+
+    KFREQ          1./KFREQ       DENSITY     MACH NO.      VELOCITY       DAMPING     FREQUENCY      COMPLEX   EIGENVALUE
+  73.7218       1.35645E-02   1.00000E+00   2.94000E-02   1.00000E+01  -7.68048E-03   3.84947E+01  -9.28837E-01   2.41869E+02
+  36.8552       2.71332E-02   1.00000E+00   5.88000E-02   2.00000E+01  -1.60859E-02   3.84888E+01  -1.94504E+00   2.41832E+02
+  24.5644       4.07094E-02   1.00000E+00   8.82000E-02   3.00000E+01  -2.43942E-02   3.84797E+01  -2.94896E+00   2.41775E+02
+  18.4172       5.42970E-02   1.00000E+00   1.17600E-01   4.00000E+01  -3.27311E-02   3.84671E+01  -3.95548E+00   2.41696E+02
+  14.7275       6.79002E-02   1.00000E+00   1.47100E-01   5.00000E+01  -4.11413E-02   3.84507E+01  -4.96972E+00   2.41593E+02
+  12.2665       8.15231E-02   1.00000E+00   1.76500E-01   6.00000E+01  -4.96561E-02   3.84305E+01  -5.99513E+00   2.41466E+02
+  10.5075       9.51704E-02   1.00000E+00   2.05900E-01   7.00000E+01  -5.83073E-02   3.84062E+01  -7.03516E+00   2.41313E+02
+   9.1872       1.08847E-01   1.00000E+00   2.35300E-01   8.00000E+01  -6.71274E-02   3.83777E+01  -8.09336E+00   2.41134E+02
+   8.1594       1.22558E-01   1.00000E+00   2.64700E-01   9.00000E+01  -7.61513E-02   3.83448E+01  -9.17347E+00   2.40928E+02
+   7.3363       1.36309E-01   1.00000E+00   2.94100E-01   1.00000E+02  -8.54173E-02   3.83072E+01  -1.02796E+01   2.40691E+02
+   6.6619       1.50107E-01   1.00000E+00   3.23500E-01   1.10000E+02  -9.49678E-02   3.82645E+01  -1.14162E+01   2.40423E+02
+   6.0991       1.63960E-01   1.00000E+00   3.52900E-01   1.20000E+02  -1.04851E-01   3.82164E+01  -1.25884E+01   2.40121E+02
+   5.6219       1.77875E-01   1.00000E+00   3.82400E-01   1.30000E+02  -1.15125E-01   3.81622E+01  -1.38024E+01   2.39780E+02
+   5.2121       1.91862E-01   1.00000E+00   4.11800E-01   1.40000E+02  -1.25844E-01   3.81016E+01  -1.50635E+01   2.39399E+02
+   4.8559       2.05934E-01   1.00000E+00   4.41200E-01   1.50000E+02  -1.37085E-01   3.80337E+01  -1.63798E+01   2.38973E+02
+   4.5433       2.20103E-01   1.00000E+00   4.70600E-01   1.60000E+02  -1.48934E-01   3.79577E+01  -1.77600E+01   2.38495E+02
+   4.2665       2.34385E-01   1.00000E+00   5.00000E-01   1.70000E+02  -1.61493E-01   3.78725E+01  -1.92144E+01   2.37960E+02
+   4.0193       2.48801E-01   1.00000E+00   5.29400E-01   1.80000E+02  -1.74885E-01   3.77768E+01  -2.07552E+01   2.37359E+02
+   3.7969       2.63375E-01   1.00000E+00   5.58800E-01   1.90000E+02  -1.89261E-01   3.76690E+01  -2.23973E+01   2.36681E+02
+   3.5953       2.78138E-01   1.00000E+00   5.88200E-01   2.00000E+02  -2.04809E-01   3.75470E+01  -2.41587E+01   2.35915E+02
+ *** USER INFORMATION MESSAGE 4110 (OUTPX2)
+                                 END-OF-DATA SIMULATION ON FORTRAN UNIT    12
+                                 (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
+                                       (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
+                                       (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
+1    FLUTTER                                            **STUDENT EDITION* DECEMBER   3, 2023  MSC Nastran  3/30/23   PAGE    16
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     74
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ -------------------------------------------------------------------------------------------------------------------
+     0     0    1    1 '        '    T    T    T    T    T     T      F      T     F     -1            0           F
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+ 
+ No PARAM values were set in the Control File.
+ 
+1                                        * * * END OF JOB * * *
+ 
+ 
+ No Symbolic Replacement variables or values were specified.
+
