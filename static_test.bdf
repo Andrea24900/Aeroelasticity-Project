@@ -3,7 +3,7 @@ NASTRAN SYSTEM(319)=1
 ID golandsimple,FEMAP
 SOL AESTAT
 CEND
-  TITLE = static
+  TITLE = static_test
   ECHO = NONE
   DISPLACEMENT(PRINT) = ALL
   SPCFORCE(PRINT) = ALL
@@ -18,7 +18,7 @@ $   Written by : Femap
 $   Version    : 2021.2.1
 $   Translator : MSC Nastran
 $   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\golandsimple.modfem
-$   Date       : Thu Dec 14 18:37:29 2023
+$   Date       : Fri Dec 15 10:14:47 2023
 $   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
 $ ***************************************************************************
 $
@@ -32,8 +32,8 @@ CORD2C         1       0      0.      0.      0.      0.      0.      1.+FEMAPC1
 CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
 +FEMAPC2      1.      0.      1.        
 AESTAT         1  ANGLEA
-TRIM           1    .029  183.75  ANGLEA.0872222                      1.
-AEROS          0       0   1.829   6.096  12.803       0       0
+TRIM           1.1470588 1531.25  ANGLEA.0872222                      1.
+AEROS          0       0   1.829   6.09611.14958       0       0
 $ Femap Constraint Set 1 : clamp
 SPC1           1  123456       1
 $ Femap Property 1 : longherone
