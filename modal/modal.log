@@ -1,0 +1,133 @@
+MSC Nastran V2023.1 (Intel Windows 10 Home 6.2 9200) Control File: 
+----------------------------------------------------------------- 
+Nastran BUFFSIZE=8193 $(d:/nastran/nastran/conf/nast20231.rcf[2])
+JID='d:/repositoriesgithub/nuova cartella/aeroelasticity-project/modal.bdf'
+OUT='./modal'
+MEM=527MB      $ 
+PMEM=0
+MACH='Intel'
+OPER='Windows 10 Home'
+OSV='6.2 9200'
+MODEL='Intel(R) Core(TM) i7-8750H CPU (LAPTOP-7Q6SRQDT)'
+NPROC='12'
+CONFIG=6
+NPROC=12
+symbol=DELDIR='d:/nastran/nastran/msc20231/nast/del' $(program default)
+symbol=DEMODIR='d:/nastran/nastran/msc20231/nast/demo' $(program default)
+symbol=SSSALTERDIR='d:/nastran/nastran/msc20231/nast/sssalter' $(program default)
+symbol=TPLDIR='d:/nastran/nastran/msc20231/nast/tpl' $(program default)
+SDIR='c:/scratch/modal.T15876_21'
+DBS='c:/scratch/modal.T15876_21'
+SCR='yes'
+SMEM=100
+BPOOL=150
+DMPMEM=0
+NEWDEL='d:/nastran/nastran/msc20231/win64i8/SSS'
+DEL='MSCDEF'
+SPOTWELD=''
+DML=MSCDEF
+SDL=MSCDEF
+AUTH='EDU'
+AUTHQUE=20
+MSGCAT='d:/nastran/nastran/msc20231/win64i8/analysis.msg'
+MSGDEST='f06'
+NEWS='d:/nastran/nastran/msc20231/nast/news.txt'
+----------------------------------------------------------------- 
+MSC_ISHELLPATH=d:\repositoriesgithub\nuova cartella\aeroelasticity-project 
+MSC_JIDPATH= 
+PATH=d:\nastran\nastran\msc20231\win64i8\nvidia;d:\nastran\nastran\msc20231\win64i8\lib;d:\nastran\nastran\msc20231\win64i8;D:\nastran\Patran\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\matlab2\bin;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Users\ughin\AppData\Local\Microsoft\WindowsApps;C:\Users\ughin\AppData\Local\GitHubDesktop\bin;D:\tex\texlive\2023\bin\windows;C:\Users\ughin\AppData\Local\Programs\Microsoft VS Code\bin;d:\nastran\nastran\msc20231\win64i8\msmpi\bin 
+SCA_SERVICE_CATALOG=d:\nastran\nastran\msc20231\res\SCAServiceCatalog.xml 
+SCA_RESOURCE_DIR=d:\nastran\nastran\msc20231\res 
+Cmd Line:    D:\nastran\Nastran\msc20231\win64i8\nastran.exe JID=D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\modal.bdf 
+Current Dir: D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project 
+Time Cmd:    d:\nastran\nastran\msc20231\win64i8\msctime 
+Executable:  d:\nastran\nastran\msc20231\win64i8\analysis.exe 
+Arch= Kywd:  [Not specified]  
+MSC_MSG:     stderr  
+FPE:         yes  
+----------------------------------------------------------------- 
+Current resource limits:
+ Physical memory:                     8034 MB
+ Physical memory available:           1952 MB
+ Paging file size:                   15970 MB
+ Paging file size available:          6601 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134213510 MB
+----------------------------------------------------------------- 
+System configuration:
+ Hostname:         LAPTOP-7Q6SRQDT
+ Architecture:     win64i8
+ Platform:         Intel Windows 10 Home 6.2 9200 (Windows Compute Cluster)
+ Model:            Intel(R) Core(TM) i7-8750H CPU
+ Clock freq.:      3379 MHz
+ Number of CPUs:   12
+ Number of CPUs:   0 ( limited by PBS )
+ Executable:       standard
+ Raw model ID:     6
+ Config number:    6
+ Physical memory:  8034 MB
+ Virtual memory:   15970 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: "d:/nastran/nastran/msc20231/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
+                   <ccs_cmd> (Windows CCS nodes)
+----------------------------------------------------------------- 
+MSC Nastran started  Thu Jan 11 18:56:22 osG 2024 
+ 18:56:28  Beginning Analysis
+SCA Kernel 29.0.913034 successfully initialized
+BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\libimalloc.dll" has been loaded.
+BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_core.2.dll" has been loaded.
+BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_intel_thread.2.dll" has been loaded.
+BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_rt.2.dll" has been loaded.
+BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\MSCblas.dll" has been loaded.
+
+ 18:56:35  MSC Authorization Information - Checkout Successful (1016, 0)
+ 18:56:35  -------------------------------------------------------------
+ 18:56:35  Acquired 1 license for Student Edition Nastran
+
+
+Beginning bulk data processing using the IFPStar component.
+For more information on IFPStar, please see KB article KB8019200
+on our support pages, at http://simcompanion.hexagon.com.
+
+ 18:56:40  180 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/modal.bdf"
+
+Processing of bulk data entries is complete.
+
+ 18:56:41  Finite element model generation started.
+ 18:56:41  Finite element model generated 432 degrees of freedom.
+ 18:56:41  Finite element model generation successfully completed.
+ 18:56:41  Application of Loads and Boundary Conditions to the finite element model started.
+ 18:56:41  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 18:56:41  Solution of the system equations for normal modes started.
+ 18:56:42  Solution of the system equations for normal modes successfully completed.
+ 18:56:42  Normal modes analysis completed.
+ 18:56:42  13 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/modal.bdf"
+ 18:56:42  NSEXIT: EXIT(0)
+ 18:56:42  Analysis complete  0
+Real:       18.177 seconds ( 0:00:18.177)
+User:        0.343 seconds ( 0:00:00.343)
+Sys:         0.421 seconds ( 0:00:00.421)
+ ==================================================
+ OS:                           6.2
+ OEM ID:                       9
+ Model:                        Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz  
+ Number of processors:         12
+ Page size:                    4096
+ Processor type:               8664
+ Minimum application address:  10000
+ Maximum application address:  fffeffff
+ Active processor mask:        4095
+ Nsocket:                      1
+ Ncore:                        6  ( 1 X 6 )
+ HyperThreading:               On
+ Ram:                          8034 Mb
+ ==================================================
+ Time Summary                 CPU       Wall   ( Time in Seconds )
+ Consider using SOLVE=AUTO if you have not.
+ =====================================================
+ Detailed performance information can be found in the 
+ "MSC Nastran High Performance Computing User's Guide"
+ =====================================================
+MSC Nastran finished Thu Jan 11 18:56:43 osG 2024 
