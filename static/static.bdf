@@ -18,7 +18,7 @@ $   Written by : Femap
 $   Version    : 2021.2.1
 $   Translator : MSC Nastran
 $   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\smallplane.modfem
-$   Date       : Thu Jan 11 19:34:23 2024
+$   Date       : Fri Jan 12 11:29:22 2024
 $   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
 $ ***************************************************************************
 $
@@ -34,12 +34,13 @@ CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
 $ Femap Coordinate System 3 : tailsys
 CORD2R         3       0    7.25      0.      0.    7.25      0.      1.+       
 +           8.25      0.      0.        
+PARAM,AUNITS,9.81
 AESTAT         1  ANGLEA
 AESTAT         2   PITCH
 AESTAT         3   URDD3
 AESTAT         4   URDD5
-TRIM           1      .1   61.25  ANGLEA      1.   PITCH      0.      0.+       
-+          URDD3   -9.81   URDD5      0.    tail      0.                
+TRIM           1      .1   61.25   PITCH      0.   URDD3     -1.      0.+       
++          URDD5      0.                                                
 AEROS          0       0      2.     10.     20.       0       0
 $ Femap Aero Control Surface 1 : tailplane
 AESURF         1    tail       3       1                      1.     LDW+       
@@ -52,7 +53,9 @@ AELIST         1    1001    1002    1003    1004    1005    1006    1007+
 +           1040    1041    1042    1043    1044    1045    1046    1047+       
 +           1048    1049    1050                                        
 $ Femap Constraint Set 1 : clamppartial
-SUPORT        11    1246
+SPC1           1    1246      11
+$ Femap Constraint Set 3 : rigidmodes
+SUPORT        11      35
 $ Femap Property 1 : spar
 $ Femap PropShape 1 : 2,0,0.3,1.,0.,0.,0.,0.1
 $ Femap PropMethod 1 : 2,0,1,0.3
