@@ -1,0 +1,892 @@
+1
+ 
+ 
+ 
+ 
+                      Warning: This computer program is protected by copyright law and international treaties.       
+                  Unauthorized use, reproduction or distribution of this computer program, or any portion of it, may 
+                                          result in severe civil and criminal penalties.                             
+                         Copyright (C) 2023 Hexagon AB and/or its subsidiaries. All rights reserved.                 
+ 
+ 
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * *                                 * *
+                                              * *           Hexagon AB            * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *      M S C   N a s t r a n      * *
+                                              * *                                 * *
+                                              * *  S T U D E N T   E D I T I O N  * *
+                                              * *                                 * *
+                                              * *     Version 2023.1-CL914096     * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *          MAR 30, 2023           * *
+                                              * *                                 * *
+                                              * *              Intel              * *
+                                              * *MODEL Intel(R) Core(TM) i7-8750H * *
+                                              * *    Windows 10 Home 6.2 9200     * *
+                                              * * Compiled for 8664 (SINGLE Mode) * *
+                                              * *                                 * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+
+ 
+ 
+                                                 This Student Edition version is  
+                                                    valid until MAR 15, 2025.     
+ 
+ 
+                  This program is being distributed as part of the Hexagon AB Student Edition. Use of this program   
+                     or its results at a commercial installation, for commercial purposes, or for production work    
+                                             I S   S T R I C T L Y  P R O H I B I T E D.                             
+                  ==================================== FOR EDUCATIONAL USE ONLY =====================================
+ 
+ 
+1News file - (February 21st, 2023)
+  
+               Welcome to MSC Nastran 2023.1
+  
+   MSC Nastran brings powerful new features and enhancements for engineering
+   solutions in several releases through the year. Key enhancements in
+   Version 2023.1 are summarized below. Addtional details can be found in
+   the MSC Nastran Version 2023.1 Release Guide.
+  
+     MSC Nastran 2023.1 Features and Enhancements
+  
+     HPC
+     - Reduced memory requirements for ACMS when large numbers of RBE3 elements
+       are present in the model
+     - Support for AMD AOCL libraries
+  
+     Documentation
+     - The complete documentation set is provided in a separate installer and
+       when installed is available at: MSC_DOC_DIR/doc/pdf_nastran directory,
+       where MSC_DOC_DIR is the directory where documentation was installed.
+       This help set includes cross references between documents, and links to
+       how-to videos, and example files
+  
+     Individual MSC Nastran documents are available for download from the
+       Simcompanion Website at:
+       http://simcompanion.hexagon.com/
+  
+     These documents were updated for the MSC Nastran 2023.1 Release
+  
+         1.  MSC Nastran 2023.1 Installation and Operations Guide
+         2.  MSC Nastran 2023.1 Quick Reference Guide
+         3.  MSC Nastran 2023.1 Release Guide
+         4.  MSC Nastran 2023.1 Linear Statics Analysis User's Guide
+         5.  MSC Nastran 2023.1 Dynamic Analysis User's Guide
+         6.  MSC Nastran 2023.1 Superelements User's Guide
+         7.  MSC Nastran 2023.1 Rotordynamics User's Guide
+         8.  MSC Nastran 2023.1 Demonstration Problems Manual
+         9.  MSC Nastran 2023.1 Nastran Embedded Fatigue User's Guide
+        10.  MSC Nastran 2023.1 Design Sensitivity and Optimization
+        11.  MSC Nastran 2023.1 Nonlinear User's Guide SOL 400
+        12.  MSC Nastran 2023.1 DMAP Programmer's Guide
+        13.  MSC Nastran 2023.1 High Performance Computing User's Guide
+        14.  MSC Nastran 2023.1 New Verification Manual
+        15.  MSC Nastran 2023.1 DEMATD Guide
+        16.  MSC Nastran 2023.1 Explicit Nonlinear (SOL 700) User's Guide
+        17.  MSC Nastran 2023.1 ACMS User's Guide
+  
+   Please refer to  MSC_DOC_DIR/doc/pdf_nastran/nastran_library.pdf
+   for the complete document set:
+  
+1 
+   Additional information about the release can be found at the MSC Nastran
+   Product Support page: http://simcompanion.hexagon.com
+  
+   The support page provides links to these valuable information:
+      * A searchable Knowledge Base containing examples and answers to thousands
+        of frequently asked questions written by MSC Software subject-matter
+        experts.
+      * Peer-to-peer Discussion Forums enabling you to post questions for your
+        MSC Software products and receive answers from other users worldwide.
+      * A list of known issues with the product and any workarounds.
+      * Instructions on how to contact technical support
+      * A mechanism for sending us product feedback or enhancement requests.
+      * Hardware and software requirements.
+      * Examples and Tutorials
+      * and much more.
+  
+   For information on training, please visit our Training web site
+  
+      https://www.mscsoftware.com/msc-training
+  
+1                                                       **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     NASTRAN BUFFSIZE=8193 $(D:/NASTRAN/NASTRAN/CONF/NAST20231.RCF[2])               
+     INIT MASTER(S)                                                                  
+     NASTRAN SYSTEM(319)=1                                                           
+1                                                       **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     ID PLANE2,FEMAP                                                                         
+     SOL AESTAT                                                                              
+     CEND                                                                                    
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1        TITLE = ROLLSTATIC                                                                    
+                  2        ECHO = NONE                                                                           
+                  3        DISPLACEMENT(PRINT) = ALL                                                             
+                  4        SPCFORCE(PRINT) = ALL                                                                 
+                  5        STRESS(PRINT,CORNER) = ALL                                                            
+                  6        APRES = ALL                                                                           
+                  7        AEROF = ALL                                                                           
+                  8        SPC = 5                                                                               
+                  9        TRIM = 1                                                                              
+                 10      BEGIN BULK                                                                              
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+                                        M O D E L   S U M M A R Y          BULK = 0
+                                   ENTRY NAME        NUMBER OF ENTRIES
+                                   ----------        -----------------
+                                       AELIST                        2
+                                        AEROS                        1
+                                       AESTAT                        2
+                                       AESURF                        2
+                                       CAERO1                        1
+                                         CBAR                       10
+                                        CONM2                       11
+                                       CORD2C                        1
+                                       CORD2R                        2
+                                       CORD2S                        1
+                                         GRID                       33
+                                         MAT1                        1
+                                       PAERO1                        1
+                                        PARAM                        6
+                                         PBAR                        1
+                                         RBE2                       11
+                                         SET1                        1
+                                         SPC1                        1
+                                      SPLINE1                        1
+                                       SUPORT                        1
+                                         TRIM                        1
+
+ ^^^     
+ ^^^ >>> IFP OPERATIONS COMPLETE <<< 
+ ^^^     
+ *** USER INFORMATION MESSAGE 4109 (OUTPX2)
+     THE LABEL IS XXXXXXXX FOR FORTRAN UNIT    12
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =          7 WORDS.)
+           (NUMBER OF FORTRAN RECORDS WRITTEN =          8 RECORDS.)
+                (TOTAL DATA WRITTEN FOR LABEL =         17 WORDS.)
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+                           O U T P U T   F R O M   G R I D   P O I N T   W E I G H T   G E N E R A T O R
+0                                                     REFERENCE POINT =        0
+                                                                M O
+                      *  1.100000E+03  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00 *
+                      *  0.000000E+00  1.100000E+03  0.000000E+00  0.000000E+00  0.000000E+00  3.300000E+02 *
+                      *  0.000000E+00  0.000000E+00  1.100000E+03  0.000000E+00 -3.300000E+02  0.000000E+00 *
+                      *  0.000000E+00  0.000000E+00  0.000000E+00  1.100000E+04  0.000000E+00  0.000000E+00 *
+                      *  0.000000E+00  0.000000E+00 -3.300000E+02  0.000000E+00  9.900000E+01  0.000000E+00 *
+                      *  0.000000E+00  3.300000E+02  0.000000E+00  0.000000E+00  0.000000E+00  1.109900E+04 *
+                                                                 S
+                                           *  1.000000E+00  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  1.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  1.000000E+00 *
+                               DIRECTION
+                          MASS AXIS SYSTEM (S)     MASS              X-C.G.        Y-C.G.        Z-C.G.
+                                  X            1.100000E+03      0.000000E+00  0.000000E+00  0.000000E+00
+                                  Y            1.100000E+03      3.000000E-01  0.000000E+00  0.000000E+00
+                                  Z            1.100000E+03      3.000000E-01  0.000000E+00  0.000000E+00
+                                                                I(S)
+                                           *  1.100000E+04  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  1.100000E+04 *
+                                                                I(Q)
+                                           *  1.100000E+04                             *
+                                           *                0.000000E+00               *
+                                           *                              1.100000E+04 *
+                                                                 Q
+                                           *  1.000000E+00  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  1.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  1.000000E+00 *
+
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+  
+ *** SYSTEM INFORMATION MESSAGE 4159 (DFMSA)
+     THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    4.435871E+00
+ *** USER INFORMATION MESSAGE 3035 (SOLVER)
+                                  FOR DATA BLOCK   KLR     
+    SUPPORT PT.NO.             EPSILON             STRAIN   ENERGY     EPSILONS LARGER THAN 0.001 ARE FLAGGED WITH ASTERISKS
+    User information:
+    One line of output is printed for each component referenced on the
+    SUPORT and SUPORT1 entries.  Large values of either EPSILON or STRAIN
+    ENERGY indicate errors in the constraints.
+                1          1.3148011E-15         -4.2632564E-14                 
+ ^^^     
+ *** USER INFORMATION MESSAGE 9936 (SUBDMAP MAKPRBD)
+     THE FOLLOWING RIGID BODY DEGREES OF FREEDOM ARE DEFINED TO BE SUPPORTED BY THE SUPDOF PARAMETER: MX
+ ^^^     
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+
+    N O N - D I M E N S I O N A L   S T A B I L I T Y   A N D   C O N T R O L   D E R I V A T I V E   C O E F F I C I E N T S
+
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+                                         MACH = 2.9412E-02                    Q = 6.1250E+01
+                         CHORD = 1.0000E+00           SPAN = 1.0000E+01            AREA = 1.0000E+01
+
+
+                TRANSFORMATION FROM BASIC TO REFERENCE COORDINATES:
+
+              { X }        [  1.0000   0.0000   0.0000  ]  { X }         { 0.0000E+00 }
+              { Y }    =   [  0.0000   1.0000   0.0000  ]  { Y }      +  { 0.0000E+00 }
+              { Z }REF     [  0.0000   0.0000   1.0000  ]  { Z }BAS      { 0.0000E+00 }
+
+
+
+
+    CONTROLLER STATE: INTERCEPT ONLY, ALL CONTROLLERS ARE ZERO
+
+    TRIM VARIABLE   COEFFICIENT              RIGID                         ELASTIC                          INERTIAL
+                                   UNSPLINED        SPLINED       RESTRAINED      UNRESTRAINED     RESTRAINED      UNRESTRAINED
+
+    REF. COEFF.      CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+
+    ROLL             CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CZ         2.450647E-16   -2.215371E-15    -2.215371E-15   -2.215371E-15     0.000000E+00   -3.266803E-17
+                     CMX       -6.321722E-01   -6.321722E-01    -6.321722E-01   -6.321722E-01     0.000000E+00   -6.321722E-01
+                     CMY        2.854859E-17    2.774198E-16     2.774198E-16    2.774198E-16     0.000000E+00    0.000000E+00
+                     CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+
+    LAIL             CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CZ         6.891953E-01    6.722883E-01     6.722883E-01    6.722883E-01     0.000000E+00   -1.109041E-17
+                     CMX       -2.146150E-01   -2.146150E-01    -2.146150E-01   -2.146150E-01     0.000000E+00   -2.146150E-01
+                     CMY       -1.643905E-01   -1.644167E-01    -1.644167E-01   -1.644167E-01     0.000000E+00    0.000000E+00
+                     CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+
+    URDD4            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     9.460304E-18    0.000000E+00
+                     CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     1.830702E-01    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE     9
+                                                                                                                                    
+0                                                                                                                                   
+
+    TRIM VARIABLE   COEFFICIENT              RIGID                         ELASTIC                          INERTIAL
+                                   UNSPLINED        SPLINED       RESTRAINED      UNRESTRAINED     RESTRAINED      UNRESTRAINED
+
+    RAIL             CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+                     CZ         6.891953E-01    6.722883E-01     6.722883E-01    6.722883E-01     0.000000E+00    1.109041E-17
+                     CMX        2.146150E-01    2.146150E-01     2.146150E-01    2.146150E-01     0.000000E+00    2.146150E-01
+                     CMY       -1.643905E-01   -1.644167E-01    -1.644167E-01   -1.644167E-01     0.000000E+00    0.000000E+00
+                     CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    10
+                                                                                                                                    
+0                                                                                                                                   
+
+          N O N - D I M E N S I O N A L    H I N G E    M O M E N T    D E R I V A T I V E   C O E F F I C I E N T S
+
+
+
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+                                         MACH = 2.9412E-02                    Q = 6.1250E+01
+
+          CONTROL SURFACE = LAIL         REFERENCE CHORD LENGTH =  2.500000E-01     REFERENCE AREA =  6.667000E-01
+
+              TRIM VARIABLE               RIGID                             ELASTIC                            INERTIAL
+                                                                 RESTRAINED      UNRESTRAINED         RESTRAINED      UNRESTRAINED
+              AT REFERENCE         0.000000E+00                 0.000000E+00    0.000000E+00         0.000000E+00    0.000000E+00
+              ROLL                -1.909700E-01                -1.909700E-01   -1.909700E-01         0.000000E+00    0.000000E+00
+              LAIL                -9.341840E-01                -9.341840E-01   -9.341840E-01         0.000000E+00    0.000000E+00
+              URDD4                0.000000E+00                 0.000000E+00    0.000000E+00         0.000000E+00    0.000000E+00
+              RAIL                -3.019510E-03                -3.019510E-03   -3.019510E-03         0.000000E+00    0.000000E+00
+
+          CONTROL SURFACE = RAIL         REFERENCE CHORD LENGTH =  2.500000E-01     REFERENCE AREA =  6.667000E-01
+
+              TRIM VARIABLE               RIGID                             ELASTIC                            INERTIAL
+                                                                 RESTRAINED      UNRESTRAINED         RESTRAINED      UNRESTRAINED
+              AT REFERENCE         0.000000E+00                 0.000000E+00    0.000000E+00         0.000000E+00    0.000000E+00
+              ROLL                 1.909700E-01                 1.909700E-01    1.909700E-01         0.000000E+00    0.000000E+00
+              LAIL                -3.019510E-03                -3.019510E-03   -3.019510E-03         0.000000E+00    0.000000E+00
+              URDD4                0.000000E+00                 0.000000E+00    0.000000E+00         0.000000E+00    0.000000E+00
+              RAIL                -9.341840E-01                -9.341840E-01   -9.341840E-01         0.000000E+00    0.000000E+00
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    11
+                                                                                                                                    
+0                                                                                                                                   
+                                                  INTERMEDIATE MATRIX ... HP      
+
+
+                                                            COLUMN      2
+     1                                                       -1.618651E+02                                                        1
+
+                                                            COLUMN      3
+     1                                                       -5.726043E+01                                                        1
+
+                                                            COLUMN      4
+     1                                                        5.116996E+01                                                        1
+
+                                                            COLUMN      5
+     1                                                        5.726043E+01                                                        1
+
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    12
+                                                                                                                                    
+0                                                                                                                                   
+                                                  INTERMEDIATE MATRIX ... UX      
+
+
+                                                            COLUMN      1
+     1                  1.000000E+00      -6.789764E-01       1.000000E+00       0.000000E+00      -1.000000E+00                  5
+
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    13
+                                                                                                                                    
+0                                                                                                                                   
+                                                  INTERMEDIATE MATRIX ... UXIFV   
+
+
+                                                            COLUMN      1
+     1                  1.678976E+00      -6.789764E-01       1.000000E+00      -1.000000E+00       0.000000E+00                  5
+
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    14
+                                                                                                                                    
+0                                                                                                                                   
+
+                               A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+                                           MACH = 2.941180E-02                Q = 6.125000E+01
+                         CHORD = 1.0000E+00           SPAN = 1.0000E+01            AREA = 1.0000E+01
+
+          TRIM ALGORITHM USED: LINEAR TRIM SOLUTION WITHOUT REDUNDANT CONTROL SURFACES.                                           
+
+
+                                                      AEROELASTIC TRIM VARIABLES
+
+                                  ID     LABEL                 TYPE        TRIM STATUS      VALUE OF UX
+
+                                         INTERCEPT          RIGID BODY           FIXED      1.000000E+00
+                                   1     ROLL               RIGID BODY            FREE     -6.789764E-01  NONDIMEN. RATE  
+                                   1     LAIL          CONTROL SURFACE           FIXED      1.000000E+00  RADIANS         
+                                   2     URDD4              RIGID BODY           FIXED      0.000000E+00  RAD/S/S PER G   
+                                   2     RAIL          CONTROL SURFACE           FIXED     -1.000000E+00  RADIANS         
+
+
+                                           CONTROL SURFACE POSITION AND HINGE MOMENT RESULTS
+
+                            ACTIVE LIMITS ARE FLAGGED WITH AN (A),  VIOLATED LIMITS ARE FLAGGED WITH A (V).
+
+                                                POSITION                                         HINGE MOMENT
+          CONTROL SURFACE      LOWER LIMIT       VALUE         UPPER LIMIT        LOWER LIMIT       VALUE         UPPER LIMIT
+              LAIL           -1.570796E+00    1.000000E+00    1.570796E+00            N/A       -8.182392E+00         N/A      
+              RAIL           -1.570796E+00   -1.000000E+00    1.570796E+00            N/A        8.182392E+00         N/A      
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    15
+                                                                                                                                    
+0                                                                                                                                   
+
+                               A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+                                           MACH = 2.941180E-02                Q = 6.125000E+01
+                         CHORD = 1.0000E+00           SPAN = 1.0000E+01            AREA = 1.0000E+01
+
+
+                                        TRANSFORMATION FROM REFERENCE TO WIND AXES:
+                                ANGLE OF ATTACK   =  0.000000E+00 RADIANS (     0.000000 DEGREES)
+                                ANGLE OF SIDESLIP =  0.000000E+00 RADIANS (     0.000000 DEGREES)
+
+                                      { X }          [  1.000000  0.000000  0.000000 ]  { X }
+                                      { Y }          [  0.000000  1.000000  0.000000 ]  { Y }
+                                      { Z }WIND =    [  0.000000  0.000000  1.000000 ]  { Z }REF
+
+
+    STRUCTURAL  MONITOR POINT TOTAL VEHICLE COEFFICIENTS:
+          AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
+          ----         ---------     ----------------     --------      -------------   ----------------     -------
+    BODY  CX          0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+    WIND  CD          0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+ 
+    BODY  CY          0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+    WIND  CY-WIND     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+ 
+    BODY  CZ          1.856112E-15     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     1.856112E-15
+    WIND  CL          1.856112E-15     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     1.856112E-15
+ 
+    BODY  CMX         0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+    WIND  CM-ROLL     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+ 
+    BODY  CMY         3.016181E-16     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     3.016181E-16
+    WIND  CM-PITCH    3.016181E-16     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     3.016181E-16
+ 
+    BODY  CMZ         0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+    WIND  CM-YAW      0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+ 
+
+
+    AERODYNAMIC MONITOR POINT TOTAL VEHICLE COEFFICIENTS:
+          AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
+          ----         ---------     ----------------     --------      -------------   ----------------     -------
+    BODY  CX          0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
+    WIND  CD          0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
+ 
+    BODY  CY          0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
+    WIND  CY-WIND     0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
+ 
+    BODY  CZ         -5.568335E-16     0.000000E+00           N/A              N/A        0.000000E+00    -5.568335E-16
+    WIND  CL         -5.568335E-16     0.000000E+00           N/A              N/A        0.000000E+00    -5.568335E-16
+ 
+    BODY  CMX         0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
+    WIND  CM-ROLL     0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
+ 
+    BODY  CMY         9.280558E-17     0.000000E+00           N/A              N/A        0.000000E+00     9.280558E-17
+    WIND  CM-PITCH    9.280558E-17     0.000000E+00           N/A              N/A        0.000000E+00     9.280558E-17
+ 
+    BODY  CMZ         0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
+    WIND  CM-YAW      0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
+ 
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    16
+                                                                                                                                    
+0                                                                                                                                   
+
+                               A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+                                           MACH = 2.941180E-02                Q = 6.125000E+01
+                         CHORD = 1.0000E+00           SPAN = 1.0000E+01            AREA = 1.0000E+01
+
+
+                                            AERODYNAMIC PRESSURES ON THE AERODYNAMIC ELEMENTS
+
+                                                             AERODYNAMIC PRES.       AERODYNAMIC
+                                         GRID   LABEL          COEFFICIENTS           PRESSURES
+                                           1     LS           -3.168321E+00        -1.940597E+02
+                                           2     LS           -5.917205E-01        -3.624288E+01
+                                           3     LS            6.089289E-01         3.729689E+01
+                                           4     LS            3.137893E+00         1.921959E+02
+                                           5     LS           -2.966575E+00        -1.817027E+02
+                                           6     LS           -5.302494E-01        -3.247777E+01
+                                           7     LS            7.067639E-01         4.328929E+01
+                                           8     LS            3.250468E+00         1.990912E+02
+                                           9     LS           -2.482281E+00        -1.520397E+02
+                                          10     LS           -3.769276E-01        -2.308682E+01
+                                          11     LS            7.727213E-01         4.732918E+01
+                                          12     LS            3.277058E+00         2.007198E+02
+                                          13     LS           -2.088937E+00        -1.279474E+02
+                                          14     LS           -3.354752E-01        -2.054786E+01
+                                          15     LS            6.869572E-01         4.207613E+01
+                                          16     LS            3.159229E+00         1.935028E+02
+                                          17     LS           -1.884639E+00        -1.154342E+02
+                                          18     LS           -6.151825E-01        -3.767993E+01
+                                          19     LS           -2.179208E-01        -1.334765E+01
+                                          20     LS           -3.032999E-02        -1.857712E+00
+                                          21     LS           -1.424072E+00        -8.722438E+01
+                                          22     LS           -5.402422E-01        -3.308983E+01
+                                          23     LS           -2.820266E-01        -1.727413E+01
+                                          24     LS           -1.359149E-01        -8.324787E+00
+                                          25     LS           -7.557072E-01        -4.628706E+01
+                                          26     LS           -2.977672E-01        -1.823824E+01
+                                          27     LS           -1.638255E-01        -1.003431E+01
+                                          28     LS           -8.382592E-02        -5.134337E+00
+                                          29     LS           -5.800349E-16        -3.552714E-14
+                                          30     LS           -3.480209E-16        -2.131628E-14
+                                          31     LS           -2.465148E-16        -1.509903E-14
+
+          *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
+                                                        YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    17
+                                                                                                                                    
+0                                                                                                                                   
+
+                               A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+                                           MACH = 2.941180E-02                Q = 6.125000E+01
+                         CHORD = 1.0000E+00           SPAN = 1.0000E+01            AREA = 1.0000E+01
+
+
+                                            AERODYNAMIC PRESSURES ON THE AERODYNAMIC ELEMENTS
+
+                                                             AERODYNAMIC PRES.       AERODYNAMIC
+                                         GRID   LABEL          COEFFICIENTS           PRESSURES
+                                          32     LS           -1.522592E-16        -9.325873E-15
+                                          33     LS            7.557072E-01         4.628706E+01
+                                          34     LS            2.977672E-01         1.823824E+01
+                                          35     LS            1.638255E-01         1.003431E+01
+                                          36     LS            8.382592E-02         5.134337E+00
+                                          37     LS            1.424072E+00         8.722438E+01
+                                          38     LS            5.402422E-01         3.308983E+01
+                                          39     LS            2.820266E-01         1.727413E+01
+                                          40     LS            1.359149E-01         8.324787E+00
+                                          41     LS            1.884639E+00         1.154342E+02
+                                          42     LS            6.151825E-01         3.767993E+01
+                                          43     LS            2.179208E-01         1.334765E+01
+                                          44     LS            3.032999E-02         1.857712E+00
+                                          45     LS            2.088937E+00         1.279474E+02
+                                          46     LS            3.354752E-01         2.054786E+01
+                                          47     LS           -6.869572E-01        -4.207613E+01
+                                          48     LS           -3.159229E+00        -1.935028E+02
+                                          49     LS            2.482281E+00         1.520397E+02
+                                          50     LS            3.769276E-01         2.308682E+01
+                                          51     LS           -7.727213E-01        -4.732918E+01
+                                          52     LS           -3.277058E+00        -2.007198E+02
+                                          53     LS            2.966575E+00         1.817027E+02
+                                          54     LS            5.302494E-01         3.247777E+01
+                                          55     LS           -7.067639E-01        -4.328929E+01
+                                          56     LS           -3.250468E+00        -1.990912E+02
+                                          57     LS            3.168321E+00         1.940597E+02
+                                          58     LS            5.917205E-01         3.624288E+01
+                                          59     LS           -6.089289E-01        -3.729689E+01
+                                          60     LS           -3.137893E+00        -1.921959E+02
+
+          *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
+                                                        YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    18
+                                                                                                                                    
+0                                                                                                                                   
+
+                               A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+                                           MACH = 2.941180E-02                Q = 6.125000E+01
+                         CHORD = 1.0000E+00           SPAN = 1.0000E+01            AREA = 1.0000E+01
+
+
+                                             AERODYNAMIC FORCES ON THE AERODYNAMIC ELEMENTS
+
+    GROUP  GRID ID  LABEL        T1                T2                T3                R1                R2                R3
+        1        1   LS     0.000000E+00      0.000000E+00     -3.234328E+01      0.000000E+00     -2.021455E+00      0.000000E+00
+        1        2   LS     0.000000E+00      0.000000E+00     -6.040480E+00      0.000000E+00     -3.775300E-01      0.000000E+00
+        1        3   LS     0.000000E+00      0.000000E+00      6.216149E+00      0.000000E+00      3.885093E-01      0.000000E+00
+        1        4   LS     0.000000E+00      0.000000E+00      3.203266E+01      0.000000E+00      2.002041E+00      0.000000E+00
+        1        5   LS     0.000000E+00      0.000000E+00     -3.028378E+01      0.000000E+00     -1.892737E+00      0.000000E+00
+        1        6   LS     0.000000E+00      0.000000E+00     -5.412962E+00      0.000000E+00     -3.383101E-01      0.000000E+00
+        1        7   LS     0.000000E+00      0.000000E+00      7.214881E+00      0.000000E+00      4.509301E-01      0.000000E+00
+        1        8   LS     0.000000E+00      0.000000E+00      3.318186E+01      0.000000E+00      2.073866E+00      0.000000E+00
+        1        9   LS     0.000000E+00      0.000000E+00     -2.533995E+01      0.000000E+00     -1.583747E+00      0.000000E+00
+        1       10   LS     0.000000E+00      0.000000E+00     -3.847803E+00      0.000000E+00     -2.404877E-01      0.000000E+00
+        1       11   LS     0.000000E+00      0.000000E+00      7.888197E+00      0.000000E+00      4.930123E-01      0.000000E+00
+        1       12   LS     0.000000E+00      0.000000E+00      3.345330E+01      0.000000E+00      2.090831E+00      0.000000E+00
+        1       13   LS     0.000000E+00      0.000000E+00     -2.132456E+01      0.000000E+00     -1.332785E+00      0.000000E+00
+        1       14   LS     0.000000E+00      0.000000E+00     -3.424643E+00      0.000000E+00     -2.140402E-01      0.000000E+00
+        1       15   LS     0.000000E+00      0.000000E+00      7.012688E+00      0.000000E+00      4.382930E-01      0.000000E+00
+        1       16   LS     0.000000E+00      0.000000E+00      3.225046E+01      0.000000E+00      2.015654E+00      0.000000E+00
+        1       17   LS     0.000000E+00      0.000000E+00     -1.923903E+01      0.000000E+00     -1.202439E+00      0.000000E+00
+        1       18   LS     0.000000E+00      0.000000E+00     -6.279988E+00      0.000000E+00     -3.924992E-01      0.000000E+00
+        1       19   LS     0.000000E+00      0.000000E+00     -2.224608E+00      0.000000E+00     -1.390380E-01      0.000000E+00
+        1       20   LS     0.000000E+00      0.000000E+00     -3.096187E-01      0.000000E+00     -1.935117E-02      0.000000E+00
+        1       21   LS     0.000000E+00      0.000000E+00     -1.453740E+01      0.000000E+00     -9.085873E-01      0.000000E+00
+        1       22   LS     0.000000E+00      0.000000E+00     -5.514972E+00      0.000000E+00     -3.446858E-01      0.000000E+00
+        1       23   LS     0.000000E+00      0.000000E+00     -2.879022E+00      0.000000E+00     -1.799389E-01      0.000000E+00
+        1       24   LS     0.000000E+00      0.000000E+00     -1.387465E+00      0.000000E+00     -8.671653E-02      0.000000E+00
+        1       25   LS     0.000000E+00      0.000000E+00     -7.714511E+00      0.000000E+00     -4.821569E-01      0.000000E+00
+        1       26   LS     0.000000E+00      0.000000E+00     -3.039707E+00      0.000000E+00     -1.899817E-01      0.000000E+00
+        1       27   LS     0.000000E+00      0.000000E+00     -1.672385E+00      0.000000E+00     -1.045241E-01      0.000000E+00
+        1       28   LS     0.000000E+00      0.000000E+00     -8.557229E-01      0.000000E+00     -5.348268E-02      0.000000E+00
+        1       29   LS     0.000000E+00      0.000000E+00     -5.329071E-15      0.000000E+00     -3.330669E-16      0.000000E+00
+        1       30   LS     0.000000E+00      0.000000E+00     -3.330669E-15      0.000000E+00     -2.081668E-16      0.000000E+00
+        1       31   LS     0.000000E+00      0.000000E+00     -2.442491E-15      0.000000E+00     -1.526557E-16      0.000000E+00
+        1       32   LS     0.000000E+00      0.000000E+00     -1.443290E-15      0.000000E+00     -9.020562E-17      0.000000E+00
+
+          *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
+                                                       ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    19
+                                                                                                                                    
+0                                                                                                                                   
+
+                               A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+                                           MACH = 2.941180E-02                Q = 6.125000E+01
+                         CHORD = 1.0000E+00           SPAN = 1.0000E+01            AREA = 1.0000E+01
+
+
+                                             AERODYNAMIC FORCES ON THE AERODYNAMIC ELEMENTS
+
+    GROUP  GRID ID  LABEL        T1                T2                T3                R1                R2                R3
+        1       33   LS     0.000000E+00      0.000000E+00      7.714511E+00      0.000000E+00      4.821569E-01      0.000000E+00
+        1       34   LS     0.000000E+00      0.000000E+00      3.039707E+00      0.000000E+00      1.899817E-01      0.000000E+00
+        1       35   LS     0.000000E+00      0.000000E+00      1.672385E+00      0.000000E+00      1.045241E-01      0.000000E+00
+        1       36   LS     0.000000E+00      0.000000E+00      8.557229E-01      0.000000E+00      5.348268E-02      0.000000E+00
+        1       37   LS     0.000000E+00      0.000000E+00      1.453740E+01      0.000000E+00      9.085873E-01      0.000000E+00
+        1       38   LS     0.000000E+00      0.000000E+00      5.514972E+00      0.000000E+00      3.446858E-01      0.000000E+00
+        1       39   LS     0.000000E+00      0.000000E+00      2.879022E+00      0.000000E+00      1.799389E-01      0.000000E+00
+        1       40   LS     0.000000E+00      0.000000E+00      1.387465E+00      0.000000E+00      8.671653E-02      0.000000E+00
+        1       41   LS     0.000000E+00      0.000000E+00      1.923903E+01      0.000000E+00      1.202439E+00      0.000000E+00
+        1       42   LS     0.000000E+00      0.000000E+00      6.279988E+00      0.000000E+00      3.924992E-01      0.000000E+00
+        1       43   LS     0.000000E+00      0.000000E+00      2.224608E+00      0.000000E+00      1.390380E-01      0.000000E+00
+        1       44   LS     0.000000E+00      0.000000E+00      3.096187E-01      0.000000E+00      1.935117E-02      0.000000E+00
+        1       45   LS     0.000000E+00      0.000000E+00      2.132456E+01      0.000000E+00      1.332785E+00      0.000000E+00
+        1       46   LS     0.000000E+00      0.000000E+00      3.424643E+00      0.000000E+00      2.140402E-01      0.000000E+00
+        1       47   LS     0.000000E+00      0.000000E+00     -7.012688E+00      0.000000E+00     -4.382930E-01      0.000000E+00
+        1       48   LS     0.000000E+00      0.000000E+00     -3.225046E+01      0.000000E+00     -2.015654E+00      0.000000E+00
+        1       49   LS     0.000000E+00      0.000000E+00      2.533995E+01      0.000000E+00      1.583747E+00      0.000000E+00
+        1       50   LS     0.000000E+00      0.000000E+00      3.847803E+00      0.000000E+00      2.404877E-01      0.000000E+00
+        1       51   LS     0.000000E+00      0.000000E+00     -7.888197E+00      0.000000E+00     -4.930123E-01      0.000000E+00
+        1       52   LS     0.000000E+00      0.000000E+00     -3.345330E+01      0.000000E+00     -2.090831E+00      0.000000E+00
+        1       53   LS     0.000000E+00      0.000000E+00      3.028378E+01      0.000000E+00      1.892737E+00      0.000000E+00
+        1       54   LS     0.000000E+00      0.000000E+00      5.412962E+00      0.000000E+00      3.383101E-01      0.000000E+00
+        1       55   LS     0.000000E+00      0.000000E+00     -7.214881E+00      0.000000E+00     -4.509301E-01      0.000000E+00
+        1       56   LS     0.000000E+00      0.000000E+00     -3.318186E+01      0.000000E+00     -2.073866E+00      0.000000E+00
+        1       57   LS     0.000000E+00      0.000000E+00      3.234328E+01      0.000000E+00      2.021455E+00      0.000000E+00
+        1       58   LS     0.000000E+00      0.000000E+00      6.040480E+00      0.000000E+00      3.775300E-01      0.000000E+00
+        1       59   LS     0.000000E+00      0.000000E+00     -6.216149E+00      0.000000E+00     -3.885093E-01      0.000000E+00
+        1       60   LS     0.000000E+00      0.000000E+00     -3.203266E+01      0.000000E+00     -2.002041E+00      0.000000E+00
+
+          *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
+                                                       ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    20
+                                                                                                                                    
+0                                                                                                                                   
+
+                              S T R U C T U R A L   M O N I T O R   P O I N T   I N T E G R A T E D   L O A D S
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+                                           MACH = 2.941180E-02                Q = 6.125000E+01
+
+        CONTROLLER STATE:
+        ROLL     =  -6.7898E-01        LAIL     =   1.0000E+00        RAIL     =  -1.0000E+00
+
+        MONITOR POINT NAME = AEROSG2D          COMPONENT =                   CLASS = COEFFICIENT               
+        LABEL = Full Vehicle Integrated Loads                           
+         CP =        0          X =  0.00000E+00          Y =  0.00000E+00          Z =  0.00000E+00          CD =        0
+
+          AXIS      RIGID AIR       ELASTIC REST.      INERTIAL      RIGID APPLIED    REST. APPLIED   
+          ----    -------------    -------------    -------------    -------------    -------------   
+           CX     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+           CY     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+           CZ     1.136868E-12     1.136868E-12     0.000000E+00     0.000000E+00     0.000000E+00
+           CMX    0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+           CMY    1.847411E-13     1.847411E-13     0.000000E+00     0.000000E+00     0.000000E+00
+           CMZ    0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    21
+                                                                                                                                    
+0                                                                                                                                   
+
+                              A E R O D Y N A M I C   M O N I T O R   P O I N T   I N T E G R A T E D   L O A D S
+                         CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = ASYMMETRIC
+                                           MACH = 2.941180E-02                Q = 6.125000E+01
+
+        CONTROLLER STATE:
+        ROLL     =  -6.7898E-01        LAIL     =   1.0000E+00        RAIL     =  -1.0000E+00
+
+        MONITOR POINT NAME = AEROSG2D          COMPONENT =                   CLASS = COEFFICIENT               
+        LABEL = Full Vehicle Integrated Loads                           
+         CP =        0          X =  0.00000E+00          Y =  0.00000E+00          Z =  0.00000E+00          CD =        0
+
+          AXIS      RIGID AIR       ELASTIC REST.  
+          ----    -------------    -------------   
+           CX     0.000000E+00     0.000000E+00
+           CY     0.000000E+00     0.000000E+00
+           CZ    -3.410605E-13    -3.410605E-13
+           CMX    0.000000E+00     0.000000E+00
+           CMY    5.684342E-14     5.684342E-14
+           CMZ    0.000000E+00     0.000000E+00
+
+        MONITOR POINT NAME = LAIL              COMPONENT = 1                 CLASS = HINGE MOMENT              
+        LABEL = LAIL     - Control Surface Hinge Moment                 
+         CP =        3          X =  0.00000E+00          Y =  0.00000E+00          Z =  0.00000E+00          CD =        3
+
+          AXIS      RIGID AIR       ELASTIC REST.  
+          ----    -------------    -------------   
+           CMY   -8.182392E+00    -8.182392E+00
+
+        MONITOR POINT NAME = RAIL              COMPONENT = 3                 CLASS = HINGE MOMENT              
+        LABEL = RAIL     - Control Surface Hinge Moment                 
+         CP =        4          X =  0.00000E+00          Y =  0.00000E+00          Z =  0.00000E+00          CD =        4
+
+          AXIS      RIGID AIR       ELASTIC REST.  
+          ----    -------------    -------------   
+           CMY    8.182392E+00     8.182392E+00
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    22
+                                                                                                                                    
+0                                                                                                                                   
+0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+
+0                                                  TRIMMED  OLOAD RESULTANT 
+  SUBCASE/
+  DAREA ID        T1             T2             T3             R1             R2             R3
+0        1   0.0000000E+00  0.0000000E+00 -3.9257486E-13 -4.7961635E-14  3.1086245E-15  0.0000000E+00
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    23
+                                                                                                                                    
+0                                                                                                                                   
+0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+
+0                                                  SPCFORCE RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----      -1.044622E-12  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----      -3.839665E-14     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00 -1.044622E-12  0.000000E+00 -3.839665E-14  0.000000E+00
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK OQG1     WRITTEN ON FORTRAN UNIT    12 IN BINARY (LTLEND) FORMAT USING NDDL DESCRIPTION FOR OQG1, TRL =
+                    101                 0               264                 0                 0                 0                 1
+     NAME OF DATA BLOCK WRITTEN ON FORTRAN UNIT IS OQG1    
+        (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =       16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =         264 WORDS.)
+           (NUMBER OF FORTRAN RECORDS WRITTEN =          20 RECORDS.)
+           (TOTAL DATA WRITTEN FOR DATA BLOCK =         443 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK OUG1     WRITTEN ON FORTRAN UNIT    12 IN BINARY (LTLEND) FORMAT USING NDDL DESCRIPTION FOR OUG1, TRL =
+                    101                 0               264                 0                 0                 0                 1
+     NAME OF DATA BLOCK WRITTEN ON FORTRAN UNIT IS OUG1    
+        (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =       16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =         264 WORDS.)
+           (NUMBER OF FORTRAN RECORDS WRITTEN =          20 RECORDS.)
+           (TOTAL DATA WRITTEN FOR DATA BLOCK =         443 WORDS.)
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    24
+                                                                                                                                    
+0                                                                                                                                   
+ 
+                                             D I S P L A C E M E N T   V E C T O R
+ 
+      POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
+             1      G      0.0            0.0            0.0            0.0            0.0            0.0
+             2      G      0.0            0.0            1.019828E-01  -1.139865E+00  -6.860862E+00   0.0
+             3      G      0.0            0.0            2.387567E+00  -3.485037E+00  -1.380006E+01   0.0
+             4      G      0.0            0.0            6.986244E+00  -4.871080E+00  -2.019811E+01   0.0
+             5      G      0.0            0.0            1.201806E+01  -5.009043E+00  -2.409585E+01   0.0
+             6      G      0.0            0.0            1.698816E+01  -4.966271E+00  -2.515028E+01   0.0
+             8      G      0.0            0.0           -1.019828E-01  -1.139865E+00   6.860862E+00   0.0
+             9      G      0.0            0.0           -2.387567E+00  -3.485037E+00   1.380006E+01   0.0
+            10      G      0.0            0.0           -6.986244E+00  -4.871080E+00   2.019811E+01   0.0
+            11      G      0.0            0.0           -1.201806E+01  -5.009043E+00   2.409585E+01   0.0
+            12      G      0.0            0.0           -1.698816E+01  -4.966271E+00   2.515028E+01   0.0
+            13      G      0.0            0.0            1.070059E+01  -4.966271E+00  -2.515028E+01   0.0
+            14      G      0.0            0.0            5.994099E+00  -5.009043E+00  -2.409585E+01   0.0
+            15      G      0.0            0.0            1.936718E+00  -4.871080E+00  -2.019811E+01   0.0
+            16      G      0.0            0.0           -1.062448E+00  -3.485037E+00  -1.380006E+01   0.0
+            17      G      0.0            0.0           -1.613233E+00  -1.139865E+00  -6.860862E+00   0.0
+            18      G      0.0            0.0            0.0            0.0            0.0            0.0
+            19      G      0.0            0.0            1.613233E+00  -1.139865E+00   6.860862E+00   0.0
+            20      G      0.0            0.0            1.062448E+00  -3.485037E+00   1.380006E+01   0.0
+            21      G      0.0            0.0           -1.936718E+00  -4.871080E+00   2.019811E+01   0.0
+            22      G      0.0            0.0           -5.994099E+00  -5.009043E+00   2.409585E+01   0.0
+            23      G      0.0            0.0           -1.070059E+01  -4.966271E+00   2.515028E+01   0.0
+            24      G      0.0            0.0           -3.585087E+01  -4.966271E+00   2.515028E+01   0.0
+            25      G      0.0            0.0           -3.008995E+01  -5.009043E+00   2.409585E+01   0.0
+            26      G      0.0            0.0           -2.213482E+01  -4.871080E+00   2.019811E+01   0.0
+            27      G      0.0            0.0           -1.273761E+01  -3.485037E+00   1.380006E+01   0.0
+            28      G      0.0            0.0           -5.247630E+00  -1.139865E+00   6.860862E+00   0.0
+            29      G      0.0            0.0            0.0            0.0            0.0            0.0
+            30      G      0.0            0.0            5.247630E+00  -1.139865E+00  -6.860862E+00   0.0
+            31      G      0.0            0.0            1.273761E+01  -3.485037E+00  -1.380006E+01   0.0
+            32      G      0.0            0.0            2.213482E+01  -4.871080E+00  -2.019811E+01   0.0
+            33      G      0.0            0.0            3.008995E+01  -5.009043E+00  -2.409585E+01   0.0
+            34      G      0.0            0.0            3.585087E+01  -4.966271E+00  -2.515028E+01   0.0
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    25
+                                                                                                                                    
+0                                                                                                                                   
+ 
+                               F O R C E S   O F   S I N G L E - P O I N T   C O N S T R A I N T
+ 
+      POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
+             1      G      0.0            0.0           -1.044622E-12   0.0           -3.839665E-14   0.0
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    26
+                                                                                                                                    
+0                                                                                                                                   
+ 
+                                 S T R E S S E S   I N   B A R   E L E M E N T S          ( C B A R )
+  ELEMENT        SA1            SA2            SA3            SA4           AXIAL          SA-MAX         SA-MIN     M.S.-T
+    ID.          SB1            SB2            SB3            SB4           STRESS         SB-MAX         SB-MIN     M.S.-C
+0       1    9.128441E-10   9.128441E-10  -9.128441E-10  -9.128441E-10   0.0            9.128441E-10  -9.128441E-10 
+             1.595811E+04   1.595811E+04  -1.595811E+04  -1.595811E+04                  1.595811E+04  -1.595811E+04 
+0       2    1.595811E+04   1.595811E+04  -1.595811E+04  -1.595811E+04   0.0            1.595811E+04  -1.595811E+04 
+             1.687430E+04   1.687430E+04  -1.687430E+04  -1.687430E+04                  1.687430E+04  -1.687430E+04 
+0       3    1.687430E+04   1.687430E+04  -1.687430E+04  -1.687430E+04   0.0            1.687430E+04  -1.687430E+04 
+             2.530299E+03   2.530299E+03  -2.530299E+03  -2.530299E+03                  2.530299E+03  -2.530299E+03 
+0       4    2.530299E+03   2.530299E+03  -2.530299E+03  -2.530299E+03   0.0            2.530299E+03  -2.530299E+03 
+            -5.988131E+02  -5.988131E+02   5.988131E+02   5.988131E+02                  5.988131E+02  -5.988131E+02 
+0       5   -5.988131E+02  -5.988131E+02   5.988131E+02   5.988131E+02   0.0            5.988131E+02  -5.988131E+02 
+             1.034259E-09   1.034259E-09  -1.034259E-09  -1.034259E-09                  1.034259E-09  -1.034259E-09 
+0       6    4.099612E-10   4.099612E-10  -4.099612E-10  -4.099612E-10   0.0            4.099612E-10  -4.099612E-10 
+             1.595811E+04   1.595811E+04  -1.595811E+04  -1.595811E+04                  1.595811E+04  -1.595811E+04 
+0       7    1.595811E+04   1.595811E+04  -1.595811E+04  -1.595811E+04   0.0            1.595811E+04  -1.595811E+04 
+             1.687430E+04   1.687430E+04  -1.687430E+04  -1.687430E+04                  1.687430E+04  -1.687430E+04 
+0       8    1.687430E+04   1.687430E+04  -1.687430E+04  -1.687430E+04   0.0            1.687430E+04  -1.687430E+04 
+             2.530299E+03   2.530299E+03  -2.530299E+03  -2.530299E+03                  2.530299E+03  -2.530299E+03 
+0       9    2.530299E+03   2.530299E+03  -2.530299E+03  -2.530299E+03   0.0            2.530299E+03  -2.530299E+03 
+            -5.988131E+02  -5.988131E+02   5.988131E+02   5.988131E+02                  5.988131E+02  -5.988131E+02 
+0      10   -5.988131E+02  -5.988131E+02   5.988131E+02   5.988131E+02   0.0            5.988131E+02  -5.988131E+02 
+             8.709549E-10   8.709549E-10  -8.709549E-10  -8.709549E-10                  8.709549E-10  -8.709549E-10 
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK OES1X1   WRITTEN ON FORTRAN UNIT    12 IN BINARY (LTLEND) FORMAT USING NDDL DESCRIPTION FOR OES1X1, TRL =
+                    101                63                 1                13                24                 0                 1
+     NAME OF DATA BLOCK WRITTEN ON FORTRAN UNIT IS OES1X1  
+        (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =       16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =         160 WORDS.)
+           (NUMBER OF FORTRAN RECORDS WRITTEN =          20 RECORDS.)
+           (TOTAL DATA WRITTEN FOR DATA BLOCK =         339 WORDS.)
+ *** USER INFORMATION MESSAGE 4110 (OUTPX2)
+                                 END-OF-DATA SIMULATION ON FORTRAN UNIT    12
+                                 (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
+                                       (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
+                                       (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
+1    ROLLSTATIC                                         **STUDENT EDITION*  JANUARY  13, 2024  MSC Nastran  3/30/23   PAGE    27
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     74
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ -------------------------------------------------------------------------------------------------------------------
+     0     0    1    1 '        '    T    T    T    T    T     F      F      T     F     -1            0           F
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+ 
+ No PARAM values were set in the Control File.
+ 
+1                                        * * * END OF JOB * * *
+ 
+ 
+ No Symbolic Replacement variables or values were specified.
+

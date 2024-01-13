@@ -1,0 +1,224 @@
+INIT MASTER(S)
+NASTRAN SYSTEM(319)=1
+ID plane2,FEMAP
+SOL SEMODES
+CEND
+  TITLE = modal
+  ECHO = NONE
+  DISPLACEMENT(PRINT) = ALL
+  SPCFORCE(PRINT) = ALL
+  ESE(PRINT) = ALL
+  METHOD = 1
+  SPC = 1
+BEGIN BULK
+$ ***************************************************************************
+$   Written by : Femap
+$   Version    : 2021.2.1
+$   Translator : MSC Nastran
+$   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\plane2.modfem
+$   Date       : Sat Jan 13 15:45:46 2024
+$   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
+$ ***************************************************************************
+$
+PARAM,PRGPST,NO
+PARAM,POST,-1
+PARAM,OGEOM,NO
+PARAM,AUTOSPC,YES
+PARAM,GRDPNT,0
+EIGRL          1                      50       0                    MASS
+CORD2C         1       0      0.      0.      0.      0.      0.      1.+FEMAPC1
++FEMAPC1      1.      0.      1.        
+CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
++FEMAPC2      1.      0.      1.        
+$ Femap Coordinate System 3 : leftail
+CORD2R         3       0      .5     -5.      0.      .5     -5.      1.+       
++            1.5     -5.      0.        
+$ Femap Coordinate System 4 : rightail
+CORD2R         4       0      .5      5.      0.      .5      5.      1.+       
++            1.5      5.      0.        
+$ Femap Coordinate System 5 : rudder
+CORD2R         5       0    4.75      0.      0.    4.75      0.      1.+       
++           5.75      0.      0.        
+$ Femap Coordinate System 6 : elev
+CORD2R         6       0    4.75      0.     1.5    4.75      0.     2.5+       
++           5.75      0.     1.5        
+$ Femap Coordinate System 7 : stabiliser
+CORD2R         7       0    4.25      0.     1.5    4.25      0.     2.5+       
++           5.25      0.     1.5        
+$ Femap Coordinate System 8 : vertfin
+CORD2R         8       0    4.25      0.      0.    4.25      0.      1.+       
++           5.25      0.      0.        
+$ Femap Constraint Set 1 : clamp
+SPC1           1  123456       1
+$ Femap Property 1 : spar
+$ Femap PropShape 1 : 2,0,0.4,0.8,0.,0.,0.,0.07
+$ Femap PropMethod 1 : 2,0,1,0.
+$ Femap PropOrient 1 : 2,0,0.,1.,2.,3.,4.,-1.,0.,0.
+PBAR           1       1   .1484.0108376   .0033.0082666      0.        +       
++            -.4     -.2      .4     -.2      .4      .2     -.4      .2+       
++       .6793329.2527372      0.
+$ Femap Property 3 : fuselage
+$ Femap PropShape 3 : 6,0,1.,0.,0.,0.,0.,0.3
+$ Femap PropMethod 3 : 6,0,1,0.3
+$ Femap PropOrient 3 : 6,0,0.,1.,2.,3.,4.,-1.,0.,0.
+PBAR           3       11.602212 .596824 .5968241.192787      0.        +       
++             0.     -1.      1.      0.      0.      1.     -1.      0.+       
++       .5567441.5567434      0.
+$ Femap Material 1 : al
+MAT1           1  70000.             .33      0.      0.      0.        
+GRID           1       0      0.      0.      0.       0
+GRID           2       0      0.     -1.      0.       0
+GRID           3       0      0.     -2.      0.       0
+GRID           4       0      0.     -3.      0.       0
+GRID           5       0      0.     -4.      0.       0
+GRID           6       0      0.     -5.      0.       0
+GRID           7       0    4.25      0.     1.5       0
+GRID           8       0      0.      1.      0.       0
+GRID           9       0      0.      2.      0.       0
+GRID          10       0      0.      3.      0.       0
+GRID          11       0      0.      4.      0.       0
+GRID          12       0      0.      5.      0.       0
+GRID          13       0    -.25     -5.      0.       0
+GRID          14       0    -.25     -4.      0.       0
+GRID          15       0    -.25     -3.      0.       0
+GRID          16       0    -.25     -2.      0.       0
+GRID          17       0    -.25     -1.      0.       0
+GRID          18       0    -.25      0.      0.       0
+GRID          19       0    -.25      1.      0.       0
+GRID          20       0    -.25      2.      0.       0
+GRID          21       0    -.25      3.      0.       0
+GRID          22       0    -.25      4.      0.       0
+GRID          23       0    -.25      5.      0.       0
+GRID          24       0     .75      5.      0.       0
+GRID          25       0     .75      4.      0.       0
+GRID          26       0     .75      3.      0.       0
+GRID          27       0     .75      2.      0.       0
+GRID          28       0     .75      1.      0.       0
+GRID          29       0     .75      0.      0.       0
+GRID          30       0     .75     -1.      0.       0
+GRID          31       0     .75     -2.      0.       0
+GRID          32       0     .75     -3.      0.       0
+GRID          33       0     .75     -4.      0.       0
+GRID          34       0     .75     -5.      0.       0
+GRID          35       0    4.25      0.     1.2       0
+GRID          36       0    4.25      0.      .9       0
+GRID          37       0    4.25      0.      .6       0
+GRID          38       0    4.25      0.      .3       0
+GRID          39       0    4.25      0.      0.       0
+GRID          40       0    4.25      2.     1.5       0
+GRID          60       0     .75      0.      0.       0
+GRID          61       0    4.25     1.6     1.5       0
+GRID          81       0      5.      0.      0.       0
+GRID          82       0    4.25     1.2     1.5       0
+GRID          83       0    4.25      .8     1.5       0
+GRID          84       0    4.25      .4     1.5       0
+GRID          86       0      4.      0.      0.       0
+GRID          87       0      4.      0.      .3       0
+GRID          88       0      4.      0.      .6       0
+GRID          89       0      4.      0.      .9       0
+GRID          90       0      4.      0.     1.2       0
+GRID          91       0      4.      0.     1.5       0
+GRID          92       0      5.      0.      .3       0
+GRID          93       0      5.      0.      .6       0
+GRID          94       0      5.      0.      .9       0
+GRID          95       0      5.      0.     1.2       0
+GRID          96       0      5.      0.     1.5       0
+GRID          97       0    4.25     -2.     1.5       0
+GRID          98       0    4.25    -1.6     1.5       0
+GRID          99       0    4.25    -1.2     1.5       0
+GRID         100       0    4.25     -.8     1.5       0
+GRID         101       0    4.25     -.4     1.5       0
+GRID         103       0      4.      2.     1.5       0
+GRID         104       0      4.     1.6     1.5       0
+GRID         105       0      4.     1.2     1.5       0
+GRID         106       0      4.      .8     1.5       0
+GRID         107       0      4.      .4     1.5       0
+GRID         108       0      5.      .4     1.5       0
+GRID         109       0      5.      .8     1.5       0
+GRID         110       0      5.     1.2     1.5       0
+GRID         111       0      5.     1.6     1.5       0
+GRID         112       0      5.      2.     1.5       0
+GRID         114       0      4.     -.4     1.5       0
+GRID         115       0      4.     -.8     1.5       0
+GRID         116       0      4.    -1.2     1.5       0
+GRID         117       0      4.    -1.6     1.5       0
+GRID         118       0      5.    -1.6     1.5       0
+GRID         119       0      5.    -1.2     1.5       0
+GRID         120       0      5.     -.8     1.5       0
+GRID         121       0      4.     -2.     1.5       0
+GRID         122       0      5.     -2.     1.5       0
+GRID         123       0      5.     -.4     1.5       0
+CBAR           1       1       1       2      1.      0.      0.
+CBAR           2       1       2       3      1.      0.      0.
+CBAR           3       1       3       4      1.      0.      0.
+CBAR           4       1       4       5      1.      0.      0.
+CBAR           5       1       5       6      1.      0.      0.
+CBAR           6       1       1       8      1.      0.      0.
+CBAR           7       1       8       9      1.      0.      0.
+CBAR           8       1       9      10      1.      0.      0.
+CBAR           9       1      10      11      1.      0.      0.
+CBAR          10       1      11      12      1.      0.      0.
+RBE2          11       6  123456      13      34
+RBE2          12       5  123456      14      33
+RBE2          13       4  123456      15      32
+RBE2          14       3  123456      16      31
+RBE2          15       2  123456      17      30
+RBE2          16       1  123456      18      29      86      39      81
+RBE2          17       8  123456      19      28
+RBE2          18       9  123456      20      27
+RBE2          19      10  123456      26      21
+RBE2          20      11  123456      22      25
+RBE2          21      12  123456      23      24
+CONM2         22       6       0    100.      .3      0.      0.                
+CONM2         23       5       0    100.      .3      0.      0.                
+CONM2         24       4       0    100.      .3      0.      0.                
+CONM2         25       3       0    100.      .3      0.      0.                
+CONM2         26       2       0    100.      .3      0.      0.                
+CONM2         27       1       0    100.      .3      0.      0.                
+CONM2         28       8       0    100.      .3      0.      0.                
+CONM2         29       9       0    100.      .3      0.      0.                
+CONM2         30      10       0    100.      .3      0.      0.                
+CONM2         31      11       0    100.      .3      0.      0.                
+CONM2         32      12       0    100.      .3      0.      0.                
+CBAR          33       1       7      35      1.      0.      0.
+CBAR          34       1      35      36      1.      0.      0.
+CBAR          35       1      36      37      1.      0.      0.
+CBAR          36       1      37      38      1.      0.      0.
+CBAR          37       1      38      39      1.      0.      0.
+CONM2         81      35       0    100.      .3      0.      0.                
+CONM2         82      36       0    100.      .3      0.      0.                
+CONM2         83      37       0    100.      .3      0.      0.                
+CONM2         84      38       0    100.      .3      0.      0.                
+CONM2         85       7       0    100.      .3      0.      0.                
+CONM2         86      39       0    100.      .3      0.      0.                
+RBE2          94      38  123456      87      92
+RBE2          95      37  123456      88      93
+RBE2          96      36  123456      89      94
+RBE2          97      35  123456      90      95
+RBE2          98       7  123456      91      96
+CBAR          99       1      40      61      1.      0.      0.
+CBAR         100       1      61      82      1.      0.      0.
+CBAR         101       1      82      83      1.      0.      0.
+CBAR         102       1      83      84      1.      0.      0.
+CBAR         103       1      84       7      1.      0.      0.
+CBAR         104       1      97      98      1.      0.      0.
+CBAR         105       1      98      99      1.      0.      0.
+CBAR         106       1      99     100      1.      0.      0.
+CBAR         107       1     100     101      1.      0.      0.
+CBAR         108       1     101       7      1.      0.      0.
+RBE2         109     101  123456     123     114
+RBE2         110     100  123456     120     115
+RBE2         111      99  123456     119     116
+RBE2         112      98  123456     118     117
+RBE2         113      97  123456     122     121
+RBE2         114      84  123456     108     107
+RBE2         115      83  123456     109     106
+RBE2         116      82  123456     110     105
+RBE2         117      61  123456     111     104
+RBE2         118      40  123456     112     103
+CONM2        119      61       0    100.      .3      0.      0.                
+CONM2        120      83       0    100.      .3      0.      0.                
+CONM2        121     100       0    100.      .3      0.      0.                
+CONM2        122      98       0    100.      .3      0.      0.                
+CONM2        123       7       0    100.      .3      0.      0.                
+ENDDATA
