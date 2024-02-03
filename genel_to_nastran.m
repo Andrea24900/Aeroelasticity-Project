@@ -1,0 +1,1 @@
+%   This script creates a GENEL bulk entry for MSC NASTRAN
