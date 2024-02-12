@@ -1,4 +1,4 @@
-Z matrix: each column represents the DISPLACEMENT of all nodes if a unit force is applied in the node corresponding to the row
+Z matrix: each column represents the DISPLACEMENT of all nodes if a unit force is applied in the node corresponding to the column
 
                       load on 2            load on 3
 node 2                7.3663-8          1.8081-7
