@@ -1,0 +1,49 @@
+INIT MASTER(S)
+NASTRAN SYSTEM(319)=1
+ID genelt,FEMAP
+SOL SESTATIC
+CEND
+  TITLE = strangeload
+  ECHO = NONE
+  DISPLACEMENT(PRINT) = ALL
+  SPCFORCE(PRINT) = ALL
+  OLOAD(PRINT) = ALL
+  FORCE(PRINT,CORNER) = ALL
+  STRESS(PRINT,CORNER) = ALL
+  SPC = 1
+  LOAD = 3
+BEGIN BULK
+$ ***************************************************************************
+$   Written by : Femap
+$   Version    : 2021.2.1
+$   Translator : MSC Nastran
+$   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\genel test 2\geneltest2.modfem
+$   Date       : Mon Feb 12 17:52:29 2024
+$   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\genel test 2\
+$ ***************************************************************************
+$
+PARAM,PRGPST,NO
+PARAM,POST,-1
+PARAM,OGEOM,NO
+PARAM,AUTOSPC,YES
+PARAM,K6ROT,100.
+PARAM,GRDPNT,0
+CORD2C         1       0      0.      0.      0.      0.      0.      1.+FEMAPC1
++FEMAPC1      1.      0.      1.        
+CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
++FEMAPC2      1.      0.      1.        
+$ Femap Load Set 3 : strangeload
+FORCE          3       2       0      1.      0.      0.     30.
+FORCE          3       3       0      1.      0.      0.     -6.
+$ Femap Constraint Set 1 : z deflection
+SPC1           1  123456       1
+SPC1           1    1256       2
+SPC1           1    1256       3
+$ Femap Material 1 : metal
+MAT1           1   7.+10             .33      0.      0.      0.        
+GRID           1       0      0.      0.      0.       0
+GRID           2       0      0.      .5      0.       0
+GRID           3       0      0.      1.      0.       0
+GENEL        100               2       3       3       3
+               Z7.3663-81.8081-75.7590-7
+ENDDATA
