@@ -78,7 +78,7 @@ Z_flexibility_matrix=[column1 column2 column3 column4 column5 column6];
 Z_lower=tril(Z_flexibility_matrix);
 
 %   Opening GENEL.bdf
-filename=fopen("GENEL.dat",'w');
+filename=fopen("GENEL.DAT",'w');
 
 %   Write field variables as indicated in BULK data entry 
 
@@ -110,7 +110,7 @@ field6=string(UI_CI_vector(6,1));
 field7=string(UI_CI_vector(6,2));
 field8="";
 field9="";
-field10="";
+field10="+";
 line2=[field1;field2;field3;field4;field5;field6;field7;field8;field9;field10];
 for i=1:10
     line2(i)=fielder(line2(i),i);
@@ -172,3 +172,6 @@ for i=1:10
 end
 fprintf(filename,'%s',line5);
 fprintf(filename,'\n');
+
+%close file
+fclose('all')
