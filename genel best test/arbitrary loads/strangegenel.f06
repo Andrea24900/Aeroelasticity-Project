@@ -116,7 +116,7 @@
   
       https://www.mscsoftware.com/msc-training
   
-1                                                       **STUDENT EDITION* FEBRUARY  12, 2024  MSC Nastran  3/30/23   PAGE     1
+1                                                       **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     1
                                                                                                                                     
 0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
 0                                                                                                                                   
@@ -125,7 +125,7 @@
      NASTRAN BUFFSIZE=8193 $(D:/NASTRAN/NASTRAN/CONF/NAST20231.RCF[2])               
      INIT MASTER(S)                                                                  
      NASTRAN SYSTEM(319)=1                                                           
-1                                                       **STUDENT EDITION* FEBRUARY  12, 2024  MSC Nastran  3/30/23   PAGE     2
+1                                                       **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     2
                                                                                                                                     
 0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
 0                                                                                                                                   
@@ -134,7 +134,7 @@
      ID GENELT,FEMAP                                                                         
      SOL SESTATIC                                                                            
      CEND                                                                                    
-1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  12, 2024  MSC Nastran  3/30/23   PAGE     3
+1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     3
                                                                                                                                     
 0                                                                                                                                   
 0                                        C A S E    C O N T R O L    E C H O                                                        
@@ -150,7 +150,7 @@
                   8        SPC = 1                                                                               
                   9        LOAD = 3                                                                              
                  10      BEGIN BULK                                                                              
-1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  12, 2024  MSC Nastran  3/30/23   PAGE     4
+1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     4
                                                                                                                                     
 0                                                                                                                                   
                                         M O D E L   S U M M A R Y          BULK = 0
@@ -159,9 +159,10 @@
                                        CORD2C                        1
                                        CORD2S                        1
                                         FORCE                        2
-                                        GENEL                        1
+                                        GENEL                        2
                                          GRID                        3
                                          MAT1                        1
+                                       MOMENT                        1
                                         PARAM                        6
                                          SPC1                        2
 
@@ -173,7 +174,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =          7 WORDS.)
            (NUMBER OF FORTRAN RECORDS WRITTEN =          8 RECORDS.)
                 (TOTAL DATA WRITTEN FOR LABEL =         17 WORDS.)
-1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  12, 2024  MSC Nastran  3/30/23   PAGE     5
+1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     5
                                                                                                                                     
 0                                                                                                                                   
 0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
@@ -185,10 +186,10 @@
                FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
                FZ       ----          ----       2.400000E+01  9.000000E+00  0.000000E+00     ----                                  
                MX       ----          ----          ----       0.000000E+00     ----          ----                                  
-               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MY       ----          ----          ----          ----       5.000000E+00     ----                                  
                MZ       ----          ----          ----          ----          ----       0.000000E+00                             
-             TOTALS  0.000000E+00  0.000000E+00  2.400000E+01  9.000000E+00  0.000000E+00  0.000000E+00
-1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  12, 2024  MSC Nastran  3/30/23   PAGE     6
+             TOTALS  0.000000E+00  0.000000E+00  2.400000E+01  9.000000E+00  5.000000E+00  0.000000E+00
+1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     6
                                                                                                                                     
 0                                                                                                                                   
   
@@ -196,7 +197,7 @@
      THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    4.359852E+00
  ^^^     
  *** USER INFORMATION MESSAGE 15201 (SUBDMAP SEKRRS)
-      Condition number of stiffness matrix = 5.051566E+01
+      Condition number of stiffness matrix = 2.438293E+02
  ^^^     
  *** USER INFORMATION MESSAGE 5293 (SSG3B)
     FOR DATA BLOCK KLL     
@@ -206,8 +207,8 @@
     Small values of EPSILON are due to accumulated round-off error. Large
     values of EPSILON indicate possible singularities in the stiffness
     matrix.  See Section 9.5.1.
-                1          7.5154773E-16          1.0968750E-05
-1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  12, 2024  MSC Nastran  3/30/23   PAGE     7
+                1          1.0460305E-16          2.7846250E-05
+1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     7
                                                                                                                                     
 0                                                                                                                                   
 0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
@@ -238,7 +239,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =         146 WORDS.)
            (NUMBER OF FORTRAN RECORDS WRITTEN =          20 RECORDS.)
            (TOTAL DATA WRITTEN FOR DATA BLOCK =         203 WORDS.)
-1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  12, 2024  MSC Nastran  3/30/23   PAGE     8
+1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     8
                                                                                                                                     
 0                                                                                                                                   
  
@@ -246,16 +247,16 @@
  
       POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
              1      G      0.0            0.0            0.0            0.0            0.0            0.0
-             2      G      0.0            0.0            1.125030E-06   0.0            0.0            0.0
-             3      G      0.0            0.0            1.968900E-06   0.0            0.0            0.0
-1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  12, 2024  MSC Nastran  3/30/23   PAGE     9
+             2      G      0.0            0.0            1.125030E-06   0.0            6.751000E-06   0.0
+             3      G      0.0            0.0            1.968900E-06   0.0            6.751000E-06   0.0
+1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     9
                                                                                                                                     
 0                                                                                                                                   
  
                                                      L O A D   V E C T O R
  
       POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
-             2      G      0.0            0.0            3.000000E+01   0.0            0.0            0.0
+             2      G      0.0            0.0            3.000000E+01   0.0            5.000000E+00   0.0
              3      G      0.0            0.0           -6.000000E+00   0.0            0.0            0.0
  *** USER INFORMATION MESSAGE 4114 (OUTPX2)
      DATA BLOCK OPG1     WRITTEN ON FORTRAN UNIT    12 IN BINARY (LTLEND) FORMAT USING NDDL DESCRIPTION FOR OPG, TRL =
@@ -270,7 +271,7 @@
                                  (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
                                        (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
                                        (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
-1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  12, 2024  MSC Nastran  3/30/23   PAGE    10
+1    STRANGELOAD                                        **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE    10
                                                                                                                                     
 0                                                                                                                                   
  * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     74

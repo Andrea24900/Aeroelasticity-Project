@@ -1,0 +1,55 @@
+INIT MASTER(S)
+NASTRAN SYSTEM(319)=1
+ID gen,FEMAP
+SOL SESTATIC
+CEND
+  TITLE = torsion2
+  ECHO = NONE
+  DISPLACEMENT(PRINT) = ALL
+  SPCFORCE(PRINT) = ALL
+  OLOAD(PRINT) = ALL
+  FORCE(PRINT,CORNER) = ALL
+  STRESS(PRINT,CORNER) = ALL
+  SPC = 2
+  LOAD = 4
+BEGIN BULK
+$ ***************************************************************************
+$   Written by : Femap
+$   Version    : 2021.2.1
+$   Translator : MSC Nastran
+$   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\genel best test\geneltest2.modfem
+$   Date       : Tue Feb 13 10:35:15 2024
+$   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\genel best test\
+$ ***************************************************************************
+$
+PARAM,PRGPST,NO
+PARAM,POST,-1
+PARAM,OGEOM,NO
+PARAM,AUTOSPC,YES
+PARAM,K6ROT,100.
+PARAM,GRDPNT,0
+CORD2C         1       0      0.      0.      0.      0.      0.      1.+FEMAPC1
++FEMAPC1      1.      0.      1.        
+CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
++FEMAPC2      1.      0.      1.        
+$ Femap Load Set 4 : torsion2
+MOMENT         4       2       0      1.      0.      1.      0.
+$ Femap Constraint Set 2 : torsion
+SPC1           2  123456       1
+SPC1           2   12346       2
+SPC1           2   12346       3
+$ Femap Property 1 : bar
+$ Femap PropShape 1 : 1,0,0.1,0.1,0.,0.,0.,0.
+$ Femap PropMethod 1 : 1,0,1,0.3
+$ Femap PropOrient 1 : 1,0,0.,1.,2.,3.,4.,-1.,0.,0.
+PBAR           1       1     .018.3333-68.3333-61.4072-5      0.        +       
++           -.05    -.05     .05    -.05     .05     .05    -.05     .05+       
++        .850116 .850116      0.
+$ Femap Material 1 : metal
+MAT1           1   7.+10             .33      0.      0.      0.        
+GRID           1       0      0.      0.      0.       0
+GRID           2       0      0.      .5      0.       0
+GRID           3       0      0.      1.      0.       0
+CBAR           1       1       1       2      1.      0.      0.
+CBAR           2       1       2       3      1.      0.      0.
+ENDDATA
