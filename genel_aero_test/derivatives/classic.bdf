@@ -18,7 +18,7 @@ $   Written by : Femap
 $   Version    : 2021.2.1
 $   Translator : MSC Nastran
 $   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\genel_aero_test\wingspar.modfem
-$   Date       : Wed Feb 14 16:19:23 2024
+$   Date       : Wed Feb 14 17:46:51 2024
 $   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\genel_aero_test\
 $ ***************************************************************************
 $
@@ -39,9 +39,9 @@ AESTAT         1  ANGLEA
 AESTAT         2   PITCH
 AESTAT         3   URDD3
 AESTAT         4   URDD5
-TRIM           1  .29412   6125.   PITCH      0.   URDD3     -1.      0.+       
+TRIM           1  .29412   6125.   PITCH      0.   URDD3      1.      0.+       
 +          URDD5      0.                                                
-AEROS          0       0      1.      5.      5.       1       0
+AEROS          0       0      1.     10.     10.       1       0
 $ Femap Aero Control Surface 1 : tail
 AESURF         1    tail       3       2                      1.     LDW+       
 +             1.      2.                                                
