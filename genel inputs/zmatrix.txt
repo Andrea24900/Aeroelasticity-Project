@@ -1,5 +1,0 @@
-Z matrix: each column represents the DISPLACEMENT of all nodes if a unit force is applied in the node corresponding to the row
-
-                          load on 2            load on 3
-node 2                2.0092-8        2.0092-8
-node 3                2.0092-8        4.0184-8
