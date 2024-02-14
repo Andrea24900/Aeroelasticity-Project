@@ -156,14 +156,12 @@
                                         M O D E L   S U M M A R Y          BULK = 0
                                    ENTRY NAME        NUMBER OF ENTRIES
                                    ----------        -----------------
-                                         CBAR                        2
                                        CORD2C                        1
                                        CORD2S                        1
                                         FORCE                        1
+                                        GENEL                        1
                                          GRID                        3
-                                         MAT1                        1
                                         PARAM                        6
-                                         PBAR                        1
                                          SPC1                        1
                                        SUPORT                        1
 
@@ -195,10 +193,10 @@
 0                                                                                                                                   
   
  *** SYSTEM INFORMATION MESSAGE 4159 (DFMSA)
-     THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    7.332580E+00
+     THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    4.359852E+00
  ^^^     
  *** USER INFORMATION MESSAGE 15201 (SUBDMAP SEKRRS)
-      Condition number of stiffness matrix = 4.675342E+02
+      Condition number of stiffness matrix = 5.051566E+01
  ^^^     
  *** USER INFORMATION MESSAGE 3035 (SOLVER)
                                   FOR DATA BLOCK   KLR     
@@ -207,8 +205,8 @@
     One line of output is printed for each component referenced on the
     SUPORT and SUPORT1 entries.  Large values of either EPSILON or STRAIN
     ENERGY indicate errors in the constraints.
-                1          2.3597757E-17          0.0000000E+00                 
-                2          2.3597757E-17          0.0000000E+00                 
+                1          0.0000000E+00          0.0000000E+00                 
+                2          0.0000000E+00          0.0000000E+00                 
  *** USER INFORMATION MESSAGE 5293 (SSG3B)
     FOR DATA BLOCK KLL     
     LOAD SEQ. NO.             EPSILON              EXTERNAL WORK      EPSILONS LARGER THAN 0.001 ARE FLAGGED WITH ASTERISKS
@@ -217,7 +215,7 @@
     Small values of EPSILON are due to accumulated round-off error. Large
     values of EPSILON indicate possible singularities in the stiffness
     matrix.  See Section 9.5.1.
-                1          8.9401689E-16          2.8795042E-07
+                1          7.2239880E-16          2.8795000E-07
 1    RIGIDMODE                                          **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     7
                                                                                                                                     
 0                                                                                                                                   
@@ -228,11 +226,11 @@
   DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
 0        1     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
                FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
-               FZ       ----          ----      -1.000000E+00  0.000000E+00  0.000000E+00     ----                                  
-               MX       ----          ----          ----      -1.000000E+00     ----          ----                                  
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
                MY       ----          ----          ----          ----       0.000000E+00     ----                                  
                MZ       ----          ----          ----          ----          ----       0.000000E+00                             
-             TOTALS  0.000000E+00  0.000000E+00 -1.000000E+00 -1.000000E+00  0.000000E+00  0.000000E+00
+             TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
  *** USER INFORMATION MESSAGE 4114 (OUTPX2)
      DATA BLOCK OQG1     WRITTEN ON FORTRAN UNIT    12 IN BINARY (LTLEND) FORMAT USING NDDL DESCRIPTION FOR OQG1, TRL =
                     101                 0                24                 0                 0                 0                 1
@@ -257,8 +255,8 @@
  
       POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
              1      G      0.0            0.0            0.0            0.0            0.0            0.0
-             2      G      0.0            0.0            1.808071E-07   6.428597E-07   0.0            0.0
-             3      G      0.0            0.0            5.759008E-07   8.571463E-07   0.0            0.0
+             2      G      0.0            0.0            1.808100E-07   0.0            0.0            0.0
+             3      G      0.0            0.0            5.759000E-07   0.0            0.0            0.0
 1    RIGIDMODE                                          **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE     9
                                                                                                                                     
 0                                                                                                                                   
@@ -267,50 +265,6 @@
  
       POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
              3      G      0.0            0.0            1.000000E+00   0.0            0.0            0.0
-1    RIGIDMODE                                          **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE    10
-                                                                                                                                    
-0                                                                                                                                   
- 
-                               F O R C E S   O F   S I N G L E - P O I N T   C O N S T R A I N T
- 
-      POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
-             1      G      0.0            0.0           -1.000000E+00  -1.000000E+00   0.0            0.0
-1    RIGIDMODE                                          **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE    11
-                                                                                                                                    
-0                                                                                                                                   
- 
-                                 F O R C E S   I N   B A R   E L E M E N T S         ( C B A R )
-0    ELEMENT         BEND-MOMENT END-A            BEND-MOMENT END-B                - SHEAR -               AXIAL
-       ID.         PLANE 1       PLANE 2        PLANE 1       PLANE 2        PLANE 1       PLANE 2         FORCE         TORQUE
-            1     0.0          -1.000000E+00   0.0          -5.000000E-01   0.0          -1.000000E+00   0.0            0.0
-            2     0.0          -5.000000E-01   0.0           8.881784E-16   0.0          -1.000000E+00   0.0            0.0
-1    RIGIDMODE                                          **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE    12
-                                                                                                                                    
-0                                                                                                                                   
- 
-                                 S T R E S S E S   I N   B A R   E L E M E N T S          ( C B A R )
-  ELEMENT        SA1            SA2            SA3            SA4           AXIAL          SA-MAX         SA-MIN     M.S.-T
-    ID.          SB1            SB2            SB3            SB4           STRESS         SB-MAX         SB-MIN     M.S.-C
-0       1   -6.000024E+03  -6.000024E+03   6.000024E+03   6.000024E+03   0.0            6.000024E+03  -6.000024E+03 
-            -3.000012E+03  -3.000012E+03   3.000012E+03   3.000012E+03                  3.000012E+03  -3.000012E+03 
-0       2   -3.000012E+03  -3.000012E+03   3.000012E+03   3.000012E+03   0.0            3.000012E+03  -3.000012E+03 
-             5.329092E-12   5.329092E-12  -5.329092E-12  -5.329092E-12                  5.329092E-12  -5.329092E-12 
- *** USER INFORMATION MESSAGE 4114 (OUTPX2)
-     DATA BLOCK OEF1X    WRITTEN ON FORTRAN UNIT    12 IN BINARY (LTLEND) FORMAT USING NDDL DESCRIPTION FOR OEF1X, TRL =
-                    101                63                 2                13                24                 0                 1
-     NAME OF DATA BLOCK WRITTEN ON FORTRAN UNIT IS OEF1X   
-        (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =       16386 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =         146 WORDS.)
-           (NUMBER OF FORTRAN RECORDS WRITTEN =          20 RECORDS.)
-           (TOTAL DATA WRITTEN FOR DATA BLOCK =         197 WORDS.)
- *** USER INFORMATION MESSAGE 4114 (OUTPX2)
-     DATA BLOCK OES1X1   WRITTEN ON FORTRAN UNIT    12 IN BINARY (LTLEND) FORMAT USING NDDL DESCRIPTION FOR OES1X1, TRL =
-                    101                63                 2                13                24                 0                 1
-     NAME OF DATA BLOCK WRITTEN ON FORTRAN UNIT IS OES1X1  
-        (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =       16386 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =         146 WORDS.)
-           (NUMBER OF FORTRAN RECORDS WRITTEN =          20 RECORDS.)
-           (TOTAL DATA WRITTEN FOR DATA BLOCK =         211 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPX2)
      DATA BLOCK OPG1     WRITTEN ON FORTRAN UNIT    12 IN BINARY (LTLEND) FORMAT USING NDDL DESCRIPTION FOR OPG, TRL =
                     101                 0                24                 0                 0                 0                 1
@@ -324,7 +278,7 @@
                                  (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
                                        (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
                                        (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
-1    RIGIDMODE                                          **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE    13
+1    RIGIDMODE                                          **STUDENT EDITION* FEBRUARY  13, 2024  MSC Nastran  3/30/23   PAGE    10
                                                                                                                                     
 0                                                                                                                                   
  * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     74
