@@ -1,0 +1,94 @@
+INIT MASTER(S)
+NASTRAN SYSTEM(319)=1
+ID goland,FEMAP
+SOL AESTAT
+CEND
+  TITLE = static
+  ECHO = NONE
+  DISPLACEMENT(PRINT) = ALL
+  SPCFORCE(PRINT) = ALL
+  STRESS(PRINT,CORNER) = ALL
+  APRES = All
+  AEROF = All
+  SPC = 1
+SUBCASE 1
+  TRIM = 1
+SUBCASE 2
+  TRIM = 2
+SUBCASE 3
+  TRIM = 3
+BEGIN BULK
+$ ***************************************************************************
+$   Written by : Femap
+$   Version    : 2021.2.1
+$   Translator : MSC Nastran
+$   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\goland.modfem
+$   Date       : Thu Feb 15 18:53:30 2024
+$   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
+$ ***************************************************************************
+$
+INCLUDE GENEL.dat
+PARAM,PRGPST,NO
+PARAM,POST,-1
+PARAM,OGEOM,NO
+PARAM,AUTOSPC,YES
+PARAM,GRDPNT,0
+CORD2C         1       0      0.      0.      0.      0.      0.      1.+FEMAPC1
++FEMAPC1      1.      0.      1.        
+CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
++FEMAPC2      1.      0.      1.        
+$ Femap Coordinate System 3 : structural
+CORD2R         3       0     .05      0.      0.     .05      0.      1.+       
++           1.05      0.      0.        
+PARAM,AUNITS,.1019368
+AESTAT         1  ANGLEA
+TRIM           1   .0294   61.25  ANGLEA   .1745                      0.
+TRIM           2   .0588    245.  ANGLEA   .1745                      0.
+TRIM           3   .1176    980.  ANGLEA   .1745                      0.
+AEROS          0       0     .25    .915  .22875       0       0
+$ Femap Constraint Set 1 : clamp
+SPC1           1  123456       1
+GRID           1       0     .05      0.      0.       0
+GRID           2       0     .05   .1525      0.       0
+GRID           3       0     .05    .305      0.       0
+GRID           4       0     .05   .4575      0.       0
+GRID           5       0     .05     .61      0.       0
+GRID           6       0     .05   .7625      0.       0
+GRID           7       0     .05    .915      0.       0
+GRID           8       0      0.      0.      0.       0
+GRID           9       0      0.   .1525      0.       0
+GRID          10       0      0.    .305      0.       0
+GRID          11       0      0.   .4575      0.       0
+GRID          12       0      0.     .61      0.       0
+GRID          13       0      0.   .7625      0.       0
+GRID          14       0      0.    .915      0.       0
+GRID          15       0     .25      0.      0.       0
+GRID          16       0     .25   .1525      0.       0
+GRID          17       0     .25    .305      0.       0
+GRID          18       0     .25   .4575      0.       0
+GRID          19       0     .25     .61      0.       0
+GRID          20       0     .25   .7625      0.       0
+GRID          21       0     .25    .915      0.       0
+RBE2           1       1  123456       8      15
+RBE2           2       2  123456       9      16
+RBE2           3       3  123456      10      17
+RBE2           4       4  123456      11      18
+RBE2           5       5  123456      12      19
+RBE2           6       6  123456      13      20
+RBE2           7       7  123456      14      21
+CONM2          8       2       0    .025     .01      0.      0.                
+CONM2          9       3       0    .025     .01      0.      0.                
+CONM2         10       4       0    .025     .01      0.      0.                
+CONM2         11       5       0    .025     .01      0.      0.                
+CONM2         12       6       0    .025     .01      0.      0.                
+$ Femap Aero Property 1 : panel
+PAERO1         1                                                        
+$ Femap Aero Panel 1 : panels
+CAERO1         1       1       0      20       5                       1+       
++             0.      0.      0.     .25      0.    .915      0.     .25
+SET1           1       1       2       3       4       5       6       7+       
++              8       9      10      11      12      13      14      15+       
++             16      17      18      19      20      21                
+$ Femap Aero Spline 1 : spleen
+SPLINE1        1       1       1     100       1      0.     IPS    BOTH
+ENDDATA
