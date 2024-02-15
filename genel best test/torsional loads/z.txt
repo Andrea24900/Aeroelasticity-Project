@@ -1,3 +1,0 @@
-                 load on 2       load on 3
-disp of node 2  1.3502-6   1.3502-6
-disp of node 3  1.3502-6   2.7004-6
