@@ -1,0 +1,92 @@
+INIT MASTER(S)
+NASTRAN SYSTEM(319)=1
+ID Longherone,FEMAP
+SOL AESTAT
+CEND
+  TITLE = static
+  ECHO = NONE
+  DISPLACEMENT(PLOT) = ALL
+  SPCFORCE(PLOT) = ALL
+  STRESS(PLOT,CORNER) = ALL
+  APRES = All
+  AEROF = All
+  SPC = 1
+  TRIM = 1
+BEGIN BULK
+$ ***************************************************************************
+$   Written by : Femap
+$   Version    : 2021.2.1
+$   Translator : MSC Nastran
+$   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\Longherone GENEL automatico\alatest.modfem
+$   Date       : Sat Feb 17 17:24:47 2024
+$   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\Longherone GENEL automatico\
+$ ***************************************************************************
+$
+INCLUDE GENEL_generated.dat
+PARAM,PRGPST,NO
+PARAM,POST,-1
+PARAM,OGEOM,NO
+PARAM,AUTOSPC,YES
+PARAM,GRDPNT,0
+CORD2C         1       0      0.      0.      0.      0.      0.      1.+FEMAPC1
++FEMAPC1      1.      0.      1.        
+CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
++FEMAPC2      1.      0.      1.        
+PARAM,AUNITS,.1019368
+AESTAT         1  ANGLEA
+TRIM           1.0441176137.8125  ANGLEA .174444                      0.
+AEROS          0       0     .25    .915  .22875       0       0
+$ Femap Constraint Set 1 : clamp
+SPC1           1  123456       1
+GRID           1       0   .0625      0.      0.       0
+GRID           2       0   .0625   .1525      0.       0
+GRID           3       0   .0625    .305      0.       0
+GRID           4       0   .0625   .4575      0.       0
+GRID           5       0   .0625     .61      0.       0
+GRID           6       0   .0625   .7625      0.       0
+GRID           7       0   .0625    .915      0.       0
+GRID           8       0      0.   .1525      0.       0
+GRID           9       0      0.      0.      0.       0
+GRID          10       0      0.    .305      0.       0
+GRID          11       0      0.   .4575      0.       0
+GRID          12       0      0.     .61      0.       0
+GRID          13       0      0.   .7625      0.       0
+GRID          14       0      0.    .915      0.       0
+GRID          15       0     .25    .915      0.       0
+GRID          16       0     .25   .7625      0.       0
+GRID          17       0     .25     .61      0.       0
+GRID          18       0     .25   .4575      0.       0
+GRID          19       0     .25    .305      0.       0
+GRID          20       0     .25   .1525      0.       0
+GRID          21       0     .25      0.      0.       0
+RBE2           1       1  123456       9      21
+RBE2           2       2  123456       8      20
+RBE2           3       3  123456      10      19
+RBE2           4       4  123456      11      18
+RBE2           5       5  123456      12      17
+RBE2           6       6  123456      13      16
+RBE2           7       7  123456      14      15
+CONM2          8       2       0   .0043      0.      0.      0.                
+CONM2          9       3       0   .0043      0.      0.      0.                
+CONM2         10       4       0   .0043      0.      0.      0.                
+CONM2         11       5       0   .0043      0.      0.      0.                
+CONM2         12       6       0   .0043      0.      0.      0.                
+CONM2         13       1       0  .00217      0.      0.      0.                
+CONM2         14       7       0  .00217      0.      0.      0.                
+CONM2         18       2       0 .007334     .02      0.      0.                
+CONM2         19       4       0 .007334     .02      0.      0.                
+CONM2         20       6       0 .007334     .02      0.      0.                
+CONM2         21       3       0 .003667     .02      0.      0.                
+CONM2         22       5       0 .003667     .02      0.      0.                
+CONM2         23       7       0 .003667     .02      0.      0.                
+$ Femap Aero Property 1 : panel
+PAERO1         1                                                        
+$ Femap Aero Panel 1 : wing
+CAERO1         1       1       0      10       4                       1+       
++             0.      0.      0.     .25      0.    .915      0.     .25
+SET1           1       1       2       3       4       5       6       7+       
++              8       9      10      11      12      13      14      15+       
++             16      17      18      19      20      21                
+$ Femap Aero Spline 1 : spline
+SPLINE1        1       1       1      40       1      0.     IPS    BOTH
+ENDDATA
