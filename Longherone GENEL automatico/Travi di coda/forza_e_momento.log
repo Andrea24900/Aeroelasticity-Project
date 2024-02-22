@@ -1,0 +1,133 @@
+MSC Nastran V2023.1 (Intel Windows 10 Pro 6.2 9200) Control File: 
+----------------------------------------------------------------- 
+Nastran BUFFSIZE=8193 $(c:/program files/msc.software/napa_se/20231/nastran/conf/nast20231.rcf[2])
+JID='c:/users/andre/documents/politecnico/aeroservoelasticity/progetto/aeroelasticity-project/longherone genel automatico/travi di coda/forza_e_momento.bdf'
+OUT='./forza_e_momento'
+MEM=527MB      $ 
+PMEM=0
+MACH='Intel'
+OPER='Windows 10 Pro'
+OSV='6.2 9200'
+MODEL='11th Gen Intel(R) Core(TM) i5- (PC_Andrea)'
+NPROC='8'
+CONFIG=6
+NPROC=8
+symbol=DELDIR='c:/program files/msc.software/napa_se/20231/nastran/msc20231/nast/del' $(program default)
+symbol=DEMODIR='c:/program files/msc.software/napa_se/20231/nastran/msc20231/nast/demo' $(program default)
+symbol=SSSALTERDIR='c:/program files/msc.software/napa_se/20231/nastran/msc20231/nast/sssalter' $(program default)
+symbol=TPLDIR='c:/program files/msc.software/napa_se/20231/nastran/msc20231/nast/tpl' $(program default)
+SDIR='c:/scratch/forza_e_momento.T34780_4'
+DBS='c:/scratch/forza_e_momento.T34780_4'
+SCR='yes'
+SMEM=100
+BPOOL=150
+DMPMEM=0
+NEWDEL='c:/program files/msc.software/napa_se/20231/nastran/msc20231/win64i8/SSS'
+DEL='MSCDEF'
+SPOTWELD=''
+DML=MSCDEF
+SDL=MSCDEF
+AUTH='EDU'
+AUTHQUE=20
+MSGCAT='c:/program files/msc.software/napa_se/20231/nastran/msc20231/win64i8/analysis.msg'
+MSGDEST='f06'
+NEWS='c:/program files/msc.software/napa_se/20231/nastran/msc20231/nast/news.txt'
+----------------------------------------------------------------- 
+MSC_ISHELLPATH=c:\users\andre\documents\politecnico\aeroservoelasticity\progetto\aeroelasticity-project\longherone genel automatico\travi di coda 
+MSC_JIDPATH= 
+PATH=c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8\nvidia;c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8\lib;c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8;C:\Program Files\MSC.Software\NaPa_SE\20231\Patran\bin;C:\Program Files\Commands;C:\Program Files\Semeru\jre-17.0.6.10-openj9\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\MATLAB\R2023a\bin;C:\Program Files\Wolfram Research\WolframScript\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\andre\AppData\Local\Microsoft\WindowsApps;C:\Users\andre\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\andre\AppData\Local\GitHubDesktop\bin;C:\texlive\2023\bin\windows;c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8\msmpi\bin 
+SCA_SERVICE_CATALOG=c:\program files\msc.software\napa_se\20231\nastran\msc20231\res\SCAServiceCatalog.xml 
+SCA_RESOURCE_DIR=c:\program files\msc.software\napa_se\20231\nastran\msc20231\res 
+Cmd Line:    C:\Program Files\MSC.Software\NaPa_SE\20231\Nastran\msc20231\win64i8\nastran.exe JID=C:\Users\andre\Documents\POLITECNICO\Aeroservoelasticity\Progetto\Aeroelasticity-Project\Longherone GENEL automatico\Travi di coda\Forza_e_momento.bdf 
+Current Dir: C:\Users\andre\Documents\POLITECNICO\Aeroservoelasticity\Progetto\Aeroelasticity-Project\Longherone GENEL automatico\Travi di coda 
+Time Cmd:    c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8\msctime 
+Executable:  c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8\analysis.exe 
+Arch= Kywd:  [Not specified]  
+MSC_MSG:     stderr  
+FPE:         yes  
+----------------------------------------------------------------- 
+Current resource limits:
+ Physical memory:                    16118 MB
+ Physical memory available:           6619 MB
+ Paging file size:                   17142 MB
+ Paging file size available:          5372 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134213509 MB
+----------------------------------------------------------------- 
+System configuration:
+ Hostname:         PC_Andrea.dot1x.polimi.it
+ Architecture:     win64i8
+ Platform:         Intel Windows 10 Pro 6.2 9200 (Windows Compute Cluster)
+ Model:            11th Gen Intel(R) Core(TM) i5-
+ Clock freq.:      6900 MHz
+ Number of CPUs:   8
+ Number of CPUs:   0 ( limited by PBS )
+ Executable:       standard
+ Raw model ID:     6
+ Config number:    6
+ Physical memory:  16118 MB
+ Virtual memory:   17142 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: "c:/program files/msc.software/napa_se/20231/nastran/msc20231/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
+                   <ccs_cmd> (Windows CCS nodes)
+----------------------------------------------------------------- 
+MSC Nastran started  Thu Feb 22 12:20:05 osEo 2024 
+ 12:20:07  Beginning Analysis
+SCA Kernel 29.0.913034 successfully initialized
+BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8\libimalloc.dll" has been loaded.
+BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8\mkl_core.2.dll" has been loaded.
+BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8\mkl_intel_thread.2.dll" has been loaded.
+BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8\mkl_rt.2.dll" has been loaded.
+BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20231\nastran\msc20231\win64i8\MSCblas.dll" has been loaded.
+
+ 12:20:07  MSC Authorization Information - Checkout Successful (1016, 0)
+ 12:20:07  -------------------------------------------------------------
+ 12:20:07  Acquired 1 license for Student Edition Nastran
+
+
+Beginning bulk data processing using the IFPStar component.
+For more information on IFPStar, please see KB article KB8019200
+on our support pages, at http://simcompanion.hexagon.com.
+
+ 12:20:07  19066 records read from JID file "c:/users/andre/documents/politecnico/aeroservoelasticity/progetto/aeroelasticity-project/longherone genel automatico/travi di coda/forza_e_momento.bdf"
+
+Processing of bulk data entries is complete.
+
+ 12:20:07  Finite element model generation started.
+ 12:20:07  Finite element model generated 57030 degrees of freedom.
+ 12:20:07  Finite element model generation successfully completed.
+ 12:20:07  Application of Loads and Boundary Conditions to the finite element model started.
+ 12:20:07  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 12:20:09  Solution of the system equations for linear statics started.
+ 12:20:09  Solution of the system equations for linear statics successfully completed.
+ 12:20:09  Linear static analysis completed.
+ 12:20:09  21 records read from JID file "c:/users/andre/documents/politecnico/aeroservoelasticity/progetto/aeroelasticity-project/longherone genel automatico/travi di coda/forza_e_momento.bdf"
+ 12:20:09  NSEXIT: EXIT(0)
+ 12:20:09  Analysis complete  0
+Real:        2.397 seconds ( 0:00:02.397)
+User:        0.640 seconds ( 0:00:00.640)
+Sys:         0.218 seconds ( 0:00:00.218)
+ ==================================================
+ OS:                           6.2
+ OEM ID:                       9
+ Model:                        11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz  
+ Number of processors:         8
+ Page size:                    4096
+ Processor type:               8664
+ Minimum application address:  10000
+ Maximum application address:  fffeffff
+ Active processor mask:        255
+ Nsocket:                      1
+ Ncore:                        4  ( 1 X 4 )
+ HyperThreading:               On
+ Ram:                          16118 Mb
+ ==================================================
+ Time Summary                 CPU       Wall   ( Time in Seconds )
+ Consider using SOLVE=AUTO if you have not.
+ =====================================================
+ Detailed performance information can be found in the 
+ "MSC Nastran High Performance Computing User's Guide"
+ =====================================================
+MSC Nastran finished Thu Feb 22 12:20:09 osEo 2024 
