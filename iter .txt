@@ -1,0 +1,91 @@
+File 
+assegnare masse su nodi:
+--> model --> element -->mass -->property, seleziona anche offset per centina 
+
+offset centine fatti
+
+elemento mass concentrate per ale 1,2 primo ling, 3-4, 5-6, 7-8.
+
+nodi per estrimità centina 101 102, 103 104, 105 106, 107 108.
+elementi rigidi per ciascuna centina: 10 prima centina, 11, 12, 13 tutti con 
+indipendent node al centro e dependent node tutti 6 dof alle estremità
+
+ruotato sistema--> Z->x, X->y, Y->z, ottenuto momenti di inerzia, creato elemento mass fuelsate propertu 8.
+Con offset, mass e momentin inerzia della fusoliera convertiti al nuovo sdr.
+
+Node 25 nodo fusoliera, element 25 elemento con proprietà elencate sopra.
+
+
+property 9 10 11 12; motroi verticali, orizz e tubo da apllicare al node 25
+
+element 26 27 28 29
+
+creato node 11
+
+creo due elementi rigidi node 25-->node 1 e node 25--> node10
+
+creato property per motori e metà tubo applicati a nodo 10 e 11
+
+node 12 centro timone
+
+element 36, rigido da nodo 11 a nodo 12, indipendente 11
+
+nodi 13 14 15 estremità della coda
+
+fare barra che connette node con proprietà di inerzia della sezione cad, fatta di balsa
+
+
+nodi estremità coda verticale 201 202 203 204
+
+estremità coda orizzontale 205 206 207 208
+
+element 37 per dipendenza centina sx coda orizzontale
+
+element 38 dipendenza base coda verticale
+
+element 39 dipendenz centina dx coda orizzontale
+
+element 40 dipendenza coda verticale alto
+
+creazione punti con offset 1508 1509
+
+creazione elementi bar per connetteri nodi alle estremità
+
+Proprietà di sezione della faccia selezionata di CodaOrizzontaleEsternaLegno
+
+Area = 548.89403522 millimetri^2
+
+Centroide relativo all'origine del sistema di coordinate risultati: ( millimetri )
+	X = -8.00534283
+	Y = -0.04249187
+	Z = 0.00000000
+
+Momenti di inerzia dell'area nel centroide: ( millimetri ^ 4 )
+	Lxx = 2062.35803159	Lxy = -182.52651583	Lxz = 0.00000000
+	Lyx = -182.52651583	Lyy = 301408.70878103	Lyz = 0.00000000
+	Lzx = 0.00000000	Lzy = 0.00000000	Lzz = 303471.06681262
+
+Momento polare di inerzia, dell'area nel centroide = 303471.06681262 millimetri ^ 4
+
+Angolo tra gli assi principali e gli assi della parte = 0.03493610 gradi
+
+Momenti principali d'inerzia dell'area nel centroide: ( millimetri ^ 4 )
+	Ix = 2062.24673604
+	Iy = 301408.82007658
+
+
+Momenti di inerzia dell'area, al risultato del sistema di coordinate: ( millimetri ^ 4 )
+	LXX = 2063.34909241	LXY = 369.23942371	LXZ = 0.00000000
+	LYX = 369.23942371	LYY = 336584.86502521	LYZ = 0.00000000
+	LZX = 0.00000000	LZY = 0.00000000	LZZ = 338648.21411762
+property 16--> bar_coda
+
+element 41 bar coda orizzontale sx, 
+
+da vedere inerzie sezione, mettrle in mm^4 e convertirle, confrontate con sezione rettangolare stessa area, ottentuo stesso rdine di grandezza, per Izz e Ixx
+
+
+masse: trovata massa per udl di lunghezza della coda orizzonatale, calcolato in maniera proporzionale per i due nodi della coda
+
+
+attuatori?
