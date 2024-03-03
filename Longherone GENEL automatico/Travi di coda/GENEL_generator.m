@@ -105,7 +105,7 @@ if fileID == -1
     error('Impossibile aprire il file per la scrittura.');
 end
 
-stringa1 = 'GENEL        300               ';
+stringa1 = 'GENEL        300              ';
 
 stringa3 = '$              UD              10       1      10       2      10       3';
 stringa4 = '$              10       4      10       5      10       6';
@@ -136,7 +136,7 @@ end
 fprintf(fileID, '\n\n');
 
 
-stringa1 = 'GENEL        400               ';
+stringa1 = 'GENEL        400              ';
 
 stringa3 = '$              UD              10       1      10       2      10       3';
 stringa4 = '$              10       4      10       5      10       6';
