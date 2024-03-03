@@ -18,10 +18,12 @@ $   Written by : Femap
 $   Version    : 2021.2.1
 $   Translator : MSC Nastran
 $   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\model_aggiornato.modfem
-$   Date       : Sun Mar  3 12:56:04 2024
+$   Date       : Sun Mar  3 14:18:32 2024
 $   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
 $ ***************************************************************************
 $
+INCLUDE GENEL_coda.dat 
+INCLUDE GENEL_ala.dat 
 PARAM,PRGPST,NO
 PARAM,POST,-1
 PARAM,OGEOM,NO
@@ -88,6 +90,7 @@ AELIST         4    2038    2039    2040    2048    2049    2050    2058+
 +           2139    2140    2148    2149    2150    2158    2159    2160+       
 +           2168    2169    2170                                        
 $ Femap Constraint Set 1 : longitudinal lock
+SPC1           1    1246      11
 SPC1           1    1246      25
 $ Femap Constraint Set 2 : longitudinal_suport
 SUPORT        25      35
