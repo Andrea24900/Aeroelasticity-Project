@@ -1,0 +1,194 @@
+INIT MASTER(S)
+NASTRAN SYSTEM(319)=1
+ID model,FEMAP
+SOL AESTAT
+CEND
+  TITLE = static_longitudinal
+  ECHO = NONE
+  DISPLACEMENT(PRINT) = ALL
+  SPCFORCE(PRINT) = ALL
+  STRESS(PRINT,CORNER) = ALL
+  APRES = All
+  AEROF = All
+  SPC = 1
+  TRIM = 1
+BEGIN BULK
+$ ***************************************************************************
+$   Written by : Femap
+$   Version    : 2021.2.1
+$   Translator : MSC Nastran
+$   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\model_aggiornato.modfem
+$   Date       : Sun Mar  3 14:18:32 2024
+$   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
+$ ***************************************************************************
+$
+INCLUDE GENEL_coda.dat 
+INCLUDE GENEL_ala.dat 
+PARAM,PRGPST,NO
+PARAM,POST,-1
+PARAM,OGEOM,NO
+PARAM,AUTOSPC,YES
+PARAM,GRDPNT,0
+CORD2C         1       0      0.      0.      0.      0.      0.      1.+FEMAPC1
++FEMAPC1      1.      0.      1.        
+CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
++FEMAPC2      1.      0.      1.        
+$ Femap Coordinate System 1000 : Wing Ref
+CORD2R      1000       0   .0625     .21      0.   .0625     .21      1.+       
++         1.0625     .21      0.        
+$ Femap Coordinate System 2000 : Tail Ref
+CORD2R      2000       0    1.18    .132      0.    1.18    .132      1.+       
++           2.18    .132      0.        
+$ Femap Coordinate System 2002 : right_ail
+CORD2R      2002       0  .19824   .8625      0.  .19824   .8625      1.+       
++        1.19824   .8625      0.        
+$ Femap Coordinate System 2003 : elevator
+CORD2R      2003       0    1.25      0.     .02    1.25      0.    1.02+       
++           2.25      0.     .02        
+$ Femap Coordinate System 2004 : right_rudder
+CORD2R      2004       0    1.25    .132    .025    1.25   -.868    .025+       
++           2.25    .132    .025        
+PARAM,AUNITS,.101937
+AESTAT         1  ANGLEA
+AESTAT         2   PITCH
+AESTAT         3   URDD3
+AESTAT         4   URDD5
+TRIM           1   0.294   6125.   PITCH      0.   URDD3      1.      0.+       
++          URDD5      0.      RA      0.      RU      0.                
+AEROS          0       0    .236    1.83  .21594       1       0
+$ Femap Aero Control Surface 1 : right_aileron
+AESURF         1      RA    2002       3                             LDW+       
++           .037 .008433                                                
+$ Femap Aero Control Surface 2 : elevator
+AESURF         2      EL    2003       1                             LDW+       
++           .029 .003086                                                
+$ Femap Aero Control Surface 3 : rudder
+AESURF         3      RU    2004       4                             LDW+       
++           .027 .002633                                                
+AELIST         1    1008    1009    1010    1018    1019    1020    1028+       
++           1029    1030    1038    1039    1040    1048    1049    1050+       
++           1058    1059    1060    1068    1069    1070    1078    1079+       
++           1080    1088    1089    1090                                
+AELIST         3    6821    6822    6823    6824    6846    6847    6848+       
++           6849    6871    6872    6873    6874    6896    6897    6898+       
++           6899    6921    6922    6923    6924    6946    6947    6948+       
++           6949    6971    6972    6973    6974    6996    6997    6998+       
++           6999    7021    7022    7023    7024    7046    7047    7048+       
++           7049    7071    7072    7073    7074    7096    7097    7098+       
++           7099    7121    7122    7123    7124    7146    7147    7148+       
++           7149    7171    7172    7173    7174    7196    7197    7198+       
++           7199    7221    7222    7223    7224    7246    7247    7248+       
++           7249    7271    7272    7273    7274    7296    7297    7298+       
++           7299    7321    7322    7323    7324    7346    7347    7348+       
++           7349    7371    7372    7373    7374    7396    7397    7398+       
++           7399    7421    7422    7423    7424    7446    7447    7448+       
++           7449    7471    7472    7473    7474                        
+AELIST         4    2038    2039    2040    2048    2049    2050    2058+       
++           2059    2060    2068    2069    2070    2078    2079    2080+       
++           2088    2089    2090    2098    2099    2100    2108    2109+       
++           2110    2118    2119    2120    2128    2129    2130    2138+       
++           2139    2140    2148    2149    2150    2158    2159    2160+       
++           2168    2169    2170                                        
+$ Femap Constraint Set 1 : longitudinal lock
+SPC1           1    1246      11
+SPC1           1    1246      25
+$ Femap Constraint Set 2 : longitudinal_suport
+SUPORT        25      35
+$ Femap Property 16 : bar_coda
+$ Femap PropShape 16 : 1,0,0.0055,0.1,0.,0.,0.,0.
+$ Femap PropMethod 16 : 1,0,1,0.
+$ Femap PropOrient 16 : 1,0,0.,1.,2.,3.,4.,-1.,0.,0.
+PBAR          16       1  5.49-43.0347-72.0624-9      0.      0.        +       
++             0.      0.      0.      0.      0.      0.      0.      0.+       
++                             0.
+$ Femap Material 1 : Balsa
+MAT1           1  3.71+9             .26    150.      0.      0.        
+GRID           1    1000      0.      0.      0.       0
+GRID           2    1000      0.   .3275      0.       0
+GRID           3    1000      0.   .6525      0.       0
+GRID           4    1000      0.   .9125      0.       0
+GRID          10       0     .25    .132      0.       0
+GRID          11       0    1.18    .132      0.       0
+GRID          12       0    1.23    .132     .02       0
+GRID          13       0    1.23    .287     .02       0
+GRID          14       0    1.23      0.     .02       0
+GRID          15       0    1.23    .132    .198       0
+GRID          25       0      0.      0.      0.       0
+GRID         101    1000  -.0625      0.      0.       0
+GRID         102    1000   .1735      0.      0.       0
+GRID         103    1000  -.0625   .3275      0.       0
+GRID         104    1000   .1735   .3275      0.       0
+GRID         105    1000  -.0625   .6525      0.       0
+GRID         106    1000   .1735   .6525      0.       0
+GRID         107    1000  -.0625   .9125      0.       0
+GRID         108    1000   .1735   .9125      0.       0
+GRID         201       0    1.18    .132     .02       0
+GRID         202       0    1.28    .132     .02       0
+GRID         203       0    1.18    .132    .198       0
+GRID         204       0    1.28    .132    .198       0
+GRID         205       0    1.18    .287     .02       0
+GRID         206       0    1.28    .287     .02       0
+GRID         207       0    1.18      0.     .02       0
+GRID         208       0    1.28      0.     .02       0
+CONM2          1       1    1000   .0269      0.      0.      0.                
+CONM2          2       1    1000   .0175   .0418      0.      0.                
+CONM2          3       2    1000   .0536      0.      0.      0.                
+CONM2          4       2    1000   .0175   .0418      0.      0.                
+CONM2          5       3    1000    .048      0.      0.      0.                
+CONM2          6       3    1000   .0171   .0409      0.      0.                
+CONM2          7       4    1000   .0213      0.      0.      0.                
+CONM2          8       4    1000   .0207  .03251      0.      0.                
+RBE2          10       1  123456     101     102
+RBE2          11       2  123456     103     104
+RBE2          12       3  123456     105     106
+RBE2          13       4  123456     107     108
+CONM2         25      25       0 .578348 .100367      0.-.024248        +       
++        .021679   1.2-5 .011463  1.47-4   1.7-5 .031867
+CONM2         26      25       0    .164  -.1455    .174      0.                
+CONM2         27      25       0    .164  -.3555    .174      0.                
+CONM2         28      25       0    .087  -.4695    .174      0.                
+CONM2         29      25       0    .239 -.23475    .174      0.                
+RBE2          30      25  123456       1
+RBE2          31      25  123456      10
+CONM2         32      10       0    .164     .09      0.      0.                
+CONM2         33      10       0    .164     .29      0.      0.                
+CONM2         34      10       0  .09875      0.      0.      0.                
+CONM2         35      11       0  .09875      0.      0.      0.                
+RBE2          36      11  123456      12
+RBE2          37      14  123456     208     207
+RBE2          38      11  123456     201     202
+RBE2          39      13  123456     205     206
+RBE2          40      15  123456     203     204
+CBAR          41      16      14      12     208                
+CBAR          42      16      12      13     206                
+CONM2         43      15    2000   .0185      0.      0.      0.                
+CONM2         44      12    2000   .0185      0.      0.      0.                
+CONM2         45      14    2000 .020467      0.      0.      0.                
+CONM2         46      13    2000 .024034      0.      0.      0.                
+CONM2         47      14    2000   7.5-4      0.      0.      0.                
+CONM2         48      15    2000   .0015      0.      0.   -.089                
+CBAR          49      16      12      15     204                
+CONM2         50       3       0    .015      0.   .1175      0.                
+$ Femap Aero Property 1 : panel
+PAERO1         1                                                        
+$ Femap Aero Panel 1001 : horizontal_tail
+CAERO1      1001       1       0      20      10                       1+       
++           1.18      0.     .02      .1    1.18    .287     .02      .1
+$ Femap Aero Panel 2001 : vert_tail
+CAERO1      2001       1       0      20      10                       1+       
++           1.18    .132    .025      .1    1.18    .132    .198      .1
+$ Femap Aero Panel 5000 : wing panel
+CAERO1      5000       1       0     100      25                       1+       
++             0.     .21      0.    .236      0.  1.1225      0.    .236
+SET1           2      12      13      14     201     202     205     206+       
++            207     208                                                
+$ Femap Aero Spline 2 : h_tail_spline
+SPLINE1        2    1001    1001    1200       2      0.     IPS    BOTH
+SET1           3      12      15     201     202     203     204        
+$ Femap Aero Spline 3 : v_tail_spline
+SPLINE1        3    2001    2001    2200       3      0.     IPS    BOTH
+SET1           1       1       2       3       4     101     102     103+       
++            104     105     106     107     108                        
+$ Femap Aero Spline 4 : wing_spline
+SPLINE1        4    5000    5000    7499       1      0.     IPS    BOTH
+ENDDATA
