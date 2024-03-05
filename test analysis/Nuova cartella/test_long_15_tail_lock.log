@@ -16,8 +16,8 @@ symbol=DELDIR='d:/nastran/nastran/msc20231/nast/del' $(program default)
 symbol=DEMODIR='d:/nastran/nastran/msc20231/nast/demo' $(program default)
 symbol=SSSALTERDIR='d:/nastran/nastran/msc20231/nast/sssalter' $(program default)
 symbol=TPLDIR='d:/nastran/nastran/msc20231/nast/tpl' $(program default)
-SDIR='c:/scratch/test_long_15_tail_lock.T8684_51'
-DBS='c:/scratch/test_long_15_tail_lock.T8684_51'
+SDIR='c:/scratch/test_long_15_tail_lock.T14180_3'
+DBS='c:/scratch/test_long_15_tail_lock.T14180_3'
 SCR='yes'
 SMEM=100
 BPOOL=150
@@ -48,9 +48,9 @@ FPE:         yes
 ----------------------------------------------------------------- 
 Current resource limits:
  Physical memory:                     8034 MB
- Physical memory available:           2715 MB
+ Physical memory available:           2929 MB
  Paging file size:                   14946 MB
- Paging file size available:          7593 MB
+ Paging file size available:          7601 MB
  Virtual memory:                 134217727 MB
  Virtual memory available:       134213510 MB
 ----------------------------------------------------------------- 
@@ -73,8 +73,8 @@ System configuration:
  Remote shell cmd: "d:/nastran/nastran/msc20231/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
                    <ccs_cmd> (Windows CCS nodes)
 ----------------------------------------------------------------- 
-MSC Nastran started  Tue Mar  5 10:58:52 osG 2024 
- 10:58:53  Beginning Analysis
+MSC Nastran started  Sun Mar  3 14:19:04 osG 2024 
+ 14:19:08  Beginning Analysis
 SCA Kernel 29.0.913034 successfully initialized
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\libimalloc.dll" has been loaded.
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_core.2.dll" has been loaded.
@@ -82,28 +82,28 @@ BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_intel_thread.2.dll" ha
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_rt.2.dll" has been loaded.
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\MSCblas.dll" has been loaded.
 
- 10:58:53  MSC Authorization Information - Checkout Successful (1016, 0)
- 10:58:53  -------------------------------------------------------------
- 10:58:53  Acquired 1 license for Student Edition Nastran
+ 14:19:08  MSC Authorization Information - Checkout Successful (1016, 0)
+ 14:19:08  -------------------------------------------------------------
+ 14:19:08  Acquired 1 license for Student Edition Nastran
 
 
 Beginning bulk data processing using the IFPStar component.
 For more information on IFPStar, please see KB article KB8019200
 on our support pages, at http://simcompanion.hexagon.com.
 
- 10:58:54  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA.DAT"
- 10:58:54  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA.DAT"
- 10:58:54  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA.DAT"
- 10:58:54  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA.DAT"
- 10:58:54  194 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/test_long_15_tail_lock.bdf"
- 10:58:54  A total of 214 records were read from 3 files.
+ 14:19:08  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA.DAT"
+ 14:19:08  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA.DAT"
+ 14:19:08  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA.DAT"
+ 14:19:08  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA.DAT"
+ 14:19:08  194 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/test_long_15_tail_lock.bdf"
+ 14:19:08  A total of 214 records were read from 3 files.
 
 Processing of bulk data entries is complete.
 
 
- 10:58:54  MSC Authorization Information - System Attributes (1004, 0)
- 10:58:54  -----------------------------------------------------------
-  Date:          Tue Mar  5 10:58:54 2024
+ 14:19:08  MSC Authorization Information - System Attributes (1004, 0)
+ 14:19:08  -----------------------------------------------------------
+  Date:          Sun Mar  3 14:19:08 2024
   LAPI Version:  LAPI 10.7.8.1 (CL 913879) (FLEXlm 11.16.3.0)
   License Mode:  Student Edition
 
@@ -111,36 +111,36 @@ Processing of bulk data entries is complete.
   * * * * * * * * * * * * * * * * * * * *
   * *                                 * *
   * *   MSC Customer Entitlement ID   * *
-  * *        a64bbae0-GA35BE53        * *
+  * *        a64bbae0-G79CE002        * *
   * *                                 * *
   * * * * * * * * * * * * * * * * * * * *
   * * * * * * * * * * * * * * * * * * * *
 
- 10:58:54  MSC Authorization Information - Checkout Successful (1016, 0)
- 10:58:54  -------------------------------------------------------------
- 10:58:54  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 14:19:09  MSC Authorization Information - Checkout Successful (1016, 0)
+ 14:19:09  -------------------------------------------------------------
+ 14:19:09  Acquired 1 license for Student Edition Nastran Aero - Basic
 
 
- 10:58:56  MSC Authorization Information - Checkout Successful (1016, 0)
- 10:58:56  -------------------------------------------------------------
- 10:58:56  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 14:19:11  MSC Authorization Information - Checkout Successful (1016, 0)
+ 14:19:11  -------------------------------------------------------------
+ 14:19:11  Acquired 1 license for Student Edition Nastran Aero - Basic
 
- 10:58:56  Finite element model generation started.
- 10:58:56  Finite element model generated 162 degrees of freedom.
- 10:58:56  Finite element model generation successfully completed.
- 10:58:56  Application of Loads and Boundary Conditions to the finite element model started.
- 10:58:56  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 14:19:11  Finite element model generation started.
+ 14:19:11  Finite element model generated 162 degrees of freedom.
+ 14:19:11  Finite element model generation successfully completed.
+ 14:19:11  Application of Loads and Boundary Conditions to the finite element model started.
+ 14:19:11  Application of Loads and Boundary Conditions to the finite element model successfully completed.
 
- 10:58:56  MSC Authorization Information - Checkout Successful (1016, 0)
- 10:58:56  -------------------------------------------------------------
- 10:58:56  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 14:19:11  MSC Authorization Information - Checkout Successful (1016, 0)
+ 14:19:11  -------------------------------------------------------------
+ 14:19:11  Acquired 1 license for Student Edition Nastran Aero - Basic
 
- 10:59:02  15 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/test_long_15_tail_lock.bdf"
- 10:59:02  NSEXIT: EXIT(0)
- 10:59:02  Analysis complete  0
-Real:        8.821 seconds ( 0:00:08.821)
-User:        6.375 seconds ( 0:00:06.375)
-Sys:         2.328 seconds ( 0:00:02.328)
+ 14:19:19  15 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/test_long_15_tail_lock.bdf"
+ 14:19:19  NSEXIT: EXIT(0)
+ 14:19:19  Analysis complete  0
+Real:       11.301 seconds ( 0:00:11.301)
+User:        5.453 seconds ( 0:00:05.453)
+Sys:         1.828 seconds ( 0:00:01.828)
  ==================================================
  OS:                           6.2
  OEM ID:                       9
@@ -162,4 +162,4 @@ Sys:         2.328 seconds ( 0:00:02.328)
  Detailed performance information can be found in the 
  "MSC Nastran High Performance Computing User's Guide"
  =====================================================
-MSC Nastran finished Tue Mar  5 10:59:03 osG 2024 
+MSC Nastran finished Sun Mar  3 14:19:20 osG 2024 
