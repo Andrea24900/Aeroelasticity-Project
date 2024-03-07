@@ -1,29 +1,39 @@
 INIT MASTER(S)
-NASTRAN SYSTEM(319)=1
+NASTRAN OP2NEW=0,SYSTEM(319)=1
 ID model,FEMAP
 SOL AESTAT
 CEND
   TITLE = static_longitudinal
   ECHO = NONE
   DISPLACEMENT(PRINT) = ALL
-  SPCFORCE(PRINT) = ALL
-  STRESS(PRINT,CORNER) = ALL
-  APRES = All
-  AEROF = All
+  APRES = NONE
+  AEROF = NONE
   SPC = 1
-  TRIM = 1
+  SUBCASE = 1 $ 11 m/s
+    TRIM = 1
+  SUBCASE = 2 $ 13 m/s
+    TRIM = 2
+  SUBCASE = 3 $ 15 m/s
+    TRIM = 3
+  SUBCASE = 4 $ 17 m/s
+    TRIM = 4
+  SUBCASE = 5 $ 19 m/s
+    TRIM = 5
+  SUBCASE = 6 $ 22 m/s
+    TRIM = 6
 BEGIN BULK
+INCLUDE GENEL_ala_ud.dat
+INCLUDE GENEL_coda_ud.dat
+
 $ ***************************************************************************
 $   Written by : Femap
 $   Version    : 2021.2.1
 $   Translator : MSC Nastran
 $   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\model_aggiornato.modfem
-$   Date       : Sun Mar  3 14:18:32 2024
+$   Date       : Thu Mar  7 09:21:49 2024
 $   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
 $ ***************************************************************************
 $
-INCLUDE GENEL_coda_ud.dat 
-INCLUDE GENEL_ala_ud.dat 
 PARAM,PRGPST,NO
 PARAM,POST,-1
 PARAM,OGEOM,NO
@@ -53,8 +63,24 @@ AESTAT         1  ANGLEA
 AESTAT         2   PITCH
 AESTAT         3   URDD3
 AESTAT         4   URDD5
-TRIM           1.0441176   137.8   PITCH      0.   URDD3      1.      1.+       
-+          URDD5      0.      RA      0.      RU      0.                
+$primo trim a 11 m/s, a=340 m/s
+TRIM           1.0323529 74.1125   PITCH      0.   URDD3      1.      1.+       
++          URDD5      0.      RA      0.      RU      0.       
+$secondo trim a 13 m/s         
+TRIM           2.0382353103.5125   PITCH      0.   URDD3      1.      1.+       
++          URDD5      0.      RA      0.      RU      0. 
+$terzo trim a 15 m/s               
+TRIM           30.044118137.8125   PITCH      0.   URDD3      1.      1.+       
++          URDD5      0.      RA      0.      RU      0.  
+$quarto trim a 17 m/s 
+TRIM           4     .05177.0125   PITCH      0.   URDD3      1.      1.+       
++          URDD5      0.      RA      0.      RU      0.     
+$quinto trim a 19 m/s 
+TRIM           50.055882221.1125   PITCH      0.   URDD3      1.      1.+       
++          URDD5      0.      RA      0.      RU      0.      
+$sesto trim a 22 m/s, velocità massima
+TRIM           60.064706  296.45   PITCH      0.   URDD3      1.      1.+       
++          URDD5      0.      RA      0.      RU      0.                                                   
 AEROS          0       0    .236    1.83  .21594       1       0
 $ Femap Aero Control Surface 1 : right_aileron
 AESURF         1      RA    2002       3                             LDW+       
@@ -169,6 +195,8 @@ CONM2         47      14    2000   7.5-4      0.      0.      0.
 CONM2         48      15    2000   .0015      0.      0.   -.089                
 CBAR          49      16      12      15     204                
 CONM2         50       3       0    .015      0.   .1175      0.                
+CONM2         51      25       0    .484      0.      0.      0.                
+CONM2         52      25       0     .17     .16      0.      0.                
 $ Femap Aero Property 1 : panel
 PAERO1         1                                                        
 $ Femap Aero Panel 1001 : horizontal_tail
