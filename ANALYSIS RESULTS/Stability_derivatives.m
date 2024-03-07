@@ -5,6 +5,22 @@ name_file_f06 = 'test_long_15_definitive_cases.f06';
 subcases = 6;
 SD = get_stability_derivatives(name_file_f06, subcases);
 
+%% PLOTS
+velocity_vector=[11;13;15;17;19;22];
+
+%CL_alpha (CL=-CZ)
+C_L_alpha_rigid(:,1)=-SD.anglea(3,2,:);
+plot(velocity_vector,C_L_alpha_rigid,'*-','LineWidth',2)
+axis padded
+grid on
+hold on
+C_L_alpha_elastic(:,1)=-SD.anglea(3,4,:);
+plot(velocity_vector,C_L_alpha_elastic,'*-','LineWidth',2)
+xlabel('$V\,[m/s]$','Interpreter','latex','FontSize',13)
+ylabel('$C_{L_{\alpha}}$','Interpreter','latex','FontSize',13)
+legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',13,'location','northwest')
+
+%
 
 %% Functions - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function SD = get_stability_derivatives(name_file_f06, subcases)
