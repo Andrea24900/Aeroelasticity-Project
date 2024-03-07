@@ -19,7 +19,7 @@ $   Written by : Femap
 $   Version    : 2021.2.1
 $   Translator : MSC Nastran
 $   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\model_aggiornato.modfem
-$   Date       : Thu Mar  7 12:53:21 2024
+$   Date       : Thu Mar  7 15:52:03 2024
 $   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
 $ ***************************************************************************
 $
@@ -57,7 +57,7 @@ AESTAT         3   URDD3
 AESTAT         4   URDD5
 TRIM           1.0441176   137.8   PITCH      0.   URDD3     -1.      1.+       
 +          URDD5      0.      RA      0.      RU      0.                
-AEROS          3       3    .236    1.83  .21594       1       0
+AEROS          0       3    .236    1.83  .21594       1       0
 $ Femap Aero Control Surface 1 : right_aileron
 AESURF         1      RA    2002       3                             LDW+       
 +           .037 .008433                                                
