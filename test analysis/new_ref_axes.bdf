@@ -19,7 +19,7 @@ $   Written by : Femap
 $   Version    : 2021.2.1
 $   Translator : MSC Nastran
 $   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\model_aggiornato.modfem
-$   Date       : Thu Mar  7 09:21:49 2024
+$   Date       : Thu Mar  7 12:53:21 2024
 $   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
 $ ***************************************************************************
 $
@@ -31,10 +31,10 @@ PARAM,GRDPNT,0
 CORD2C         1       0      0.      0.      0.      0.      0.      1.+FEMAPC1
 +FEMAPC1      1.      0.      1.        
 CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
-+FEMAPC2      1.      0.      1.       
++FEMAPC2      1.      0.      1.        
 $ Femap Coordinate System 3 : aero globale
 CORD2R         3       0   .1297      0.-2.472-3   .1297      0.-1.00247+       
-+         1.1297      0.-2.472-3         
++         -.8703      0.-2.472-3        
 $ Femap Coordinate System 1000 : Wing Ref
 CORD2R      1000       0   .0625     .21      0.   .0625     .21      1.+       
 +         1.0625     .21      0.        
@@ -55,9 +55,9 @@ AESTAT         1  ANGLEA
 AESTAT         2   PITCH
 AESTAT         3   URDD3
 AESTAT         4   URDD5
-TRIM           1.0441176   137.8   PITCH      0.   URDD3      1.      1.+       
+TRIM           1.0441176   137.8   PITCH      0.   URDD3     -1.      1.+       
 +          URDD5      0.      RA      0.      RU      0.                
-AEROS          3       0    .236    1.83  .21594       1       0
+AEROS          3       3    .236    1.83  .21594       1       0
 $ Femap Aero Control Surface 1 : right_aileron
 AESURF         1      RA    2002       3                             LDW+       
 +           .037 .008433                                                
