@@ -1,6 +1,6 @@
 close all; clearvars; clc;
 
-name_file_f06 = 'test_long_15_tail_lock.f06';
+name_file_f06 = 'test_long_15_definitive_cases.f06';
 
 SD = get_stability_derivatives(name_file_f06);
 
