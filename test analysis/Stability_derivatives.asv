@@ -25,43 +25,43 @@ while ~feof(file)
         if length(currentLine)>30
     
             if currentLine(1:23) == '    REF. COEFF.      CX'
-                scambia = [1 2 3 4 5 6];
-                SD.ref_coeff(:,:,scambia(n)) = get_matrix(currentLine,file);
+                scambiato = scambia(subcases, 1);
+                SD.ref_coeff(:,:,scambiato(n)) = get_matrix(currentLine,file);
             end
             
             if currentLine(1:23) == '    RA               CX'
-                scambia = [6 1 2 3 4 5];
-                SD.ra(:,:,scambia(n)) = get_matrix(currentLine,file);
+                scambiato = scambia(subcases, 2);
+                SD.ra(:,:,scambiato(n)) = get_matrix(currentLine,file);
             end
     
             if currentLine(1:23) == '    ANGLEA           CX'
-                scambia = [5 61 2 3 4 5 6];
-                SD.anglea(:,:,scambia(n)) = get_matrix(currentLine,file);
+                scambiato = scambia(subcases, 3);
+                SD.anglea(:,:,scambiato(n)) = get_matrix(currentLine,file);
             end
             
             if currentLine(1:23) == '    EL               CX'
-                scambia = [1 2 3 4 5 6];
-                SD.el(:,:,scambia(n)) = get_matrix(currentLine,file);
+                scambiato = scambia(subcases, 4);
+                SD.el(:,:,scambiato(n)) = get_matrix(currentLine,file);
             end
             
             if currentLine(1:23) == '    PITCH            CX'
-                scambia = [1 2 3 4 5 6];
-                SD.pitch(:,:,scambia(n)) = get_matrix(currentLine,file);
+                scambiato = scambia(subcases, 5);
+                SD.pitch(:,:,scambiato(n)) = get_matrix(currentLine,file);
             end
             
             if currentLine(1:23) == '    URDD3            CX'
-                scambia = [1 2 3 4 5 6];
-                SD.urdd3(:,:,scambia(n)) = get_matrix(currentLine,file);
+                scambiato = scambia(subcases, 6);
+                SD.urdd3(:,:,scambiato(n)) = get_matrix(currentLine,file);
             end
             
             if currentLine(1:23) == '    RU               CX'
-                scambia = [1 2 3 4 5 6];
-                SD.ru(:,:,scambia(n)) = get_matrix(currentLine,file);
+                scambiato = scambia(subcases, 7);
+                SD.ru(:,:,scambiato(n)) = get_matrix(currentLine,file);
             end
             
             if currentLine(1:23) == '    URDD5            CX'
-                scambia = [1 2 3 4 5 6];
-                SD.urdd5(:,:,scambia(n)) = get_matrix(currentLine,file);
+                scambiato = scambia(subcases, 8);
+                SD.urdd5(:,:,scambiato(n)) = get_matrix(currentLine,file);
             end
 
         end
@@ -70,7 +70,13 @@ end
 
 fclose(file);
 end
+function scambiato = scambia(subcases, posizione)
+scambiato = zeros(1,length(subcases));
+for i = posizione: subcases
+    scambiato (i) = 
+scambiato = 
 
+end
 
 function matrix = get_matrix(currentLine,file)
     matrix = zeros(6,6);
@@ -84,4 +90,8 @@ function matrix = get_matrix(currentLine,file)
         % end
     end
 end
+
+
+
+
 
