@@ -35,22 +35,22 @@ while ~feof(file)
             end
     
             if currentLine(1:23) == '    ANGLEA           CX'
-                scambia = [5 6 1 2 3 4];
+                scambia = [5 61 2 3 4 5 6];
                 SD.anglea(:,:,scambia(n)) = get_matrix(currentLine,file);
             end
             
             if currentLine(1:23) == '    EL               CX'
-                scambia = [4 5 6 1 2 3];
+                scambia = [1 2 3 4 5 6];
                 SD.el(:,:,scambia(n)) = get_matrix(currentLine,file);
             end
             
             if currentLine(1:23) == '    PITCH            CX'
-                scambia = [3 4 5 6 1 2];
+                scambia = [1 2 3 4 5 6];
                 SD.pitch(:,:,scambia(n)) = get_matrix(currentLine,file);
             end
             
             if currentLine(1:23) == '    URDD3            CX'
-                scambia = [2 3 4 5 6 1];
+                scambia = [1 2 3 4 5 6];
                 SD.urdd3(:,:,scambia(n)) = get_matrix(currentLine,file);
             end
             
@@ -60,7 +60,7 @@ while ~feof(file)
             end
             
             if currentLine(1:23) == '    URDD5            CX'
-                scambia = [6 1 2 3 4 5];
+                scambia = [1 2 3 4 5 6];
                 SD.urdd5(:,:,scambia(n)) = get_matrix(currentLine,file);
             end
 
