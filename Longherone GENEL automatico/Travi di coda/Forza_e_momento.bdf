@@ -13,9 +13,13 @@ CEND
         SPC = 1
         LOAD = 1
 
-  SUBCASE = 2 $ momento su nodo 1
+  SUBCASE = 2 $ momento flettente su nodo 1
         SPC = 1
         LOAD = 2
+
+  SUBCASE = 3 $ momento torcente su nodo 1
+        SPC = 1
+        LOAD = 3
 
 
 BEGIN BULK
@@ -44,6 +48,7 @@ CORD2R         3       0      0.      0.      0.     -1.      0.      0.+
 $ Femap Load Set 1 : Forza
 FORCE          1   12001       0      1.      0.      1.      0.
 MOMENT         2   12001       0      1.      1.      0.      0.
+MOMENT         3   12001       0      1.      0.      0.      1.
 $ Femap Constraint Set 1 : Incastro
 SPC1           1  123456       1
 SPC1           1  123456       2

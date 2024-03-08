@@ -5,6 +5,7 @@ fid = fopen('forza_e_momento.f06', 'r');
 
 N = 1;
 spostamenti_verticali = zeros(N,N);
+flessioni = zeros(N,N);
 torsioni = zeros(N,N);
 
 a = zeros(N,1);
@@ -16,18 +17,24 @@ while ~feof(fid)
                 if a(1)<=N
                     spostamenti_verticali(1,a(1)) = str2double(currentLine(43:54));
                 end
-                if a(1)>=N+1
-                    torsioni(1,a(1)-N) = str2double(currentLine(103:114));
+                if a(1)>=N+1 && a(1) <=2*N
+                    flessioni(1,a(1)-N) = str2double(currentLine(72:84));
+                end
+                if a(1)>=2*N+1
+                    torsioni(1,a(1)-2*N) = str2double(currentLine(102:114));
                 end
             end
-
+        
             if currentLine(1:26) == '         12002      G     '
                 a(2) = a(2)+1;
                 if a(2)<=N
                     spostamenti_verticali(2,a(2)) = str2double(currentLine(43:54));
                 end
-                if a(2)>=N+1
-                    torsioni(2,a(2)-N) = str2double(currentLine(103:114));
+                if a(2)>=N+1 && a(2) <=2*N
+                    flessioni(2,a(2)-N) = str2double(currentLine(72:84));
+                end
+                if a(2)>=2*N+1
+                    torsioni(2,a(2)-2*N) = str2double(currentLine(102:114));
                 end
             end
 
@@ -36,64 +43,89 @@ while ~feof(fid)
                 if a(3)<=N
                     spostamenti_verticali(3,a(3)) = str2double(currentLine(43:54));
                 end
-                if a(3)>=N+1
-                    torsioni(3,a(3)-N) = str2double(currentLine(103:114));
+                if a(3)>=N+1 && a(3) <=2*N
+                    flessioni(3,a(3)-N) = str2double(currentLine(72:84));
+                end
+                if a(3)>=3*N+1
+                    torsioni(3,a(3)-2*N) = str2double(currentLine(102:114));
                 end
             end
+
             if currentLine(1:26) == '         12004      G     '
                 a(4) = a(4)+1;
                 if a(4)<=N
                     spostamenti_verticali(4,a(4)) = str2double(currentLine(43:54));
                 end
-                if a(4)>=N+1
-                    torsioni(4,a(4)-N) = str2double(currentLine(103:114));
+                if a(4)>=N+1 && a(4) <=2*N
+                    flessioni(4,a(4)-N) = str2double(currentLine(72:84));
+                end
+                if a(4)>=2*N+1
+                    torsioni(4,a(4)-2*N) = str2double(currentLine(102:114));
                 end
             end
+            
             if currentLine(1:26) == '         12005      G     '
                 a(5) = a(5)+1;
                 if a(5)<=N
                     spostamenti_verticali(5,a(5)) = str2double(currentLine(43:54));
                 end
-                if a(5)>=N+1
-                    torsioni(5,a(5)-N) = str2double(currentLine(103:114));
+                if a(5)>=N+1 && a(5) <=2*N
+                    flessioni(5,a(5)-N) = str2double(currentLine(72:84));
+                end
+                if a(5)>=2*N+1
+                    torsioni(5,a(5)-2*N) = str2double(currentLine(102:114));
                 end
             end
+            
             if currentLine(1:26) == '         12006      G     '
                 a(6) = a(6)+1;
                 if a(6)<=N
                     spostamenti_verticali(6,a(6)) = str2double(currentLine(43:54));
                 end
-                if a(6)>=N+1
-                    torsioni(6,a(6)-N) = str2double(currentLine(103:114));
+                if a(6)>=N+1 && a(6) <=2*N
+                    flessioni(6,a(6)-N) = str2double(currentLine(72:84));
+                end
+                if a(6)>=2*N+1
+                    torsioni(6,a(6)-2*N) = str2double(currentLine(102:114));
                 end
             end
+            
             if currentLine(1:26) == '         12007      G     '
                 a(7) = a(7)+1;
                 if a(7)<=N
                     spostamenti_verticali(7,a(7)) = str2double(currentLine(43:54));
                 end
-                if a(7)>=N+1
-                    torsioni(7,a(7)-N) = str2double(currentLine(103:114));
+                if a(7)>=N+1 && a(7) <=2*N
+                    flessioni(7,a(7)-N) = str2double(currentLine(72:84));
+                end
+                if a(7)>=2*N+1
+                    torsioni(7,a(7)-2*N) = str2double(currentLine(102:114));
                 end
             end
+            
             if currentLine(1:26) == '         12008      G     '
-                a(8) = a(8)+1;
-                if a(8)<=N
-                    spostamenti_verticali(8,a(8)) = str2double(currentLine(43:54));
+                a(4) = a(4)+1;
+                if a(4)<=N
+                    spostamenti_verticali(4,a(4)) = str2double(currentLine(43:54));
                 end
-                if a(8)>=N+1
-                    torsioni(8,a(8)-N) = str2double(currentLine(103:114));
+                if a(4)>=N+1 && a(4) <=2*N
+                    flessioni(4,a(4)-N) = str2double(currentLine(72:84));
+                end
+                if a(4)>=2*N+1
+                    torsioni(4,a(4)-2*N) = str2double(currentLine(102:114));
                 end
             end
-            if currentLine(1:26) == '         12006      G     '
+            
+            if currentLine(1:26) == '         12009      G     '
                 a(9) = a(9)+1;
                 if a(9)<=N
                     spostamenti_verticali(9,a(9)) = str2double(currentLine(43:54));
                 end
                 if a(9)>=N+1
-                    torsioni(9,a(9)-N) = str2double(currentLine(103:114));
+                    flessioni(9,a(9)-N) = str2double(currentLine(103:114));
                 end
             end
+        %}
     end
 end
 
@@ -105,17 +137,17 @@ if fileID == -1
     error('Impossibile aprire il file per la scrittura.');
 end
 
-stringa1 = 'GENEL        100               ';
+stringa1 = 'GENEL        300              ';
 
-stringa3 = '$              UD               1       1       1       2       1       3';
-stringa4 = '$               1       4       1       5       1       6';
+stringa3 = '$              UD              10       1      10       2      10       3';
+stringa4 = '$              10       4      10       5      10       6';
 stringa5 = '               Z';
 
 for j = 1:N
     if j == 1
-    stringa1 = [stringa1,num2str(j+1),'       3'];
+    stringa1 = [stringa1,num2str(j+10),'       3'];
     else
-    stringa1 = [stringa1,'       ',num2str(j+1),'       3'];
+    stringa1 = [stringa1,'       ',num2str(j+10),'       3'];
     end
 
     for i = j:N
@@ -136,22 +168,22 @@ end
 fprintf(fileID, '\n\n');
 
 
-stringa1 = 'GENEL        200               ';
+stringa1 = 'GENEL        400              ';
 
-stringa3 = '$              UD               1       1       1       2       1       3';
-stringa4 = '$               1       4       1       5       1       6';
+stringa3 = '$              UD              10       1      10       2      10       3';
+stringa4 = '$              10       4      10       5      10       6';
 stringa5 = '               Z';
 
 
 for j = 1:N
     if j == 1
-    stringa1 = [stringa1,num2str(j+1),'       5'];
+    stringa1 = [stringa1,num2str(j+10),'       5'];
     else
-    stringa1 = [stringa1,'       ',num2str(j+1),'       5'];
+    stringa1 = [stringa1,'       ',num2str(j+10),'       5'];
     end
 
     for i = j:N
-        stringa5 = [stringa5,converti(torsioni(i,j))];
+        stringa5 = [stringa5,converti(flessioni(i,j))];
     end
 end
 [stringa1,righe] = vai_a_capo_nodi(stringa1);
