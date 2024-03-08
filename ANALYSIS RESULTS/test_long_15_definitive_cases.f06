@@ -116,7 +116,7 @@
   
       https://www.mscsoftware.com/msc-training
   
-1                                                       **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE     1
+1                                                       **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     1
                                                                                                                                     
 0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
 0                                                                                                                                   
@@ -125,7 +125,7 @@
      NASTRAN BUFFSIZE=8193 $(D:/NASTRAN/NASTRAN/CONF/NAST20231.RCF[2])               
      INIT MASTER(S)                                                                  
      NASTRAN OP2NEW=0,SYSTEM(319)=1                                                  
-1                                                       **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE     2
+1                                                       **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     2
                                                                                                                                     
 0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
 0                                                                                                                                   
@@ -134,7 +134,7 @@
      ID MODEL,FEMAP                                                                          
      SOL AESTAT                                                                              
      CEND                                                                                    
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE     3
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     3
                                                                                                                                     
 0                                                                                                                                   
 0                                        C A S E    C O N T R O L    E C H O                                                        
@@ -159,17 +159,17 @@
                  17        SUBCASE = 6 $ 22 M/S                                                                  
                  18          TRIM = 6                                                                            
                  19      BEGIN BULK                                                                              
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE     4
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     4
                                                                                                                                     
 0                                                                                                                                   
                                               I N P U T   B U L K   D A T A   E C H O                                               
                  ENTRY                                                                                                              
                  COUNT        .   1  ..   2  ..   3  ..   4  ..   5  ..   6  ..   7  ..   8  ..   9  ..  10  .                      
-                              $INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD.DAT"
-                              $END OF INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD.DAT"
-                              $INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD.DAT"
-                              $END OF INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD.DAT"
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE     5
+                              $INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\ANALYSIS RESULTS\GENEL_ALA_UD.DAT"
+                              $END OF INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\ANALYSIS RESULTS\GENEL_ALA_UD.DAT"
+                              $INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\ANALYSIS RESULTS\GENEL_CODA_UD.DAT"
+                              $END OF INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\ANALYSIS RESULTS\GENEL_CODA_UD.DAT"
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     5
                                                                                                                                     
 0                                                                                                                                   
                                         M O D E L   S U M M A R Y          BULK = 0
@@ -206,7 +206,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =          7 WORDS.)
            (NUMBER OF FORTRAN RECORDS WRITTEN =          8 RECORDS.)
                 (TOTAL DATA WRITTEN FOR LABEL =         17 WORDS.)
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE     6
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     6
                                                                                                                                     
 0                                                                                                                                   
                            O U T P U T   F R O M   G R I D   P O I N T   W E I G H T   G E N E R A T O R
@@ -240,10 +240,10 @@
                                            * -9.995615E-01  2.587636E-02  1.439813E-02 *
                                            * -1.491059E-02 -1.972137E-02 -9.996943E-01 *
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE     7
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     7
                                                                                                                                     
 0                                                                                                                                   
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE     8
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     8
                                                                                                                                     
 0                                                                                                                                   
 0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
@@ -309,7 +309,7 @@
  *** USER INFORMATION MESSAGE 9936 (SUBDMAP MAKPRBD)
      THE FOLLOWING RIGID BODY DEGREES OF FREEDOM ARE DEFINED TO BE SUPPORTED BY THE SUPDOF PARAMETER: TZ, MY
  ^^^     
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE     9
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     9
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
 
@@ -317,7 +317,7 @@
 
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                          MACH = 3.2353E-02                    Q = 7.4112E+01
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                 TRANSFORMATION FROM BASIC TO REFERENCE COORDINATES:
@@ -341,61 +341,61 @@
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.527895E-04
+    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.056021E-04
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.695896E-01   -4.695896E-01    -4.061433E-01   -4.041605E-01     0.000000E+00   -4.041605E-01
+                     CZ        -3.819329E-01   -3.819329E-01    -3.303299E-01   -3.287172E-01     0.000000E+00   -3.287172E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -7.028662E-02   -7.095838E-02    -7.256357E-02   -7.166406E-02     0.000000E+00   -7.166671E-02
+                     CMY       -5.716645E-02   -5.771281E-02    -5.901837E-02   -5.828677E-02     0.000000E+00   -5.828892E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.805954E-03
+    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.975509E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.543587E+00   -4.543587E+00    -4.571533E+00   -4.582900E+00     0.000000E+00   -4.582900E+00
+                     CZ        -3.695451E+00   -3.695451E+00    -3.718180E+00   -3.727425E+00     0.000000E+00   -3.727425E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.741999E+00   -2.781026E+00    -2.777783E+00   -2.779912E+00     0.000000E+00   -2.780014E+00
+                     CMY       -2.230159E+00   -2.261901E+00    -2.259264E+00   -2.260995E+00     0.000000E+00   -2.261078E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    3.070986E-03
+    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.497735E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -1.913726E-01   -1.913726E-01    -1.913479E-01   -1.951299E-01     0.000000E+00   -1.951299E-01
+                     CZ        -1.556497E-01   -1.556497E-01    -1.556296E-01   -1.587057E-01     0.000000E+00   -1.587057E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -8.675891E-01   -8.693428E-01    -8.692794E-01   -8.705997E-01     0.000000E+00   -8.706319E-01
+                     CMY       -7.056391E-01   -7.070655E-01    -7.070139E-01   -7.080878E-01     0.000000E+00   -7.081139E-01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    10
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    10
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
 
     TRIM VARIABLE   COEFFICIENT              RIGID                         ELASTIC                          INERTIAL
                                    UNSPLINED        SPLINED       RESTRAINED      UNRESTRAINED     RESTRAINED      UNRESTRAINED
 
-    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.007934E-02
+    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.326453E-02
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -7.227395E+00   -7.227395E+00    -7.001296E+00   -7.106058E+00     0.000000E+00   -7.106058E+00
+                     CZ        -5.878282E+00   -5.878282E+00    -5.694387E+00   -5.779594E+00     0.000000E+00   -5.779594E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.523770E+01   -2.549921E+01    -2.550091E+01   -2.553677E+01     0.000000E+00   -2.553771E+01
+                     CMY       -2.052666E+01   -2.073936E+01    -2.074074E+01   -2.076990E+01     0.000000E+00   -2.077067E+01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     2.295974E-22    0.000000E+00
+    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     1.867392E-22    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00     2.392059E-03    0.000000E+00     1.698858E+00    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00     1.945541E-03    0.000000E+00     1.381738E+00    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     7.860332E-05    0.000000E+00     1.255150E-06    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     6.393070E-05    0.000000E+00     1.020855E-06    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    8.906101E-05
+    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.243628E-05
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -5.585720E-03   -5.585720E-03    -5.585147E-03   -5.694980E-03     0.000000E+00   -5.694980E-03
+                     CZ        -4.543053E-03   -4.543053E-03    -4.542586E-03   -4.631917E-03     0.000000E+00   -4.631917E-03
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.481531E-02   -2.521187E-02    -2.520975E-02   -2.524808E-02     0.000000E+00   -2.524901E-02
+                     CMY       -2.018312E-02   -2.050565E-02    -2.050393E-02   -2.053510E-02     0.000000E+00   -2.053586E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -3.934716E-03    0.000000E+00
+    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -3.200236E-03    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00    -6.675330E-05    0.000000E+00     2.962154E-07    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00    -5.429269E-05    0.000000E+00     2.409218E-07    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     3.257201E-05    0.000000E+00     1.115501E+00    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     2.649190E-05    0.000000E+00     9.072744E-01    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    11
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    11
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
 
@@ -444,7 +444,7 @@
               URDD3                0.000000E+00                -2.468092E-05    0.000000E+00         0.000000E+00    0.000000E+00
               RU                  -1.015354E+00                -1.015354E+00   -1.015353E+00         0.000000E+00    0.000000E+00
               URDD5                0.000000E+00                 9.604162E-07    0.000000E+00         0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    12
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    12
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
                                                   INTERMEDIATE MATRIX ... HP      
@@ -471,7 +471,7 @@
                                                             COLUMN      8
      1                                              -2.321036E-05       2.069535E-03                                              2
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    13
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    13
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
                                                   INTERMEDIATE MATRIX ... UX      
@@ -480,7 +480,7 @@
                                                             COLUMN      1
      1         1.000000E+00       0.000000E+00      -4.283962E-01       1.369029E+00       0.000000E+00       1.000000E+00        6
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    14
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    14
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
                                                   INTERMEDIATE MATRIX ... UXIFV   
@@ -490,14 +490,14 @@
      1         5.936688E-02       0.000000E+00      -4.283962E-01       1.369029E+00       0.000000E+00       0.000000E+00        6
      7         1.000000E+00       0.000000E+00                                                                                    8
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    15
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    15
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 3.235290E-02                Q = 7.411250E+01
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
           TRIM ALGORITHM USED: LINEAR TRIM SOLUTION WITHOUT REDUNDANT CONTROL SURFACES.                                           
 
@@ -525,14 +525,14 @@
               RA             -1.570796E+00    0.000000E+00    1.570796E+00            N/A        1.996703E-03         N/A      
               EL             -1.570796E+00    1.369029E+00    1.570796E+00            N/A       -7.010556E-03         N/A      
               RU             -1.570796E+00    0.000000E+00    1.570796E+00            N/A       -7.986290E-04         N/A      
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    16
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    16
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 3.235290E-02                Q = 7.411250E+01
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                                         TRANSFORMATION FROM REFERENCE TO WIND AXES:
@@ -547,23 +547,23 @@
     STRUCTURAL  MONITOR POINT TOTAL VEHICLE COEFFICIENTS:
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
-    BODY  CX          0.000000E+00     0.000000E+00     2.295974E-22     0.000000E+00     0.000000E+00    -2.295974E-22
-    WIND  CD          6.997458E-01     5.981108E-03     7.057269E-01     0.000000E+00     0.000000E+00     2.220446E-16
+    BODY  CX          0.000000E+00     0.000000E+00     1.867392E-22     0.000000E+00     0.000000E+00    -1.867392E-22
+    WIND  CD          5.691266E-01     4.864634E-03     5.739912E-01     0.000000E+00     0.000000E+00     0.000000E+00
  
-    BODY  CY         -2.181525E-02    -4.551742E-05     0.000000E+00     0.000000E+00     0.000000E+00    -2.186077E-02
-    WIND  CY-WIND    -2.181525E-02    -4.551742E-05     0.000000E+00     0.000000E+00     0.000000E+00    -2.186077E-02
+    BODY  CY         -1.774307E-02    -3.702083E-05     0.000000E+00     0.000000E+00     0.000000E+00    -1.778009E-02
+    WIND  CY-WIND    -1.774307E-02    -3.702083E-05     0.000000E+00     0.000000E+00     0.000000E+00    -1.778009E-02
  
-    BODY  CZ          1.684460E+00     1.439800E-02     1.698858E+00     0.000000E+00     0.000000E+00     4.440892E-16
-    WIND  CL         -1.532241E+00    -1.309690E-02    -1.545338E+00     0.000000E+00     0.000000E+00    -4.440892E-16
+    BODY  CZ          1.370028E+00     1.171037E-02     1.381738E+00     0.000000E+00     0.000000E+00     2.220446E-16
+    WIND  CL         -1.246223E+00    -1.065214E-02    -1.256875E+00     0.000000E+00     0.000000E+00    -2.220446E-16
  
-    BODY  CMX         5.629013E-01     5.547795E-03     6.189676E-02     0.000000E+00     0.000000E+00     5.065523E-01
-    WIND  CM-ROLL    -5.065849E-01    -5.035090E-03    -5.630335E-02     0.000000E+00     0.000000E+00    -4.553167E-01
+    BODY  CMX         3.723655E-01     3.669928E-03     4.094539E-02     0.000000E+00     0.000000E+00     3.350900E-01
+    WIND  CM-ROLL    -3.351115E-01    -3.330768E-03    -3.724529E-02     0.000000E+00     0.000000E+00    -3.011970E-01
  
-    BODY  CMY         1.225314E-03    -1.224059E-03     1.255150E-06     0.000000E+00     0.000000E+00     3.697286E-16
-    WIND  CM-PITCH    1.225314E-03    -1.224059E-03     1.255150E-06     0.000000E+00     0.000000E+00     3.697286E-16
+    BODY  CMY         9.965889E-04    -9.955680E-04     1.020855E-06     0.000000E+00     0.000000E+00     3.007126E-16
+    WIND  CM-PITCH    9.965889E-04    -9.955680E-04     1.020855E-06     0.000000E+00     0.000000E+00     3.007126E-16
  
-    BODY  CMZ         1.311657E-02     2.736766E-05    -1.702882E-23     0.000000E+00     0.000000E+00     1.314394E-02
-    WIND  CM-YAW     -2.457675E-01    -2.329518E-03    -2.571268E-02     0.000000E+00     0.000000E+00    -2.223843E-01
+    BODY  CMZ         8.676756E-03     1.810401E-05    -1.126475E-23     0.000000E+00     0.000000E+00     8.694860E-03
+    WIND  CM-YAW     -1.625779E-01    -1.541002E-03    -1.700923E-02     0.000000E+00     0.000000E+00    -1.471097E-01
  
 
 
@@ -571,24 +571,24 @@
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
     BODY  CX          0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
-    WIND  CD          6.997458E-01     5.981108E-03           N/A              N/A        0.000000E+00     7.057269E-01
+    WIND  CD          5.691266E-01     4.864634E-03           N/A              N/A        0.000000E+00     5.739912E-01
  
-    BODY  CY         -5.183321E-02    -9.380095E-05           N/A              N/A        0.000000E+00    -5.192701E-02
-    WIND  CY-WIND    -5.183321E-02    -9.380095E-05           N/A              N/A        0.000000E+00    -5.192701E-02
+    BODY  CY         -4.215768E-02    -7.629144E-05           N/A              N/A        0.000000E+00    -4.223397E-02
+    WIND  CY-WIND    -4.215768E-02    -7.629144E-05           N/A              N/A        0.000000E+00    -4.223397E-02
  
-    BODY  CZ          1.684460E+00     1.439800E-02           N/A              N/A        0.000000E+00     1.698858E+00
-    WIND  CL         -1.532241E+00    -1.309690E-02           N/A              N/A        0.000000E+00    -1.545338E+00
+    BODY  CZ          1.370028E+00     1.171037E-02           N/A              N/A        0.000000E+00     1.381738E+00
+    WIND  CL         -1.246223E+00    -1.065214E-02           N/A              N/A        0.000000E+00    -1.256875E+00
  
-    BODY  CMX         5.819991E-01     5.622715E-03           N/A              N/A        0.000000E+00     5.876218E-01
-    WIND  CM-ROLL    -5.166831E-01    -5.091807E-03           N/A              N/A        0.000000E+00    -5.217749E-01
+    BODY  CMX         3.849989E-01     3.719488E-03           N/A              N/A        0.000000E+00     3.887184E-01
+    WIND  CM-ROLL    -3.417916E-01    -3.368287E-03           N/A              N/A        0.000000E+00    -3.451599E-01
  
-    BODY  CMY        -1.309310E-02    -1.258913E-03           N/A              N/A        0.000000E+00    -1.435202E-02
-    WIND  CM-PITCH   -1.309310E-02    -1.258913E-03           N/A              N/A        0.000000E+00    -1.435202E-02
+    BODY  CMY        -1.064906E-02    -1.023916E-03           N/A              N/A        0.000000E+00    -1.167297E-02
+    WIND  CM-PITCH   -1.064906E-02    -1.023916E-03           N/A              N/A        0.000000E+00    -1.167297E-02
  
-    BODY  CMZ         3.062640E-02     5.488732E-05           N/A              N/A        0.000000E+00     3.068128E-02
-    WIND  CM-YAW     -2.696285E-01    -2.385673E-03           N/A              N/A        0.000000E+00    -2.720141E-01
+    BODY  CMZ         2.025970E-02     3.630857E-05           N/A              N/A        0.000000E+00     2.029601E-02
+    WIND  CM-YAW     -1.783622E-01    -1.578149E-03           N/A              N/A        0.000000E+00    -1.799404E-01
  
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    17
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    17
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
 
@@ -611,7 +611,7 @@
            CMX    1.648572E+01     1.664820E+01     1.812774E+00     0.000000E+00     0.000000E+00
            CMY    4.627901E-03     4.740587E-06     4.740587E-06     0.000000E+00     0.000000E+00
            CMZ    3.841456E-01     3.849472E-01    -4.987238E-22     0.000000E+00     0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    18
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    18
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
 
@@ -658,7 +658,7 @@
           AXIS      RIGID AIR       ELASTIC REST.  
           ----    -------------    -------------   
            CMY   -7.979752E-04    -7.986290E-04
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    19
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    19
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
 
@@ -666,7 +666,7 @@
 
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                          MACH = 3.8235E-02                    Q = 1.0351E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                 TRANSFORMATION FROM BASIC TO REFERENCE COORDINATES:
@@ -690,61 +690,61 @@
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.540987E-04
+    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.066670E-04
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.696521E-01   -4.696521E-01    -3.805897E-01   -3.778310E-01     0.000000E+00   -3.778310E-01
+                     CZ        -3.819837E-01   -3.819837E-01    -3.095463E-01   -3.073026E-01     0.000000E+00   -3.073026E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -7.031601E-02   -7.098800E-02    -7.326702E-02   -7.203520E-02     0.000000E+00   -7.203786E-02
+                     CMY       -5.719036E-02   -5.773691E-02    -5.959051E-02   -5.858863E-02     0.000000E+00   -5.859079E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.806296E-03
+    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.975788E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.544180E+00   -4.544180E+00    -4.583700E+00   -4.599609E+00     0.000000E+00   -4.599609E+00
+                     CZ        -3.695933E+00   -3.695933E+00    -3.728076E+00   -3.741015E+00     0.000000E+00   -3.741015E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.742567E+00   -2.781603E+00    -2.777051E+00   -2.780009E+00     0.000000E+00   -2.780111E+00
+                     CMY       -2.230621E+00   -2.262370E+00    -2.258668E+00   -2.261074E+00     0.000000E+00   -2.261157E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    3.073223E-03
+    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.499555E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -1.914017E-01   -1.914017E-01    -1.913672E-01   -1.966677E-01     0.000000E+00   -1.966677E-01
+                     CZ        -1.556733E-01   -1.556733E-01    -1.556454E-01   -1.599564E-01     0.000000E+00   -1.599564E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -8.677256E-01   -8.694793E-01    -8.693908E-01   -8.712340E-01     0.000000E+00   -8.712662E-01
+                     CMY       -7.057502E-01   -7.071765E-01    -7.071045E-01   -7.086037E-01     0.000000E+00   -7.086298E-01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    20
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    20
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
 
     TRIM VARIABLE   COEFFICIENT              RIGID                         ELASTIC                          INERTIAL
                                    UNSPLINED        SPLINED       RESTRAINED      UNRESTRAINED     RESTRAINED      UNRESTRAINED
 
-    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.014547E-02
+    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.331832E-02
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -7.228394E+00   -7.228394E+00    -6.910882E+00   -7.057753E+00     0.000000E+00   -7.057753E+00
+                     CZ        -5.879094E+00   -5.879094E+00    -5.620851E+00   -5.740306E+00     0.000000E+00   -5.740306E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.524133E+01   -2.550289E+01    -2.550538E+01   -2.555551E+01     0.000000E+00   -2.555646E+01
+                     CMY       -2.052962E+01   -2.074235E+01    -2.074437E+01   -2.078515E+01     0.000000E+00   -2.078592E+01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     1.643863E-22    0.000000E+00
+    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     1.337009E-22    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00     2.395436E-03    0.000000E+00     1.216342E+00    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00     1.948288E-03    0.000000E+00     9.892918E-01    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     7.783001E-05    0.000000E+00     8.986576E-07    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     6.330174E-05    0.000000E+00     7.309082E-07    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    8.914196E-05
+    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.250213E-05
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -5.587608E-03   -5.587608E-03    -5.586813E-03   -5.740771E-03     0.000000E+00   -5.740771E-03
+                     CZ        -4.544588E-03   -4.544588E-03    -4.543941E-03   -4.669160E-03     0.000000E+00   -4.669160E-03
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.482383E-02   -2.522047E-02    -2.521751E-02   -2.527103E-02     0.000000E+00   -2.527196E-02
+                     CMY       -2.019005E-02   -2.051265E-02    -2.051024E-02   -2.055377E-02     0.000000E+00   -2.055453E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -2.817164E-03    0.000000E+00
+    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -2.291293E-03    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00    -6.662719E-05    0.000000E+00     2.120832E-07    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00    -5.419012E-05    0.000000E+00     1.724943E-07    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     3.259701E-05    0.000000E+00     7.986725E-01    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     2.651224E-05    0.000000E+00     6.495870E-01    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    21
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    21
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
 
@@ -793,7 +793,7 @@
               URDD3                0.000000E+00                -2.468714E-05    0.000000E+00         0.000000E+00    0.000000E+00
               RU                  -1.015500E+00                -1.015500E+00   -1.015499E+00         0.000000E+00    0.000000E+00
               URDD5                0.000000E+00                 9.582226E-07    0.000000E+00         0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    22
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    22
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
                                                   INTERMEDIATE MATRIX ... HP      
@@ -820,7 +820,7 @@
                                                             COLUMN      8
      1                                              -2.322993E-05       2.069511E-03                                              2
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    23
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    23
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
                                                   INTERMEDIATE MATRIX ... UX      
@@ -829,7 +829,7 @@
                                                             COLUMN      1
      1         1.000000E+00       0.000000E+00      -3.055977E-01       9.762437E-01       0.000000E+00       1.000000E+00        6
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    24
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    24
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
                                                   INTERMEDIATE MATRIX ... UXIFV   
@@ -839,14 +839,14 @@
      1         3.293540E-01       0.000000E+00      -3.055977E-01       9.762437E-01       0.000000E+00       0.000000E+00        6
      7         1.000000E+00       0.000000E+00                                                                                    8
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    25
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    25
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 3.823530E-02                Q = 1.035125E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
           TRIM ALGORITHM USED: LINEAR TRIM SOLUTION WITHOUT REDUNDANT CONTROL SURFACES.                                           
 
@@ -874,14 +874,14 @@
               RA             -1.570796E+00    0.000000E+00    1.570796E+00            N/A        1.993449E-03         N/A      
               EL             -1.570796E+00    9.762437E-01    1.570796E+00            N/A       -6.980367E-03         N/A      
               RU             -1.570796E+00    0.000000E+00    1.570796E+00            N/A       -7.958756E-04         N/A      
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    26
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    26
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 3.823530E-02                Q = 1.035125E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                                         TRANSFORMATION FROM REFERENCE TO WIND AXES:
@@ -896,23 +896,23 @@
     STRUCTURAL  MONITOR POINT TOTAL VEHICLE COEFFICIENTS:
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
-    BODY  CX          0.000000E+00     0.000000E+00     1.643863E-22     0.000000E+00     0.000000E+00    -1.643863E-22
-    WIND  CD          3.615883E-01     4.364411E-03     3.659527E-01     0.000000E+00     0.000000E+00     0.000000E+00
+    BODY  CX          0.000000E+00     0.000000E+00     1.337009E-22     0.000000E+00     0.000000E+00    -1.337009E-22
+    WIND  CD          2.940918E-01     3.549721E-03     2.976415E-01     0.000000E+00     0.000000E+00     0.000000E+00
  
-    BODY  CY         -1.556013E-02    -4.590903E-05     0.000000E+00     0.000000E+00     0.000000E+00    -1.560604E-02
-    WIND  CY-WIND    -1.556013E-02    -4.590903E-05     0.000000E+00     0.000000E+00     0.000000E+00    -1.560604E-02
+    BODY  CY         -1.265558E-02    -3.733935E-05     0.000000E+00     0.000000E+00     0.000000E+00    -1.269292E-02
+    WIND  CY-WIND    -1.265558E-02    -3.733935E-05     0.000000E+00     0.000000E+00     0.000000E+00    -1.269292E-02
  
-    BODY  CZ          1.201836E+00     1.450630E-02     1.216342E+00     0.000000E+00     0.000000E+00     0.000000E+00
-    WIND  CL         -1.146152E+00    -1.383418E-02    -1.159986E+00     0.000000E+00     0.000000E+00     0.000000E+00
+    BODY  CZ          9.774934E-01     1.179846E-02     9.892918E-01     0.000000E+00     0.000000E+00     0.000000E+00
+    WIND  CL         -9.322035E-01    -1.125180E-02    -9.434553E-01     0.000000E+00     0.000000E+00     0.000000E+00
  
-    BODY  CMX         4.015996E-01     5.587766E-03     4.431661E-02     0.000000E+00     0.000000E+00     3.628707E-01
-    WIND  CM-ROLL    -3.801776E-01    -5.320565E-03    -4.226331E-02     0.000000E+00     0.000000E+00    -3.432349E-01
+    BODY  CMX         2.656626E-01     3.696370E-03     2.931593E-02     0.000000E+00     0.000000E+00     2.400430E-01
+    WIND  CM-ROLL    -2.514917E-01    -3.519613E-03    -2.795765E-02     0.000000E+00     0.000000E+00    -2.270537E-01
  
-    BODY  CMY         1.227662E-03    -1.226763E-03     8.986576E-07     0.000000E+00     0.000000E+00     1.062851E-16
-    WIND  CM-PITCH    1.227662E-03    -1.226763E-03     8.986576E-07     0.000000E+00     0.000000E+00     1.062851E-16
+    BODY  CMY         9.984983E-04    -9.977674E-04     7.309082E-07     0.000000E+00     0.000000E+00     8.644522E-17
+    WIND  CM-PITCH    9.984983E-04    -9.977674E-04     7.309082E-07     0.000000E+00     0.000000E+00     8.644522E-17
  
-    BODY  CMZ         9.355637E-03     2.760312E-05    -1.219223E-23     0.000000E+00     0.000000E+00     9.383241E-03
-    WIND  CM-YAW     -1.297487E-01    -1.707478E-03    -1.333324E-02     0.000000E+00     0.000000E+00    -1.181229E-01
+    BODY  CMZ         6.188858E-03     1.825977E-05    -8.065295E-24     0.000000E+00     0.000000E+00     6.207118E-03
+    WIND  CM-YAW     -8.583021E-02    -1.129515E-03    -8.820086E-03     0.000000E+00     0.000000E+00    -7.813964E-02
  
 
 
@@ -920,24 +920,24 @@
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
     BODY  CX          0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
-    WIND  CD          3.615883E-01     4.364411E-03           N/A              N/A        0.000000E+00     3.659527E-01
+    WIND  CD          2.940918E-01     3.549721E-03           N/A              N/A        0.000000E+00     2.976415E-01
  
-    BODY  CY         -3.697046E-02    -9.460957E-05           N/A              N/A        0.000000E+00    -3.706507E-02
-    WIND  CY-WIND    -3.697046E-02    -9.460957E-05           N/A              N/A        0.000000E+00    -3.706507E-02
+    BODY  CY         -3.006931E-02    -7.694912E-05           N/A              N/A        0.000000E+00    -3.014626E-02
+    WIND  CY-WIND    -3.006931E-02    -7.694912E-05           N/A              N/A        0.000000E+00    -3.014626E-02
  
-    BODY  CZ          1.201836E+00     1.450630E-02           N/A              N/A        0.000000E+00     1.216342E+00
-    WIND  CL         -1.146152E+00    -1.383418E-02           N/A              N/A        0.000000E+00    -1.159986E+00
+    BODY  CZ          9.774934E-01     1.179846E-02           N/A              N/A        0.000000E+00     9.892918E-01
+    WIND  CL         -9.322035E-01    -1.125180E-02           N/A              N/A        0.000000E+00    -9.434553E-01
  
-    BODY  CMX         4.152246E-01     5.663343E-03           N/A              N/A        0.000000E+00     4.208879E-01
-    WIND  CM-ROLL    -3.894139E-01    -5.384289E-03           N/A              N/A        0.000000E+00    -3.947982E-01
+    BODY  CMX         2.746757E-01     3.746364E-03           N/A              N/A        0.000000E+00     2.784220E-01
+    WIND  CM-ROLL    -2.576016E-01    -3.561767E-03           N/A              N/A        0.000000E+00    -2.611634E-01
  
-    BODY  CMY        -8.989440E-03    -1.261911E-03           N/A              N/A        0.000000E+00    -1.025135E-02
-    WIND  CM-PITCH   -8.989440E-03    -1.261911E-03           N/A              N/A        0.000000E+00    -1.025135E-02
+    BODY  CMY        -7.311411E-03    -1.026354E-03           N/A              N/A        0.000000E+00    -8.337766E-03
+    WIND  CM-PITCH   -7.311411E-03    -1.026354E-03           N/A              N/A        0.000000E+00    -8.337766E-03
  
-    BODY  CMZ         2.184452E-02     5.536047E-05           N/A              N/A        0.000000E+00     2.189988E-02
-    WIND  CM-YAW     -1.457582E-01    -1.756687E-03           N/A              N/A        0.000000E+00    -1.475149E-01
+    BODY  CMZ         1.445039E-02     3.662157E-05           N/A              N/A        0.000000E+00     1.448701E-02
+    WIND  CM-YAW     -9.642067E-02    -1.162068E-03           N/A              N/A        0.000000E+00    -9.758274E-02
  
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    27
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    27
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
 
@@ -960,7 +960,7 @@
            CMX    1.642745E+01     1.665602E+01     1.812774E+00     0.000000E+00     0.000000E+00
            CMY    6.476146E-03     4.740587E-06     4.740587E-06     0.000000E+00     0.000000E+00
            CMZ    3.826929E-01     3.838220E-01    -4.987238E-22     0.000000E+00     0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    28
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    28
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
 
@@ -1007,7 +1007,7 @@
           AXIS      RIGID AIR       ELASTIC REST.  
           ----    -------------    -------------   
            CMY   -7.949547E-04    -7.958756E-04
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    29
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    29
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
 
@@ -1015,7 +1015,7 @@
 
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                          MACH = 4.4118E-02                    Q = 1.3781E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                 TRANSFORMATION FROM BASIC TO REFERENCE COORDINATES:
@@ -1039,61 +1039,61 @@
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.557866E-04
+    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.080398E-04
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.697250E-01   -4.697250E-01    -3.504401E-01   -3.467844E-01     0.000000E+00   -3.467844E-01
+                     CZ        -3.820430E-01   -3.820430E-01    -2.850246E-01   -2.820513E-01     0.000000E+00   -2.820513E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -7.035033E-02   -7.102258E-02    -7.411516E-02   -7.251369E-02     0.000000E+00   -7.251637E-02
+                     CMY       -5.721827E-02   -5.776504E-02    -6.028033E-02   -5.897780E-02     0.000000E+00   -5.897998E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.806600E-03
+    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.976034E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.544872E+00   -4.544872E+00    -4.598258E+00   -4.619492E+00     0.000000E+00   -4.619492E+00
+                     CZ        -3.696496E+00   -3.696496E+00    -3.739917E+00   -3.757187E+00     0.000000E+00   -3.757187E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.743231E+00   -2.782275E+00    -2.776181E+00   -2.780095E+00     0.000000E+00   -2.780197E+00
+                     CMY       -2.231161E+00   -2.262917E+00    -2.257960E+00   -2.261144E+00     0.000000E+00   -2.261227E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    3.075832E-03
+    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.501677E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -1.914356E-01   -1.914356E-01    -1.913900E-01   -1.984756E-01     0.000000E+00   -1.984756E-01
+                     CZ        -1.557009E-01   -1.557009E-01    -1.556639E-01   -1.614268E-01     0.000000E+00   -1.614268E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -8.678851E-01   -8.696387E-01    -8.695208E-01   -8.719735E-01     0.000000E+00   -8.720057E-01
+                     CMY       -7.058799E-01   -7.073061E-01    -7.072102E-01   -7.092051E-01     0.000000E+00   -7.092313E-01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    30
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    30
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
 
     TRIM VARIABLE   COEFFICIENT              RIGID                         ELASTIC                          INERTIAL
                                    UNSPLINED        SPLINED       RESTRAINED      UNRESTRAINED     RESTRAINED      UNRESTRAINED
 
-    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.022309E-02
+    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.338145E-02
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -7.229559E+00   -7.229559E+00    -6.804107E+00   -7.000521E+00     0.000000E+00   -7.000521E+00
+                     CZ        -5.880041E+00   -5.880041E+00    -5.534007E+00   -5.693757E+00     0.000000E+00   -5.693757E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.524558E+01   -2.550718E+01    -2.551068E+01   -2.557752E+01     0.000000E+00   -2.557846E+01
+                     CMY       -2.053307E+01   -2.074584E+01    -2.074869E+01   -2.080305E+01     0.000000E+00   -2.080382E+01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     1.234724E-22    0.000000E+00
+    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     1.004242E-22    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00     2.399558E-03    0.000000E+00     9.136083E-01    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00     1.951641E-03    0.000000E+00     7.430681E-01    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     7.692058E-05    0.000000E+00     6.749917E-07    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     6.256207E-05    0.000000E+00     5.489933E-07    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    8.923639E-05
+    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.257893E-05
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -5.589811E-03   -5.589811E-03    -5.588762E-03   -5.794616E-03     0.000000E+00   -5.794616E-03
+                     CZ        -4.546380E-03   -4.546380E-03    -4.545526E-03   -4.712954E-03     0.000000E+00   -4.712954E-03
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.483377E-02   -2.523051E-02    -2.522657E-02   -2.529780E-02     0.000000E+00   -2.529873E-02
+                     CMY       -2.019813E-02   -2.052082E-02    -2.051761E-02   -2.057554E-02     0.000000E+00   -2.057630E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -2.116003E-03    0.000000E+00
+    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -1.721016E-03    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00    -6.648214E-05    0.000000E+00     1.592980E-07    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00    -5.407214E-05    0.000000E+00     1.295624E-07    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     3.262618E-05    0.000000E+00     5.998918E-01    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     2.653596E-05    0.000000E+00     4.879120E-01    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    31
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    31
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
 
@@ -1142,7 +1142,7 @@
               URDD3                0.000000E+00                -2.469616E-05    0.000000E+00         0.000000E+00    0.000000E+00
               RU                  -1.015671E+00                -1.015671E+00   -1.015670E+00         0.000000E+00    0.000000E+00
               URDD5                0.000000E+00                 9.556869E-07    0.000000E+00         0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    32
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    32
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
                                                   INTERMEDIATE MATRIX ... HP      
@@ -1169,7 +1169,7 @@
                                                             COLUMN      8
      1                                              -2.325270E-05       2.069483E-03                                              2
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    33
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    33
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
                                                   INTERMEDIATE MATRIX ... UX      
@@ -1178,7 +1178,7 @@
                                                             COLUMN      1
      1         1.000000E+00       0.000000E+00      -2.285381E-01       7.297573E-01       0.000000E+00       1.000000E+00        6
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    34
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    34
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
                                                   INTERMEDIATE MATRIX ... UXIFV   
@@ -1188,14 +1188,14 @@
      1         4.987807E-01       0.000000E+00      -2.285381E-01       7.297573E-01       0.000000E+00       0.000000E+00        6
      7         1.000000E+00       0.000000E+00                                                                                    8
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    35
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    35
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 4.411800E-02                Q = 1.378125E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
           TRIM ALGORITHM USED: LINEAR TRIM SOLUTION WITHOUT REDUNDANT CONTROL SURFACES.                                           
 
@@ -1223,14 +1223,14 @@
               RA             -1.570796E+00    0.000000E+00    1.570796E+00            N/A        1.989593E-03         N/A      
               EL             -1.570796E+00    7.297573E-01    1.570796E+00            N/A       -6.944609E-03         N/A      
               RU             -1.570796E+00    0.000000E+00    1.570796E+00            N/A       -7.926131E-04         N/A      
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    36
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    36
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 4.411800E-02                Q = 1.378125E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                                         TRANSFORMATION FROM REFERENCE TO WIND AXES:
@@ -1245,23 +1245,23 @@
     STRUCTURAL  MONITOR POINT TOTAL VEHICLE COEFFICIENTS:
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
-    BODY  CX          0.000000E+00     0.000000E+00     1.234724E-22     0.000000E+00     0.000000E+00    -1.234724E-22
-    WIND  CD          2.036661E-01     3.315313E-03     2.069815E-01     0.000000E+00     0.000000E+00     0.000000E+00
+    BODY  CX          0.000000E+00     0.000000E+00     1.004242E-22     0.000000E+00     0.000000E+00    -1.004242E-22
+    WIND  CD          1.656485E-01     2.696454E-03     1.683449E-01     0.000000E+00     0.000000E+00     0.000000E+00
  
-    BODY  CY         -1.163482E-02    -4.636950E-05     0.000000E+00     0.000000E+00     0.000000E+00    -1.168119E-02
-    WIND  CY-WIND    -1.163482E-02    -4.636950E-05     0.000000E+00     0.000000E+00     0.000000E+00    -1.168119E-02
+    BODY  CY         -9.462989E-03    -3.771386E-05     0.000000E+00     0.000000E+00     0.000000E+00    -9.500703E-03
+    WIND  CY-WIND    -9.462989E-03    -3.771386E-05     0.000000E+00     0.000000E+00     0.000000E+00    -9.500703E-03
  
-    BODY  CZ          8.989746E-01     1.463367E-02     9.136083E-01     0.000000E+00     0.000000E+00     0.000000E+00
-    WIND  CL         -8.756001E-01    -1.425317E-02    -8.898532E-01     0.000000E+00     0.000000E+00     0.000000E+00
+    BODY  CZ          7.311660E-01     1.190205E-02     7.430681E-01     0.000000E+00     0.000000E+00     0.000000E+00
+    WIND  CL         -7.121547E-01    -1.159258E-02    -7.237473E-01     0.000000E+00     0.000000E+00     0.000000E+00
  
-    BODY  CMX         3.003778E-01     5.634779E-03     3.328670E-02     0.000000E+00     0.000000E+00     2.727258E-01
-    WIND  CM-ROLL    -2.909827E-01    -5.481951E-03    -3.242120E-02     0.000000E+00     0.000000E+00    -2.640434E-01
+    BODY  CMX         1.987032E-01     3.727469E-03     2.201952E-02     0.000000E+00     0.000000E+00     1.804112E-01
+    WIND  CM-ROLL    -1.924883E-01    -3.626372E-03    -2.144699E-02     0.000000E+00     0.000000E+00    -1.746677E-01
  
-    BODY  CMY         1.230619E-03    -1.229944E-03     6.749917E-07     0.000000E+00     0.000000E+00     1.021659E-17
-    WIND  CM-PITCH    1.230619E-03    -1.229944E-03     6.749917E-07     0.000000E+00     0.000000E+00     1.021659E-17
+    BODY  CMY         1.000904E-03    -1.000355E-03     5.489933E-07     0.000000E+00     0.000000E+00     8.309499E-18
+    WIND  CM-PITCH    1.000904E-03    -1.000355E-03     5.489933E-07     0.000000E+00     0.000000E+00     8.309499E-18
  
-    BODY  CMZ         6.995517E-03     2.787998E-05    -9.157719E-24     0.000000E+00     0.000000E+00     7.023397E-03
-    WIND  CM-YAW     -7.486536E-02    -1.303736E-03    -7.541230E-03     0.000000E+00     0.000000E+00    -6.862786E-02
+    BODY  CMZ         4.627612E-03     1.844291E-05    -6.057933E-24     0.000000E+00     0.000000E+00     4.646055E-03
+    WIND  CM-YAW     -4.952426E-02    -8.624358E-04    -4.988607E-03     0.000000E+00     0.000000E+00    -4.539809E-02
  
 
 
@@ -1269,24 +1269,24 @@
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
     BODY  CX          0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
-    WIND  CD          2.036661E-01     3.315313E-03           N/A              N/A        0.000000E+00     2.069815E-01
+    WIND  CD          1.656485E-01     2.696454E-03           N/A              N/A        0.000000E+00     1.683449E-01
  
-    BODY  CY         -2.764354E-02    -9.556035E-05           N/A              N/A        0.000000E+00    -2.773911E-02
-    WIND  CY-WIND    -2.764354E-02    -9.556035E-05           N/A              N/A        0.000000E+00    -2.773911E-02
+    BODY  CY         -2.248342E-02    -7.772242E-05           N/A              N/A        0.000000E+00    -2.256114E-02
+    WIND  CY-WIND    -2.248342E-02    -7.772242E-05           N/A              N/A        0.000000E+00    -2.256114E-02
  
-    BODY  CZ          8.989746E-01     1.463367E-02           N/A              N/A        0.000000E+00     9.136083E-01
-    WIND  CL         -8.756001E-01    -1.425317E-02           N/A              N/A        0.000000E+00    -8.898532E-01
+    BODY  CZ          7.311660E-01     1.190205E-02           N/A              N/A        0.000000E+00     7.430681E-01
+    WIND  CL         -7.121547E-01    -1.159258E-02           N/A              N/A        0.000000E+00    -7.237473E-01
  
-    BODY  CMX         3.105683E-01     5.711128E-03           N/A              N/A        0.000000E+00     3.162795E-01
-    WIND  CM-ROLL    -2.987927E-01    -5.549963E-03           N/A              N/A        0.000000E+00    -3.043427E-01
+    BODY  CMX         2.054444E-01     3.777975E-03           N/A              N/A        0.000000E+00     2.092224E-01
+    WIND  CM-ROLL    -1.976547E-01    -3.671362E-03           N/A              N/A        0.000000E+00    -2.013261E-01
  
-    BODY  CMY        -6.412774E-03    -1.265438E-03           N/A              N/A        0.000000E+00    -7.678212E-03
-    WIND  CM-PITCH   -6.412774E-03    -1.265438E-03           N/A              N/A        0.000000E+00    -7.678212E-03
+    BODY  CMY        -5.215723E-03    -1.029223E-03           N/A              N/A        0.000000E+00    -6.244946E-03
+    WIND  CM-PITCH   -5.215723E-03    -1.029223E-03           N/A              N/A        0.000000E+00    -6.244946E-03
  
-    BODY  CMZ         1.633357E-02     5.591680E-05           N/A              N/A        0.000000E+00     1.638949E-02
-    WIND  CM-YAW     -8.626932E-02    -1.348341E-03           N/A              N/A        0.000000E+00    -8.761767E-02
+    BODY  CMZ         1.080484E-02     3.698958E-05           N/A              N/A        0.000000E+00     1.084183E-02
+    WIND  CM-YAW     -5.706812E-02    -8.919424E-04           N/A              N/A        0.000000E+00    -5.796006E-02
  
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    37
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    37
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
 
@@ -1309,7 +1309,7 @@
            CMX    1.635839E+01     1.666526E+01     1.812774E+00     0.000000E+00     0.000000E+00
            CMY    8.642860E-03     4.740587E-06     4.740587E-06     0.000000E+00     0.000000E+00
            CMZ    3.809716E-01     3.824899E-01    -4.987238E-22     0.000000E+00     0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    38
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    38
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
 
@@ -1356,7 +1356,7 @@
           AXIS      RIGID AIR       ELASTIC REST.  
           ----    -------------    -------------   
            CMY   -7.913749E-04    -7.926131E-04
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    39
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    39
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
 
@@ -1364,7 +1364,7 @@
 
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                          MACH = 5.0000E-02                    Q = 1.7701E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                 TRANSFORMATION FROM BASIC TO REFERENCE COORDINATES:
@@ -1388,61 +1388,61 @@
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.579319E-04
+    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.097846E-04
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.698084E-01   -4.698084E-01    -3.155224E-01   -3.108529E-01     0.000000E+00   -3.108529E-01
+                     CZ        -3.821109E-01   -3.821109E-01    -2.566249E-01   -2.528270E-01     0.000000E+00   -2.528270E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -7.038958E-02   -7.106214E-02    -7.512146E-02   -7.312182E-02     0.000000E+00   -7.312452E-02
+                     CMY       -5.725020E-02   -5.779721E-02    -6.109879E-02   -5.947241E-02     0.000000E+00   -5.947461E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.806814E-03
+    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.976209E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.545663E+00   -4.545663E+00    -4.615390E+00   -4.642744E+00     0.000000E+00   -4.642744E+00
+                     CZ        -3.697139E+00   -3.697139E+00    -3.753851E+00   -3.776098E+00     0.000000E+00   -3.776098E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.743990E+00   -2.783045E+00    -2.775164E+00   -2.780156E+00     0.000000E+00   -2.780258E+00
+                     CMY       -2.231779E+00   -2.263543E+00    -2.257133E+00   -2.261193E+00     0.000000E+00   -2.261277E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    3.078810E-03
+    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.504099E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -1.914743E-01   -1.914743E-01    -1.914162E-01   -2.005606E-01     0.000000E+00   -2.005606E-01
+                     CZ        -1.557324E-01   -1.557324E-01    -1.556852E-01   -1.631226E-01     0.000000E+00   -1.631226E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -8.680674E-01   -8.698209E-01    -8.696694E-01   -8.728178E-01     0.000000E+00   -8.728500E-01
+                     CMY       -7.060281E-01   -7.074543E-01    -7.073311E-01   -7.098918E-01     0.000000E+00   -7.099180E-01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    40
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    40
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
 
     TRIM VARIABLE   COEFFICIENT              RIGID                         ELASTIC                          INERTIAL
                                    UNSPLINED        SPLINED       RESTRAINED      UNRESTRAINED     RESTRAINED      UNRESTRAINED
 
-    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.031243E-02
+    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.345411E-02
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -7.230892E+00   -7.230892E+00    -6.680315E+00   -6.933916E+00     0.000000E+00   -6.933916E+00
+                     CZ        -5.881125E+00   -5.881125E+00    -5.433323E+00   -5.639585E+00     0.000000E+00   -5.639585E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.525043E+01   -2.551208E+01    -2.551687E+01   -2.560285E+01     0.000000E+00   -2.560379E+01
+                     CMY       -2.053702E+01   -2.074983E+01    -2.075372E+01   -2.082365E+01     0.000000E+00   -2.082442E+01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     9.612901E-23    0.000000E+00
+    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     7.818493E-23    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00     2.404515E-03    0.000000E+00     7.112867E-01    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00     1.955672E-03    0.000000E+00     5.785132E-01    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     7.587129E-05    0.000000E+00     5.255126E-07    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     6.170865E-05    0.000000E+00     4.274169E-07    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    8.934428E-05
+    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.266668E-05
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -5.592331E-03   -5.592331E-03    -5.590998E-03   -5.856728E-03     0.000000E+00   -5.856728E-03
+                     CZ        -4.548429E-03   -4.548429E-03    -4.547345E-03   -4.763472E-03     0.000000E+00   -4.763472E-03
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.484513E-02   -2.524200E-02    -2.523693E-02   -2.532838E-02     0.000000E+00   -2.532932E-02
+                     CMY       -2.020737E-02   -2.053016E-02    -2.052604E-02   -2.060042E-02     0.000000E+00   -2.060118E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -1.647407E-03    0.000000E+00
+    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -1.339891E-03    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00    -6.631914E-05    0.000000E+00     1.240210E-07    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00    -5.393956E-05    0.000000E+00     1.008704E-07    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     3.265953E-05    0.000000E+00     4.670438E-01    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     2.656308E-05    0.000000E+00     3.798623E-01    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    41
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    41
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
 
@@ -1491,7 +1491,7 @@
               URDD3                0.000000E+00                -2.470884E-05    0.000000E+00         0.000000E+00    0.000000E+00
               RU                  -1.015867E+00                -1.015867E+00   -1.015865E+00         0.000000E+00    0.000000E+00
               URDD5                0.000000E+00                 9.528203E-07    0.000000E+00         0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    42
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    42
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
                                                   INTERMEDIATE MATRIX ... HP      
@@ -1518,7 +1518,7 @@
                                                             COLUMN      8
      1                                              -2.327866E-05       2.069452E-03                                              2
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    43
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    43
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
                                                   INTERMEDIATE MATRIX ... UX      
@@ -1527,7 +1527,7 @@
                                                             COLUMN      1
      1         1.000000E+00       0.000000E+00      -1.770224E-01       5.649752E-01       0.000000E+00       1.000000E+00        6
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    44
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    44
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
                                                   INTERMEDIATE MATRIX ... UXIFV   
@@ -1537,14 +1537,14 @@
      1         6.120472E-01       0.000000E+00      -1.770224E-01       5.649752E-01       0.000000E+00       0.000000E+00        6
      7         1.000000E+00       0.000000E+00                                                                                    8
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    45
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    45
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 5.000000E-02                Q = 1.770125E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
           TRIM ALGORITHM USED: LINEAR TRIM SOLUTION WITHOUT REDUNDANT CONTROL SURFACES.                                           
 
@@ -1572,14 +1572,14 @@
               RA             -1.570796E+00    0.000000E+00    1.570796E+00            N/A        1.985108E-03         N/A      
               EL             -1.570796E+00    5.649752E-01    1.570796E+00            N/A       -6.903024E-03         N/A      
               RU             -1.570796E+00    0.000000E+00    1.570796E+00            N/A       -7.888176E-04         N/A      
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    46
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    46
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 5.000000E-02                Q = 1.770125E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                                         TRANSFORMATION FROM REFERENCE TO WIND AXES:
@@ -1594,23 +1594,23 @@
     STRUCTURAL  MONITOR POINT TOTAL VEHICLE COEFFICIENTS:
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
-    BODY  CX          0.000000E+00     0.000000E+00     9.612901E-23     0.000000E+00     0.000000E+00    -9.612901E-23
-    WIND  CD          1.226543E-01     2.602852E-03     1.252571E-01     0.000000E+00     0.000000E+00     2.775558E-17
+    BODY  CX          0.000000E+00     0.000000E+00     7.818493E-23     0.000000E+00     0.000000E+00    -7.818493E-23
+    WIND  CD          9.975881E-02     2.116987E-03     1.018758E-01     0.000000E+00     0.000000E+00     0.000000E+00
  
-    BODY  CY         -9.010642E-03    -4.690053E-05     0.000000E+00     0.000000E+00     0.000000E+00    -9.057542E-03
-    WIND  CY-WIND    -9.010642E-03    -4.690053E-05     0.000000E+00     0.000000E+00     0.000000E+00    -9.057542E-03
+    BODY  CY         -7.328655E-03    -3.814576E-05     0.000000E+00     0.000000E+00     0.000000E+00    -7.366801E-03
+    WIND  CY-WIND    -7.328655E-03    -3.814576E-05     0.000000E+00     0.000000E+00     0.000000E+00    -7.366801E-03
  
-    BODY  CZ          6.965061E-01     1.478059E-02     7.112867E-01     0.000000E+00     0.000000E+00     1.110223E-16
-    WIND  CL         -6.856214E-01    -1.454961E-02    -7.001710E-01     0.000000E+00     0.000000E+00    -1.110223E-16
+    BODY  CZ          5.664917E-01     1.202155E-02     5.785132E-01     0.000000E+00     0.000000E+00     0.000000E+00
+    WIND  CL         -5.576388E-01    -1.183368E-02    -5.694724E-01     0.000000E+00     0.000000E+00     0.000000E+00
  
-    BODY  CMX         2.327090E-01     5.689016E-03     2.591525E-02     0.000000E+00     0.000000E+00     2.124828E-01
-    WIND  CM-ROLL    -2.281183E-01    -5.595145E-03    -2.551026E-02     0.000000E+00     0.000000E+00    -2.082032E-01
+    BODY  CMX         1.539396E-01     3.763347E-03     1.714323E-02     0.000000E+00     0.000000E+00     1.405597E-01
+    WIND  CM-ROLL    -1.509028E-01    -3.701250E-03    -1.687532E-02     0.000000E+00     0.000000E+00    -1.377287E-01
  
-    BODY  CMY         1.234141E-03    -1.233616E-03     5.255126E-07     0.000000E+00     0.000000E+00    -7.122573E-17
-    WIND  CM-PITCH    1.234141E-03    -1.233616E-03     5.255126E-07     0.000000E+00     0.000000E+00    -7.122573E-17
+    BODY  CMY         1.003768E-03    -1.003341E-03     4.274169E-07     0.000000E+00     0.000000E+00    -5.793028E-17
+    WIND  CM-PITCH    1.003768E-03    -1.003341E-03     4.274169E-07     0.000000E+00     0.000000E+00    -5.793028E-17
  
-    BODY  CMZ         5.417710E-03     2.819926E-05    -7.129712E-24     0.000000E+00     0.000000E+00     5.445909E-03
-    WIND  CM-YAW     -4.631295E-02    -1.029591E-03    -4.563659E-03     0.000000E+00     0.000000E+00    -4.277888E-02
+    BODY  CMZ         3.583875E-03     1.865413E-05    -4.716384E-24     0.000000E+00     0.000000E+00     3.602529E-03
+    WIND  CM-YAW     -3.063653E-02    -6.810856E-04    -3.018911E-03     0.000000E+00     0.000000E+00    -2.829870E-02
  
 
 
@@ -1618,24 +1618,24 @@
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
     BODY  CX          0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
-    WIND  CD          1.226543E-01     2.602852E-03           N/A              N/A        0.000000E+00     1.252571E-01
+    WIND  CD          9.975881E-02     2.116987E-03           N/A              N/A        0.000000E+00     1.018758E-01
  
-    BODY  CY         -2.140824E-02    -9.665683E-05           N/A              N/A        0.000000E+00    -2.150490E-02
-    WIND  CY-WIND    -2.140824E-02    -9.665683E-05           N/A              N/A        0.000000E+00    -2.150490E-02
+    BODY  CY         -1.741204E-02    -7.861423E-05           N/A              N/A        0.000000E+00    -1.749065E-02
+    WIND  CY-WIND    -1.741204E-02    -7.861423E-05           N/A              N/A        0.000000E+00    -1.749065E-02
  
-    BODY  CZ          6.965061E-01     1.478059E-02           N/A              N/A        0.000000E+00     7.112867E-01
-    WIND  CL         -6.856214E-01    -1.454961E-02           N/A              N/A        0.000000E+00    -7.001710E-01
+    BODY  CZ          5.664917E-01     1.202155E-02           N/A              N/A        0.000000E+00     5.785132E-01
+    WIND  CL         -5.576388E-01    -1.183368E-02           N/A              N/A        0.000000E+00    -5.694724E-01
  
-    BODY  CMX         2.406036E-01     5.766255E-03           N/A              N/A        0.000000E+00     2.463699E-01
-    WIND  CM-ROLL    -2.346160E-01    -5.666183E-03           N/A              N/A        0.000000E+00    -2.402822E-01
+    BODY  CMX         1.591620E-01     3.814442E-03           N/A              N/A        0.000000E+00     1.629764E-01
+    WIND  CM-ROLL    -1.552011E-01    -3.748243E-03           N/A              N/A        0.000000E+00    -1.589493E-01
  
-    BODY  CMY        -4.688673E-03    -1.269508E-03           N/A              N/A        0.000000E+00    -5.958181E-03
-    WIND  CM-PITCH   -4.688673E-03    -1.269508E-03           N/A              N/A        0.000000E+00    -5.958181E-03
+    BODY  CMY        -3.813454E-03    -1.032533E-03           N/A              N/A        0.000000E+00    -4.845988E-03
+    WIND  CM-PITCH   -3.813454E-03    -1.032533E-03           N/A              N/A        0.000000E+00    -4.845988E-03
  
-    BODY  CMZ         1.264935E-02     5.655838E-05           N/A              N/A        0.000000E+00     1.270591E-02
-    WIND  CM-YAW     -5.482181E-02    -1.071108E-03           N/A              N/A        0.000000E+00    -5.589292E-02
+    BODY  CMZ         8.367688E-03     3.741400E-05           N/A              N/A        0.000000E+00     8.405102E-03
+    WIND  CM-YAW     -3.626524E-02    -7.085500E-04           N/A              N/A        0.000000E+00    -3.697379E-02
  
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    47
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    47
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
 
@@ -1658,7 +1658,7 @@
            CMX    1.627801E+01     1.667596E+01     1.812774E+00     0.000000E+00     0.000000E+00
            CMY    1.113304E-02     4.740587E-06     4.740587E-06     0.000000E+00     0.000000E+00
            CMZ    3.789692E-01     3.809417E-01    -4.987238E-22     0.000000E+00     0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    48
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    48
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
 
@@ -1705,7 +1705,7 @@
           AXIS      RIGID AIR       ELASTIC REST.  
           ----    -------------    -------------   
            CMY   -7.872089E-04    -7.888176E-04
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    49
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    49
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
 
@@ -1713,7 +1713,7 @@
 
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                          MACH = 5.5882E-02                    Q = 2.2111E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                 TRANSFORMATION FROM BASIC TO REFERENCE COORDINATES:
@@ -1737,61 +1737,61 @@
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.606279E-04
+    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.119774E-04
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.699023E-01   -4.699023E-01    -2.756272E-01   -2.698325E-01     0.000000E+00   -2.698325E-01
+                     CZ        -3.821872E-01   -3.821872E-01    -2.241768E-01   -2.194638E-01     0.000000E+00   -2.194638E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -7.043378E-02   -7.110669E-02    -7.630200E-02   -7.388610E-02     0.000000E+00   -7.388883E-02
+                     CMY       -5.728614E-02   -5.783344E-02    -6.205896E-02   -6.009403E-02     0.000000E+00   -6.009625E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.806881E-03
+    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.976263E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.546554E+00   -4.546554E+00    -4.635313E+00   -4.669597E+00     0.000000E+00   -4.669597E+00
+                     CZ        -3.697864E+00   -3.697864E+00    -3.770055E+00   -3.797939E+00     0.000000E+00   -3.797939E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.744845E+00   -2.783911E+00    -2.773991E+00   -2.780174E+00     0.000000E+00   -2.780277E+00
+                     CMY       -2.232474E+00   -2.264247E+00    -2.256179E+00   -2.261209E+00     0.000000E+00   -2.261292E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    3.082157E-03
+    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.506821E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -1.915180E-01   -1.915180E-01    -1.914459E-01   -2.029310E-01     0.000000E+00   -2.029310E-01
+                     CZ        -1.557679E-01   -1.557679E-01    -1.557094E-01   -1.650506E-01     0.000000E+00   -1.650506E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -8.682726E-01   -8.700260E-01    -8.698368E-01   -8.737666E-01     0.000000E+00   -8.737989E-01
+                     CMY       -7.061950E-01   -7.076212E-01    -7.074673E-01   -7.106635E-01     0.000000E+00   -7.106897E-01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    50
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    50
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
 
     TRIM VARIABLE   COEFFICIENT              RIGID                         ELASTIC                          INERTIAL
                                    UNSPLINED        SPLINED       RESTRAINED      UNRESTRAINED     RESTRAINED      UNRESTRAINED
 
-    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.041376E-02
+    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.353652E-02
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -7.232392E+00   -7.232392E+00    -6.538708E+00   -6.857401E+00     0.000000E+00   -6.857401E+00
+                     CZ        -5.882345E+00   -5.882345E+00    -5.318149E+00   -5.577353E+00     0.000000E+00   -5.577353E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.525589E+01   -2.551760E+01    -2.552400E+01   -2.563157E+01     0.000000E+00   -2.563252E+01
+                     CMY       -2.054146E+01   -2.075432E+01    -2.075952E+01   -2.084701E+01     0.000000E+00   -2.084778E+01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     7.695647E-23    0.000000E+00
+    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     6.259126E-23    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00     2.410415E-03    0.000000E+00     5.694235E-01    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00     1.960471E-03    0.000000E+00     4.631311E-01    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     7.467762E-05    0.000000E+00     4.207012E-07    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     6.073780E-05    0.000000E+00     3.421703E-07    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    8.946562E-05
+    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.276537E-05
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -5.595169E-03   -5.595169E-03    -5.593523E-03   -5.927368E-03     0.000000E+00   -5.927368E-03
+                     CZ        -4.550737E-03   -4.550737E-03    -4.549399E-03   -4.820926E-03     0.000000E+00   -4.820926E-03
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.485793E-02   -2.525493E-02    -2.524860E-02   -2.536278E-02     0.000000E+00   -2.536372E-02
+                     CMY       -2.021778E-02   -2.054068E-02    -2.053552E-02   -2.062839E-02     0.000000E+00   -2.062916E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -1.318838E-03    0.000000E+00
+    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -1.072655E-03    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00    -6.613937E-05    0.000000E+00     9.928548E-08    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00    -5.379335E-05    0.000000E+00     8.075219E-08    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     3.269706E-05    0.000000E+00     3.738938E-01    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     2.659361E-05    0.000000E+00     3.041003E-01    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    51
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    51
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
 
@@ -1840,7 +1840,7 @@
               URDD3                0.000000E+00                -2.472624E-05    0.000000E+00         0.000000E+00    0.000000E+00
               RU                  -1.016087E+00                -1.016087E+00   -1.016084E+00         0.000000E+00    0.000000E+00
               URDD5                0.000000E+00                 9.496359E-07    0.000000E+00         0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    52
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    52
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
                                                   INTERMEDIATE MATRIX ... HP      
@@ -1867,7 +1867,7 @@
                                                             COLUMN      8
      1                                              -2.330777E-05       2.069416E-03                                              2
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    53
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    53
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
                                                   INTERMEDIATE MATRIX ... UX      
@@ -1876,7 +1876,7 @@
                                                             COLUMN      1
      1         1.000000E+00       0.000000E+00      -1.408848E-01       4.493801E-01       0.000000E+00       1.000000E+00        6
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    54
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    54
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
                                                   INTERMEDIATE MATRIX ... UXIFV   
@@ -1886,14 +1886,14 @@
      1         6.915047E-01       0.000000E+00      -1.408848E-01       4.493801E-01       0.000000E+00       0.000000E+00        6
      7         1.000000E+00       0.000000E+00                                                                                    8
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    55
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    55
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 5.588200E-02                Q = 2.211125E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
           TRIM ALGORITHM USED: LINEAR TRIM SOLUTION WITHOUT REDUNDANT CONTROL SURFACES.                                           
 
@@ -1921,14 +1921,14 @@
               RA             -1.570796E+00    0.000000E+00    1.570796E+00            N/A        1.979961E-03         N/A      
               EL             -1.570796E+00    4.493801E-01    1.570796E+00            N/A       -6.855310E-03         N/A      
               RU             -1.570796E+00    0.000000E+00    1.570796E+00            N/A       -7.844607E-04         N/A      
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    56
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    56
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 5.588200E-02                Q = 2.211125E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                                         TRANSFORMATION FROM REFERENCE TO WIND AXES:
@@ -1943,23 +1943,23 @@
     STRUCTURAL  MONITOR POINT TOTAL VEHICLE COEFFICIENTS:
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
-    BODY  CX          0.000000E+00     0.000000E+00     7.695647E-23     0.000000E+00     0.000000E+00    -7.695647E-23
-    WIND  CD          7.785903E-02     2.098937E-03     7.995797E-02     0.000000E+00     0.000000E+00     1.387779E-17
+    BODY  CX          0.000000E+00     0.000000E+00     6.259126E-23     0.000000E+00     0.000000E+00    -6.259126E-23
+    WIND  CD          6.332535E-02     1.707135E-03     6.503248E-02     0.000000E+00     0.000000E+00     1.387779E-17
  
-    BODY  CY         -7.169757E-03    -4.750413E-05     0.000000E+00     0.000000E+00     0.000000E+00    -7.217261E-03
-    WIND  CY-WIND    -7.169757E-03    -4.750413E-05     0.000000E+00     0.000000E+00     0.000000E+00    -7.217261E-03
+    BODY  CY         -5.831403E-03    -3.863670E-05     0.000000E+00     0.000000E+00     0.000000E+00    -5.870039E-03
+    WIND  CY-WIND    -5.831403E-03    -3.863670E-05     0.000000E+00     0.000000E+00     0.000000E+00    -5.870039E-03
  
-    BODY  CZ          5.544758E-01     1.494765E-02     5.694235E-01     0.000000E+00     0.000000E+00     1.110223E-16
-    WIND  CL         -5.489821E-01    -1.479955E-02    -5.637817E-01     0.000000E+00     0.000000E+00    -1.110223E-16
+    BODY  CZ          4.509737E-01     1.215742E-02     4.631311E-01     0.000000E+00     0.000000E+00     5.551115E-17
+    WIND  CL         -4.465055E-01    -1.203697E-02    -4.585424E-01     0.000000E+00     0.000000E+00     0.000000E+00
  
-    BODY  CMX         1.852397E-01     5.750690E-03     2.074656E-02     0.000000E+00     0.000000E+00     1.702438E-01
-    WIND  CM-ROLL    -1.827991E-01    -5.689703E-03    -2.054101E-02     0.000000E+00     0.000000E+00    -1.679478E-01
+    BODY  CMX         1.225381E-01     3.804146E-03     1.372408E-02     0.000000E+00     0.000000E+00     1.126182E-01
+    WIND  CM-ROLL    -1.209236E-01    -3.763802E-03    -1.358810E-02     0.000000E+00     0.000000E+00    -1.110993E-01
  
-    BODY  CMY         1.238213E-03    -1.237792E-03     4.207012E-07     0.000000E+00     0.000000E+00    -2.806840E-17
-    WIND  CM-PITCH    1.238213E-03    -1.237792E-03     4.207012E-07     0.000000E+00     0.000000E+00    -2.806840E-17
+    BODY  CMY         1.007080E-03    -1.006738E-03     3.421703E-07     0.000000E+00     0.000000E+00    -2.282891E-17
+    WIND  CM-PITCH    1.007080E-03    -1.006738E-03     3.421703E-07     0.000000E+00     0.000000E+00    -2.282891E-17
  
-    BODY  CMZ         4.310865E-03     2.856218E-05    -5.707719E-24     0.000000E+00     0.000000E+00     4.339428E-03
-    WIND  CM-YAW     -3.027936E-02    -8.357864E-04    -2.913215E-03     0.000000E+00     0.000000E+00    -2.820193E-02
+    BODY  CMZ         2.851685E-03     1.889420E-05    -3.775720E-24     0.000000E+00     0.000000E+00     2.870580E-03
+    WIND  CM-YAW     -2.003013E-02    -5.528820E-04    -1.927124E-03     0.000000E+00     0.000000E+00    -1.865589E-02
  
 
 
@@ -1967,24 +1967,24 @@
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
     BODY  CX          0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
-    WIND  CD          7.785903E-02     2.098937E-03           N/A              N/A        0.000000E+00     7.995797E-02
+    WIND  CD          6.332535E-02     1.707135E-03           N/A              N/A        0.000000E+00     6.503248E-02
  
-    BODY  CY         -1.703413E-02    -9.790317E-05           N/A              N/A        0.000000E+00    -1.713203E-02
-    WIND  CY-WIND    -1.703413E-02    -9.790317E-05           N/A              N/A        0.000000E+00    -1.713203E-02
+    BODY  CY         -1.385442E-02    -7.962791E-05           N/A              N/A        0.000000E+00    -1.393405E-02
+    WIND  CY-WIND    -1.385442E-02    -7.962791E-05           N/A              N/A        0.000000E+00    -1.393405E-02
  
-    BODY  CZ          5.544758E-01     1.494765E-02           N/A              N/A        0.000000E+00     5.694235E-01
-    WIND  CL         -5.489821E-01    -1.479955E-02           N/A              N/A        0.000000E+00    -5.637817E-01
+    BODY  CZ          4.509737E-01     1.215742E-02           N/A              N/A        0.000000E+00     4.631311E-01
+    WIND  CL         -4.465055E-01    -1.203697E-02           N/A              N/A        0.000000E+00    -4.585424E-01
  
-    BODY  CMX         1.915237E-01     5.828942E-03           N/A              N/A        0.000000E+00     1.973527E-01
-    WIND  CM-ROLL    -1.882128E-01    -5.763145E-03           N/A              N/A        0.000000E+00    -1.939760E-01
+    BODY  CMX         1.266951E-01     3.855910E-03           N/A              N/A        0.000000E+00     1.305510E-01
+    WIND  CM-ROLL    -1.245049E-01    -3.812385E-03           N/A              N/A        0.000000E+00    -1.283173E-01
  
-    BODY  CMY        -3.477619E-03    -1.274138E-03           N/A              N/A        0.000000E+00    -4.751757E-03
-    WIND  CM-PITCH   -3.477619E-03    -1.274138E-03           N/A              N/A        0.000000E+00    -4.751757E-03
+    BODY  CMY        -2.828463E-03    -1.036299E-03           N/A              N/A        0.000000E+00    -3.864762E-03
+    WIND  CM-PITCH   -2.828463E-03    -1.036299E-03           N/A              N/A        0.000000E+00    -3.864762E-03
  
-    BODY  CMZ         1.006484E-02     5.728764E-05           N/A              N/A        0.000000E+00     1.012213E-02
-    WIND  CM-YAW     -3.685872E-02    -8.752152E-04           N/A              N/A        0.000000E+00    -3.773394E-02
+    BODY  CMZ         6.658004E-03     3.789641E-05           N/A              N/A        0.000000E+00     6.695900E-03
+    WIND  CM-YAW     -2.438245E-02    -5.789646E-04           N/A              N/A        0.000000E+00    -2.496142E-02
  
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    57
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    57
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
 
@@ -2007,7 +2007,7 @@
            CMX    1.618570E+01     1.668818E+01     1.812774E+00     0.000000E+00     0.000000E+00
            CMY    1.395256E-02     4.740587E-06     4.740587E-06     0.000000E+00     0.000000E+00
            CMZ    3.766708E-01     3.791665E-01    -4.987238E-22     0.000000E+00     0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    58
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    58
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
 
@@ -2054,7 +2054,7 @@
           AXIS      RIGID AIR       ELASTIC REST.  
           ----    -------------    -------------   
            CMY   -7.824254E-04    -7.844607E-04
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    59
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    59
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
 
@@ -2062,7 +2062,7 @@
 
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                          MACH = 6.4706E-02                    Q = 2.9645E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                 TRANSFORMATION FROM BASIC TO REFERENCE COORDINATES:
@@ -2086,61 +2086,61 @@
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.659508E-04
+    RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.163067E-04
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.700630E-01   -4.700630E-01    -2.058841E-01   -1.982078E-01     0.000000E+00   -1.982078E-01
+                     CZ        -3.823179E-01   -3.823179E-01    -1.674524E-01   -1.612090E-01     0.000000E+00   -1.612090E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -7.050940E-02   -7.118290E-02    -7.844186E-02   -7.539504E-02     0.000000E+00   -7.539783E-02
+                     CMY       -5.734765E-02   -5.789542E-02    -6.379938E-02   -6.132130E-02     0.000000E+00   -6.132356E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.806541E-03
+    ANGLEA           CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.975986E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -4.548077E+00   -4.548077E+00    -4.671015E+00   -4.717257E+00     0.000000E+00   -4.717257E+00
+                     CZ        -3.699103E+00   -3.699103E+00    -3.799092E+00   -3.836702E+00     0.000000E+00   -3.836702E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.746306E+00   -2.785392E+00    -2.771912E+00   -2.780078E+00     0.000000E+00   -2.780181E+00
+                     CMY       -2.233663E+00   -2.265452E+00    -2.254489E+00   -2.261130E+00     0.000000E+00   -2.261214E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    3.087864E-03
+    EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    2.511463E-03
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -1.915926E-01   -1.915926E-01    -1.914973E-01   -2.070450E-01     0.000000E+00   -2.070450E-01
+                     CZ        -1.558286E-01   -1.558286E-01    -1.557512E-01   -1.683966E-01     0.000000E+00   -1.683966E-01
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -8.686236E-01   -8.703769E-01    -8.701230E-01   -8.753846E-01     0.000000E+00   -8.754170E-01
+                     CMY       -7.064805E-01   -7.079066E-01    -7.077000E-01   -7.119795E-01     0.000000E+00   -7.120058E-01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    60
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    60
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
 
     TRIM VARIABLE   COEFFICIENT              RIGID                         ELASTIC                          INERTIAL
                                    UNSPLINED        SPLINED       RESTRAINED      UNRESTRAINED     RESTRAINED      UNRESTRAINED
 
-    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    9.058893E-02
+    PITCH            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.367900E-02
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -7.234957E+00   -7.234957E+00    -6.290747E+00   -6.722596E+00     0.000000E+00   -6.722596E+00
+                     CZ        -5.884432E+00   -5.884432E+00    -5.116474E+00   -5.467711E+00     0.000000E+00   -5.467711E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.526523E+01   -2.552704E+01    -2.553659E+01   -2.568123E+01     0.000000E+00   -2.568218E+01
+                     CMY       -2.054906E+01   -2.076200E+01    -2.076976E+01   -2.088740E+01     0.000000E+00   -2.088817E+01
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     5.739935E-23    0.000000E+00
+    URDD3            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     4.668480E-23    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00     2.421320E-03    0.000000E+00     4.247146E-01    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00     1.969340E-03    0.000000E+00     3.454345E-01    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     7.260415E-05    0.000000E+00     3.137875E-07    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     5.905138E-05    0.000000E+00     2.552138E-07    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    8.967278E-05
+    RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    7.293386E-05
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ        -5.600024E-03   -5.600024E-03    -5.597864E-03   -6.050012E-03     0.000000E+00   -6.050012E-03
+                     CZ        -4.554686E-03   -4.554686E-03    -4.552930E-03   -4.920676E-03     0.000000E+00   -4.920676E-03
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY       -2.487983E-02   -2.527706E-02    -2.526855E-02   -2.542151E-02     0.000000E+00   -2.542245E-02
+                     CMY       -2.023560E-02   -2.055867E-02    -2.055176E-02   -2.067616E-02     0.000000E+00   -2.067693E-02
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
-    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -9.836791E-04    0.000000E+00
+    URDD5            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00    -8.000590E-04    0.000000E+00
                      CY         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CZ         0.000000E+00    0.000000E+00    -6.584132E-05    0.000000E+00     7.405384E-08    0.000000E+00
+                     CZ         0.000000E+00    0.000000E+00    -5.355094E-05    0.000000E+00     6.023046E-08    0.000000E+00
                      CMX        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMY        0.000000E+00    0.000000E+00     3.276125E-05    0.000000E+00     2.788753E-01    0.000000E+00
+                     CMY        0.000000E+00    0.000000E+00     2.664582E-05    0.000000E+00     2.268186E-01    0.000000E+00
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    61
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    61
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
 
@@ -2189,7 +2189,7 @@
               URDD3                0.000000E+00                -2.476392E-05    0.000000E+00         0.000000E+00    0.000000E+00
               RU                  -1.016463E+00                -1.016463E+00   -1.016460E+00         0.000000E+00    0.000000E+00
               URDD5                0.000000E+00                 9.442968E-07    0.000000E+00         0.000000E+00    0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    62
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    62
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
                                                   INTERMEDIATE MATRIX ... HP      
@@ -2216,7 +2216,7 @@
                                                             COLUMN      8
      1                                              -2.335730E-05       2.069354E-03                                              2
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    63
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    63
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
                                                   INTERMEDIATE MATRIX ... UX      
@@ -2225,7 +2225,7 @@
                                                             COLUMN      1
      1         1.000000E+00       0.000000E+00      -1.039922E-01       3.313664E-01       0.000000E+00       1.000000E+00        6
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    64
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    64
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
                                                   INTERMEDIATE MATRIX ... UXIFV   
@@ -2235,14 +2235,14 @@
      1         7.726258E-01       0.000000E+00      -1.039922E-01       3.313664E-01       0.000000E+00       0.000000E+00        6
      7         1.000000E+00       0.000000E+00                                                                                    8
 
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    65
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    65
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 6.470600E-02                Q = 2.964500E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
           TRIM ALGORITHM USED: LINEAR TRIM SOLUTION WITHOUT REDUNDANT CONTROL SURFACES.                                           
 
@@ -2270,14 +2270,14 @@
               RA             -1.570796E+00    0.000000E+00    1.570796E+00            N/A        1.970911E-03         N/A      
               EL             -1.570796E+00    3.313664E-01    1.570796E+00            N/A       -6.771473E-03         N/A      
               RU             -1.570796E+00    0.000000E+00    1.570796E+00            N/A       -7.768005E-04         N/A      
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    66
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    66
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
 
                                A E R O S T A T I C   D A T A   R E C O V E R Y   O U T P U T   T A B L E S
                          CONFIGURATION = AEROSG2D     XY-SYMMETRY = ASYMMETRIC     XZ-SYMMETRY = SYMMETRIC
                                            MACH = 6.470600E-02                Q = 2.964500E+02
-                         CHORD = 2.3600E-01           SPAN = 1.8300E+00            AREA = 2.1594E-01
+                         CHORD = 2.3600E-01           SPAN = 2.2500E+00            AREA = 2.6550E-01
 
 
                                         TRANSFORMATION FROM REFERENCE TO WIND AXES:
@@ -2292,23 +2292,23 @@
     STRUCTURAL  MONITOR POINT TOTAL VEHICLE COEFFICIENTS:
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
-    BODY  CX          0.000000E+00     0.000000E+00     5.739935E-23     0.000000E+00     0.000000E+00    -5.739935E-23
-    WIND  CD          4.250571E-02     1.581723E-03     4.408744E-02     0.000000E+00     0.000000E+00    -6.938894E-18
+    BODY  CX          0.000000E+00     0.000000E+00     4.668480E-23     0.000000E+00     0.000000E+00    -4.668480E-23
+    WIND  CD          3.457131E-02     1.286468E-03     3.585778E-02     0.000000E+00     0.000000E+00    -6.938894E-18
  
-    BODY  CY         -5.290327E-03    -4.855081E-05     0.000000E+00     0.000000E+00     0.000000E+00    -5.338878E-03
-    WIND  CY-WIND    -5.290327E-03    -4.855081E-05     0.000000E+00     0.000000E+00     0.000000E+00    -5.338878E-03
+    BODY  CY         -4.302799E-03    -3.948800E-05     0.000000E+00     0.000000E+00     0.000000E+00    -4.342287E-03
+    WIND  CY-WIND    -4.302799E-03    -3.948800E-05     0.000000E+00     0.000000E+00     0.000000E+00    -4.342287E-03
  
-    BODY  CZ          4.094771E-01     1.523747E-02     4.247146E-01     0.000000E+00     0.000000E+00    -5.551115E-17
-    WIND  CL         -4.072650E-01    -1.515515E-02    -4.224202E-01     0.000000E+00     0.000000E+00     5.551115E-17
+    BODY  CZ          3.330414E-01     1.239314E-02     3.454345E-01     0.000000E+00     0.000000E+00    -5.551115E-17
+    WIND  CL         -3.312422E-01    -1.232619E-02    -3.435684E-01     0.000000E+00     0.000000E+00     5.551115E-17
  
-    BODY  CMX         1.367782E-01     5.857698E-03     1.547419E-02     0.000000E+00     0.000000E+00     1.271617E-01
-    WIND  CM-ROLL    -1.357091E-01    -5.823023E-03    -1.539059E-02     0.000000E+00     0.000000E+00    -1.261415E-01
+    BODY  CMX         9.048028E-02     3.874932E-03     1.023635E-02     0.000000E+00     0.000000E+00     8.411887E-02
+    WIND  CM-ROLL    -8.977306E-02    -3.851994E-03    -1.018105E-02     0.000000E+00     0.000000E+00    -8.344400E-02
  
-    BODY  CMY         1.245357E-03    -1.245043E-03     3.137875E-07     0.000000E+00     0.000000E+00    -4.364708E-18
-    WIND  CM-PITCH    1.245357E-03    -1.245043E-03     3.137875E-07     0.000000E+00     0.000000E+00    -4.364708E-18
+    BODY  CMY         1.012890E-03    -1.012635E-03     2.552138E-07     0.000000E+00     0.000000E+00    -3.549968E-18
+    WIND  CM-PITCH    1.012890E-03    -1.012635E-03     2.552138E-07     0.000000E+00     0.000000E+00    -3.549968E-18
  
-    BODY  CMZ         3.180845E-03     2.919151E-05    -4.257204E-24     0.000000E+00     0.000000E+00     3.210037E-03
-    WIND  CM-YAW     -1.736190E-02    -6.370913E-04    -1.606296E-03     0.000000E+00     0.000000E+00    -1.639270E-02
+    BODY  CMZ         2.104165E-03     1.931051E-05    -2.816188E-24     0.000000E+00     0.000000E+00     2.123475E-03
+    WIND  CM-YAW     -1.148509E-02    -4.214430E-04    -1.062583E-03     0.000000E+00     0.000000E+00    -1.084395E-02
  
 
 
@@ -2316,24 +2316,24 @@
           AXIS         RIGID AIR  +  RESTRAINED INCR.  -  INERTIAL  +   RIGID-APPLIED + RESTRAINED INCR.  =  BALANCE
           ----         ---------     ----------------     --------      -------------   ----------------     -------
     BODY  CX          0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
-    WIND  CD          4.250571E-02     1.581723E-03           N/A              N/A        0.000000E+00     4.408744E-02
+    WIND  CD          3.457131E-02     1.286468E-03           N/A              N/A        0.000000E+00     3.585778E-02
  
-    BODY  CY         -1.256842E-02    -1.000644E-04           N/A              N/A        0.000000E+00    -1.266849E-02
-    WIND  CY-WIND    -1.256842E-02    -1.000644E-04           N/A              N/A        0.000000E+00    -1.266849E-02
+    BODY  CY         -1.022232E-02    -8.138568E-05           N/A              N/A        0.000000E+00    -1.030370E-02
+    WIND  CY-WIND    -1.022232E-02    -8.138568E-05           N/A              N/A        0.000000E+00    -1.030370E-02
  
-    BODY  CZ          4.094771E-01     1.523747E-02           N/A              N/A        0.000000E+00     4.247146E-01
-    WIND  CL         -4.072650E-01    -1.515515E-02           N/A              N/A        0.000000E+00    -4.224202E-01
+    BODY  CZ          3.330414E-01     1.239314E-02           N/A              N/A        0.000000E+00     3.454345E-01
+    WIND  CL         -3.312422E-01    -1.232619E-02           N/A              N/A        0.000000E+00    -3.435684E-01
  
-    BODY  CMX         1.414179E-01     5.937704E-03           N/A              N/A        0.000000E+00     1.473556E-01
-    WIND  CM-ROLL    -1.398831E-01    -5.899549E-03           N/A              N/A        0.000000E+00    -1.457826E-01
+    BODY  CMX         9.354953E-02     3.927857E-03           N/A              N/A        0.000000E+00     9.747738E-02
+    WIND  CM-ROLL    -9.253420E-02    -3.902617E-03           N/A              N/A        0.000000E+00    -9.643681E-02
  
-    BODY  CMY        -2.238253E-03    -1.282175E-03           N/A              N/A        0.000000E+00    -3.520427E-03
-    WIND  CM-PITCH   -2.238253E-03    -1.282175E-03           N/A              N/A        0.000000E+00    -3.520427E-03
+    BODY  CMY        -1.820445E-03    -1.042836E-03           N/A              N/A        0.000000E+00    -2.863281E-03
+    WIND  CM-PITCH   -1.820445E-03    -1.042836E-03           N/A              N/A        0.000000E+00    -2.863281E-03
  
-    BODY  CMZ         7.426212E-03     5.855220E-05           N/A              N/A        0.000000E+00     7.484764E-03
-    WIND  CM-YAW     -2.206596E-02    -6.745984E-04           N/A              N/A        0.000000E+00    -2.274056E-02
+    BODY  CMZ         4.912521E-03     3.873293E-05           N/A              N/A        0.000000E+00     4.951254E-03
+    WIND  CM-YAW     -1.459688E-02    -4.462544E-04           N/A              N/A        0.000000E+00    -1.504313E-02
  
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    67
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    67
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
 
@@ -2356,7 +2356,7 @@
            CMX    1.602332E+01     1.670954E+01     1.812774E+00     0.000000E+00     0.000000E+00
            CMY    1.881439E-02     4.740587E-06     4.740587E-06     0.000000E+00     0.000000E+00
            CMZ    3.726303E-01     3.760501E-01    -4.987238E-22     0.000000E+00     0.000000E+00
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    68
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    68
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
 
@@ -2403,7 +2403,7 @@
           AXIS      RIGID AIR       ELASTIC REST.  
           ----    -------------    -------------   
            CMY   -7.740119E-04    -7.768005E-04
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    69
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    69
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
 0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
@@ -2425,7 +2425,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =         216 WORDS.)
            (NUMBER OF FORTRAN RECORDS WRITTEN =          70 RECORDS.)
            (TOTAL DATA WRITTEN FOR DATA BLOCK =        2245 WORDS.)
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    70
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    70
                                                                                                                                     
 0                                                                                                            SUBCASE = 1 $ 11 M/S   
  
@@ -2459,7 +2459,7 @@
            206      G     -1.603872E-12  -3.701706E-28   5.021501E-04  -7.293503E-04   0.0           -7.403411E-27
            207      G     -1.603872E-12  -6.109139E-28   6.407965E-04  -7.190940E-04   0.0            1.221828E-26
            208      G     -1.603872E-12   6.109139E-28   6.407965E-04  -7.190940E-04   0.0            1.221828E-26
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    71
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    71
                                                                                                                                     
 0                                                                                                            SUBCASE = 2 $ 13 M/S   
  
@@ -2493,7 +2493,7 @@
            206      G     -1.596716E-12  -6.675580E-28   5.014024E-04  -7.264182E-04   0.0           -1.335116E-26
            207      G     -1.596716E-12  -7.378387E-29   6.394507E-04  -7.157406E-04   0.0            1.475677E-27
            208      G     -1.596716E-12   7.378387E-29   6.394507E-04  -7.157406E-04   0.0            1.475677E-27
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    72
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    72
                                                                                                                                     
 0                                                                                                            SUBCASE = 3 $ 15 M/S   
  
@@ -2527,7 +2527,7 @@
            206      G     -1.588249E-12  -3.524030E-28   5.005321E-04  -7.229450E-04   0.0           -7.048059E-27
            207      G     -1.588249E-12  -1.494298E-28   6.378724E-04  -7.117728E-04   0.0            2.988595E-27
            208      G     -1.588249E-12   1.494298E-28   6.378724E-04  -7.117728E-04   0.0            2.988595E-27
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    73
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    73
                                                                                                                                     
 0                                                                                                            SUBCASE = 4 $ 17 M/S   
  
@@ -2561,7 +2561,7 @@
            206      G     -1.578414E-12   5.545270E-29   4.995403E-04  -7.189054E-04   0.0            1.109054E-27
            207      G     -1.578414E-12   2.584712E-28   6.360576E-04  -7.071641E-04   0.0           -5.169424E-27
            208      G     -1.578414E-12  -2.584712E-28   6.360576E-04  -7.071641E-04   0.0           -5.169424E-27
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    74
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    74
                                                                                                                                     
 0                                                                                                            SUBCASE = 5 $ 19 M/S   
  
@@ -2595,7 +2595,7 @@
            206      G     -1.567144E-12  -1.022482E-27   4.984280E-04  -7.142700E-04   0.0           -2.044964E-26
            207      G     -1.567144E-12  -9.089885E-29   6.340016E-04  -7.018834E-04   0.0            1.817977E-27
            208      G     -1.567144E-12   9.089885E-29   6.340016E-04  -7.018834E-04   0.0            1.817977E-27
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    75
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    75
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
  
@@ -2634,7 +2634,7 @@
                                  (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
                                        (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
                                        (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
-1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   7, 2024  MSC Nastran  3/30/23   PAGE    76
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    76
                                                                                                                                     
 0                                                                                                            SUBCASE = 6 $ 22 M/S   
  * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     74

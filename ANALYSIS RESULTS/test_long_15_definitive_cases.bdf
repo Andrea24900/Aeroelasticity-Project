@@ -84,7 +84,7 @@ TRIM           50.055882221.1125   PITCH      0.   URDD3      1.      1.+
 $sesto trim a 22 m/s, velocità massima
 TRIM           60.064706  296.45   PITCH      0.   URDD3      1.      1.+       
 +          URDD5      0.      RA      0.      RU      0.                                                   
-AEROS          0       3    .236    1.83  .21594       1       0
+AEROS          0       3    .236    2.25   .2655       1       0
 $ Femap Aero Control Surface 1 : right_aileron
 AESURF         1      RA    2002       3                             LDW+       
 +           .037 .008433                                                
