@@ -1,25 +1,24 @@
 INIT MASTER(S)
-NASTRAN OP2NEW=0,SYSTEM(319)=1
+NASTRAN SYSTEM(319)=1
 ID model,FEMAP
 SOL AESTAT
 CEND
-  TITLE = static_longitudinal
+  TITLE = static_lat_dir
   ECHO = NONE
   DISPLACEMENT(PRINT) = ALL
   APRES = All
   AEROF = All
-  SPC = 1
+  SPC = 3
   TRIM = 1
 BEGIN BULK
 INCLUDE GENEL_ala_ud.dat
-INCLUDE GENEL_coda_ud.dat
-
+$INCLUDE GENEL_coda_ud.dat
 $ ***************************************************************************
 $   Written by : Femap
 $   Version    : 2021.2.1
 $   Translator : MSC Nastran
 $   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\model_aggiornato.modfem
-$   Date       : Fri Mar  8 10:32:36 2024
+$   Date       : Fri Mar  8 11:09:05 2024
 $   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
 $ ***************************************************************************
 $
@@ -51,13 +50,15 @@ $ Femap Coordinate System 2004 : right_rudder
 CORD2R      2004       0    1.25    .132    .025    1.25   -.868    .025+       
 +           2.25    .132    .025        
 PARAM,AUNITS,.101937
-AESTAT         1  ANGLEA
-AESTAT         2   PITCH
-AESTAT         3   URDD3
-AESTAT         4   URDD5
-TRIM           1.0441176   137.8   PITCH      0.   URDD3     -1.      1.+       
-+          URDD5      0.      RA      0.      RU      0.                
-AEROS          0       3    .236    2.25   .2655       1       0
+AESTAT         1   SIDES
+AESTAT         2    ROLL
+AESTAT         3     YAW
+AESTAT         4   URDD2
+AESTAT         5   URDD4
+AESTAT         6   URDD6
+TRIM           1.0323529 74.1125    ROLL      0.     YAW      0.      1.+       
++          URDD2      0.   URDD4      0.   URDD6      0.      EL      0.                                   
+AEROS          0       3    .236    2.25   .2655      -1       0
 $ Femap Aero Control Surface 1 : right_aileron
 AESURF         1      RA    2002       3                             LDW+       
 +           .037 .008433                                                
@@ -91,11 +92,10 @@ AELIST         4    2038    2039    2040    2048    2049    2050    2058+
 +           2110    2118    2119    2120    2128    2129    2130    2138+       
 +           2139    2140    2148    2149    2150    2158    2159    2160+       
 +           2168    2169    2170                                        
-$ Femap Constraint Set 1 : longitudinal lock
-SPC1           1    1246      11
-SPC1           1    1246      25
-$ Femap Constraint Set 2 : longitudinal_suport
-SUPORT        25      35
+$ Femap Constraint Set 3 : lat_dir_lock
+SPC1           3     135      25
+$ Femap Constraint Set 4 : lat_dir_suport
+SUPORT        25     246
 $ Femap Property 16 : bar_coda
 $ Femap PropShape 16 : 1,0,0.0055,0.1,0.,0.,0.,0.
 $ Femap PropMethod 16 : 1,0,1,0.
@@ -144,6 +144,7 @@ RBE2          10       1  123456     101     102
 RBE2          11       2  123456     103     104
 RBE2          12       3  123456     105     106
 RBE2          13       4  123456     107     108
+RBE2          17      10  123456      11
 CONM2         25      25       0 .578348 .100367      0.-.024248        +       
 +        .021679   1.2-5 .011463  1.47-4   1.7-5 .031867
 CONM2         26      25       0    .164  -.1455    .174      0.                
