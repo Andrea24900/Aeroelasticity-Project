@@ -85,7 +85,7 @@ while ~feof(fid)
                     torsioni(8,a(8)-N) = str2double(currentLine(103:114));
                 end
             end
-            if currentLine(1:26) == '         12006      G     '
+            if currentLine(1:26) == '         12009      G     '
                 a(9) = a(9)+1;
                 if a(9)<=N
                     spostamenti_verticali(9,a(9)) = str2double(currentLine(43:54));
@@ -96,7 +96,7 @@ while ~feof(fid)
             end
     end
 end
-
+fclose(fid);
 
 fileID = fopen('GENEL_generated.txt', 'w');
 
