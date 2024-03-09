@@ -119,7 +119,7 @@ AELIST         4    2038    2039    2040    2048    2049    2050    2058+
 +           2139    2140    2148    2149    2150    2158    2159    2160+       
 +           2168    2169    2170                                        
 $ Femap Constraint Set 1 : longitudinal lock
-SPC1           1    1246      11
+SPC1           1    1         11
 SPC1           1    1246      25
 $ Femap Constraint Set 2 : longitudinal_suport
 SUPORT        25      35

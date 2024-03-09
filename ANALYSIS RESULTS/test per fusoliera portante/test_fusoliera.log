@@ -16,8 +16,8 @@ symbol=DELDIR='d:/nastran/nastran/msc20231/nast/del' $(program default)
 symbol=DEMODIR='d:/nastran/nastran/msc20231/nast/demo' $(program default)
 symbol=SSSALTERDIR='d:/nastran/nastran/msc20231/nast/sssalter' $(program default)
 symbol=TPLDIR='d:/nastran/nastran/msc20231/nast/tpl' $(program default)
-SDIR='c:/scratch/test_fusoliera.T14388_29'
-DBS='c:/scratch/test_fusoliera.T14388_29'
+SDIR='c:/scratch/test_fusoliera.T3372_41'
+DBS='c:/scratch/test_fusoliera.T3372_41'
 SCR='yes'
 SMEM=100
 BPOOL=150
@@ -48,9 +48,9 @@ FPE:         yes
 ----------------------------------------------------------------- 
 Current resource limits:
  Physical memory:                     8034 MB
- Physical memory available:           1757 MB
+ Physical memory available:           2833 MB
  Paging file size:                   15202 MB
- Paging file size available:          5829 MB
+ Paging file size available:          6265 MB
  Virtual memory:                 134217727 MB
  Virtual memory available:       134213510 MB
 ----------------------------------------------------------------- 
@@ -59,7 +59,7 @@ System configuration:
  Architecture:     win64i8
  Platform:         Intel Windows 10 Home 6.2 9200 (Windows Compute Cluster)
  Model:            Intel(R) Core(TM) i7-8750H CPU
- Clock freq.:      3379 MHz
+ Clock freq.:      3383 MHz
  Number of CPUs:   12
  Number of CPUs:   0 ( limited by PBS )
  Executable:       standard
@@ -73,8 +73,8 @@ System configuration:
  Remote shell cmd: "d:/nastran/nastran/msc20231/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
                    <ccs_cmd> (Windows CCS nodes)
 ----------------------------------------------------------------- 
-MSC Nastran started  Fri Mar  8 12:12:31 osG 2024 
- 12:12:34  Beginning Analysis
+MSC Nastran started  Sat Mar  9 18:34:42 osG 2024 
+ 18:34:46  Beginning Analysis
 SCA Kernel 29.0.913034 successfully initialized
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\libimalloc.dll" has been loaded.
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_core.2.dll" has been loaded.
@@ -82,28 +82,28 @@ BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_intel_thread.2.dll" ha
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_rt.2.dll" has been loaded.
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\MSCblas.dll" has been loaded.
 
- 12:12:34  MSC Authorization Information - Checkout Successful (1016, 0)
- 12:12:34  -------------------------------------------------------------
- 12:12:34  Acquired 1 license for Student Edition Nastran
+ 18:34:46  MSC Authorization Information - Checkout Successful (1016, 0)
+ 18:34:46  -------------------------------------------------------------
+ 18:34:46  Acquired 1 license for Student Edition Nastran
 
 
 Beginning bulk data processing using the IFPStar component.
 For more information on IFPStar, please see KB article KB8019200
 on our support pages, at http://simcompanion.hexagon.com.
 
- 12:12:35  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\test per fusoliera portante\GENEL_ALA_UD.DAT"
- 12:12:35  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\test per fusoliera portante\GENEL_ALA_UD.DAT"
- 12:12:35  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\test per fusoliera portante\GENEL_CODA_UD.DAT"
- 12:12:35  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\test per fusoliera portante\GENEL_CODA_UD.DAT"
- 12:12:35  231 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/test per fusoliera portante/test_fusoliera.bdf"
- 12:12:35  A total of 251 records were read from 3 files.
+ 18:34:46  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\test per fusoliera portante\GENEL_ALA_UD.DAT"
+ 18:34:46  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\test per fusoliera portante\GENEL_ALA_UD.DAT"
+ 18:34:46  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\test per fusoliera portante\GENEL_CODA_UD.DAT"
+ 18:34:46  27 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\test per fusoliera portante\GENEL_CODA_UD.DAT"
+ 18:34:46  231 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/test per fusoliera portante/test_fusoliera.bdf"
+ 18:34:46  A total of 268 records were read from 3 files.
 
 Processing of bulk data entries is complete.
 
 
- 12:12:36  MSC Authorization Information - System Attributes (1004, 0)
- 12:12:36  -----------------------------------------------------------
-  Date:          Fri Mar  8 12:12:36 2024
+ 18:34:46  MSC Authorization Information - System Attributes (1004, 0)
+ 18:34:46  -----------------------------------------------------------
+  Date:          Sat Mar  9 18:34:46 2024
   LAPI Version:  LAPI 10.7.8.1 (CL 913879) (FLEXlm 11.16.3.0)
   License Mode:  Student Edition
 
@@ -111,61 +111,61 @@ Processing of bulk data entries is complete.
   * * * * * * * * * * * * * * * * * * * *
   * *                                 * *
   * *   MSC Customer Entitlement ID   * *
-  * *        2700000e-GA32A067        * *
+  * *        2700000e-G4A98A45        * *
   * *                                 * *
   * * * * * * * * * * * * * * * * * * * *
   * * * * * * * * * * * * * * * * * * * *
 
- 12:12:36  MSC Authorization Information - Checkout Successful (1016, 0)
- 12:12:36  -------------------------------------------------------------
- 12:12:36  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 18:34:46  MSC Authorization Information - Checkout Successful (1016, 0)
+ 18:34:46  -------------------------------------------------------------
+ 18:34:46  Acquired 1 license for Student Edition Nastran Aero - Basic
 
 
- 12:12:40  MSC Authorization Information - Checkout Successful (1016, 0)
- 12:12:40  -------------------------------------------------------------
- 12:12:40  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 18:34:49  MSC Authorization Information - Checkout Successful (1016, 0)
+ 18:34:49  -------------------------------------------------------------
+ 18:34:49  Acquired 1 license for Student Edition Nastran Aero - Basic
 
- 12:12:40  Finite element model generation started.
- 12:12:40  Finite element model generated 162 degrees of freedom.
- 12:12:40  Finite element model generation successfully completed.
- 12:12:40  Application of Loads and Boundary Conditions to the finite element model started.
- 12:12:41  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 18:34:49  Finite element model generation started.
+ 18:34:49  Finite element model generated 162 degrees of freedom.
+ 18:34:49  Finite element model generation successfully completed.
+ 18:34:49  Application of Loads and Boundary Conditions to the finite element model started.
+ 18:34:49  Application of Loads and Boundary Conditions to the finite element model successfully completed.
 
- 12:12:41  MSC Authorization Information - Checkout Successful (1016, 0)
- 12:12:41  -------------------------------------------------------------
- 12:12:41  Acquired 1 license for Student Edition Nastran Aero - Basic
-
-
- 12:12:47  MSC Authorization Information - Checkout Successful (1016, 0)
- 12:12:47  -------------------------------------------------------------
- 12:12:47  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 18:34:49  MSC Authorization Information - Checkout Successful (1016, 0)
+ 18:34:49  -------------------------------------------------------------
+ 18:34:49  Acquired 1 license for Student Edition Nastran Aero - Basic
 
 
- 12:12:55  MSC Authorization Information - Checkout Successful (1016, 0)
- 12:12:55  -------------------------------------------------------------
- 12:12:55  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 18:34:55  MSC Authorization Information - Checkout Successful (1016, 0)
+ 18:34:55  -------------------------------------------------------------
+ 18:34:55  Acquired 1 license for Student Edition Nastran Aero - Basic
 
 
- 12:13:01  MSC Authorization Information - Checkout Successful (1016, 0)
- 12:13:01  -------------------------------------------------------------
- 12:13:01  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 18:35:01  MSC Authorization Information - Checkout Successful (1016, 0)
+ 18:35:01  -------------------------------------------------------------
+ 18:35:01  Acquired 1 license for Student Edition Nastran Aero - Basic
 
 
- 12:13:07  MSC Authorization Information - Checkout Successful (1016, 0)
- 12:13:07  -------------------------------------------------------------
- 12:13:07  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 18:35:07  MSC Authorization Information - Checkout Successful (1016, 0)
+ 18:35:07  -------------------------------------------------------------
+ 18:35:07  Acquired 1 license for Student Edition Nastran Aero - Basic
 
 
- 12:13:13  MSC Authorization Information - Checkout Successful (1016, 0)
- 12:13:13  -------------------------------------------------------------
- 12:13:13  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 18:35:13  MSC Authorization Information - Checkout Successful (1016, 0)
+ 18:35:13  -------------------------------------------------------------
+ 18:35:13  Acquired 1 license for Student Edition Nastran Aero - Basic
 
- 12:14:02  24 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/test per fusoliera portante/test_fusoliera.bdf"
- 12:14:02  NSEXIT: EXIT(0)
- 12:14:02  Analysis complete  0
-Real:       88.718 seconds ( 0:01:28.718)
-User:       35.687 seconds ( 0:00:35.687)
-Sys:        12.281 seconds ( 0:00:12.281)
+
+ 18:35:19  MSC Authorization Information - Checkout Successful (1016, 0)
+ 18:35:19  -------------------------------------------------------------
+ 18:35:19  Acquired 1 license for Student Edition Nastran Aero - Basic
+
+ 18:35:49  24 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/test per fusoliera portante/test_fusoliera.bdf"
+ 18:35:49  NSEXIT: EXIT(0)
+ 18:35:49  Analysis complete  0
+Real:       63.398 seconds ( 0:01:03.398)
+User:       38.812 seconds ( 0:00:38.812)
+Sys:        11.937 seconds ( 0:00:11.937)
  ==================================================
  OS:                           6.2
  OEM ID:                       9
@@ -187,4 +187,4 @@ Sys:        12.281 seconds ( 0:00:12.281)
  Detailed performance information can be found in the 
  "MSC Nastran High Performance Computing User's Guide"
  =====================================================
-MSC Nastran finished Fri Mar  8 12:14:04 osG 2024 
+MSC Nastran finished Sat Mar  9 18:35:50 osG 2024 

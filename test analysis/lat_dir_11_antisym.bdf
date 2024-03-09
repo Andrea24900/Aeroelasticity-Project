@@ -12,7 +12,7 @@ CEND
   TRIM = 1
 BEGIN BULK
 INCLUDE GENEL_ala_ud.dat
-$INCLUDE GENEL_coda_ud.dat
+INCLUDE GENEL_coda_ud.dat
 $ ***************************************************************************
 $   Written by : Femap
 $   Version    : 2021.2.1
@@ -94,6 +94,7 @@ AELIST         4    2038    2039    2040    2048    2049    2050    2058+
 +           2168    2169    2170                                        
 $ Femap Constraint Set 3 : lat_dir_lock
 SPC1           3     135      25
+SPC1           3     1        11
 $ Femap Constraint Set 4 : lat_dir_suport
 SUPORT        25     246
 $ Femap Property 16 : bar_coda
@@ -144,7 +145,6 @@ RBE2          10       1  123456     101     102
 RBE2          11       2  123456     103     104
 RBE2          12       3  123456     105     106
 RBE2          13       4  123456     107     108
-RBE2          17      10  123456      11
 CONM2         25      25       0 .578348 .100367      0.-.024248        +       
 +        .021679   1.2-5 .011463  1.47-4   1.7-5 .031867
 CONM2         26      25       0    .164  -.1455    .174      0.                

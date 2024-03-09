@@ -116,7 +116,7 @@
   
       https://www.mscsoftware.com/msc-training
   
-1                                                       **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     1
+1                                                       **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE     1
                                                                                                                                     
 0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
 0                                                                                                                                   
@@ -125,7 +125,7 @@
      NASTRAN BUFFSIZE=8193 $(D:/NASTRAN/NASTRAN/CONF/NAST20231.RCF[2])               
      INIT MASTER(S)                                                                  
      NASTRAN SYSTEM(319)=1                                                           
-1                                                       **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     2
+1                                                       **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE     2
                                                                                                                                     
 0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
 0                                                                                                                                   
@@ -134,7 +134,7 @@
      ID MODEL,FEMAP                                                                          
      SOL AESTAT                                                                              
      CEND                                                                                    
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     3
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE     3
                                                                                                                                     
 0                                                                                                                                   
 0                                        C A S E    C O N T R O L    E C H O                                                        
@@ -148,7 +148,7 @@
                   6        SPC = 3                                                                               
                   7        TRIM = 1                                                                              
                   8      BEGIN BULK                                                                              
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     4
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE     4
                                                                                                                                     
 0                                                                                                                                   
                                               I N P U T   B U L K   D A T A   E C H O                                               
@@ -156,7 +156,9 @@
                  COUNT        .   1  ..   2  ..   3  ..   4  ..   5  ..   6  ..   7  ..   8  ..   9  ..  10  .                      
                               $INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD.DAT"
                               $END OF INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD.DAT"
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     5
+                              $INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD.DAT"
+                              $END OF INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD.DAT"
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE     5
                                                                                                                                     
 0                                                                                                                                   
                                         M O D E L   S U M M A R Y          BULK = 0
@@ -172,15 +174,15 @@
                                        CORD2C                        1
                                        CORD2R                        6
                                        CORD2S                        1
-                                        GENEL                        2
+                                        GENEL                        7
                                          GRID                       27
                                          MAT1                        1
                                        PAERO1                        1
                                         PARAM                        6
                                          PBAR                        1
-                                         RBE2                       12
+                                         RBE2                       11
                                          SET1                        3
-                                         SPC1                        1
+                                         SPC1                        2
                                       SPLINE1                        3
                                        SUPORT                        1
                                          TRIM                        1
@@ -193,7 +195,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =          7 WORDS.)
            (NUMBER OF FORTRAN RECORDS WRITTEN =          8 RECORDS.)
                 (TOTAL DATA WRITTEN FOR LABEL =         17 WORDS.)
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     6
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE     6
                                                                                                                                     
 0                                                                                                                                   
                            O U T P U T   F R O M   G R I D   P O I N T   W E I G H T   G E N E R A T O R
@@ -227,10 +229,10 @@
                                            * -9.995615E-01  2.587636E-02  1.439813E-02 *
                                            * -1.491059E-02 -1.972137E-02 -9.996943E-01 *
 
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     7
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE     7
                                                                                                                                     
 0                                                                                                                                   
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     8
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE     8
                                                                                                                                     
 0                                                                                                                                   
 0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
@@ -247,7 +249,7 @@
              TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
   
  *** SYSTEM INFORMATION MESSAGE 4159 (DFMSA)
-     THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    3.422478E+01
+     THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    4.554595E+04
  *** USER INFORMATION MESSAGE 3035 (SOLVER)
                                   FOR DATA BLOCK   KLR     
     SUPPORT PT.NO.             EPSILON             STRAIN   ENERGY     EPSILONS LARGER THAN 0.001 ARE FLAGGED WITH ASTERISKS
@@ -255,14 +257,14 @@
     One line of output is printed for each component referenced on the
     SUPORT and SUPORT1 entries.  Large values of either EPSILON or STRAIN
     ENERGY indicate errors in the constraints.
-                1          5.2123190E-17          0.0000000E+00                 
-                2          5.2123190E-17          0.0000000E+00                 
-                3          5.2123190E-17          3.7252903E-09                 
+                1          2.2263648E-12          1.4069315E-09                 
+                2          2.2263648E-12         -2.7284841E-12                 
+                3          2.2263648E-12          2.2344011E-09                 
  ^^^     
  *** USER INFORMATION MESSAGE 9936 (SUBDMAP MAKPRBD)
      THE FOLLOWING RIGID BODY DEGREES OF FREEDOM ARE DEFINED TO BE SUPPORTED BY THE SUPDOF PARAMETER: TY, MX, MZ
  ^^^     
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE     9
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE     9
                                                                                                                                     
 0                                                                                                                                   
 
@@ -295,26 +297,26 @@
                      CMZ        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
 
     RA               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CY         1.737751E-03    1.737751E-03     1.118148E-03    1.190207E-03     0.000000E+00    1.190207E-03
+                     CY         1.737751E-03    1.737751E-03     1.117621E-03    1.198861E-03     0.000000E+00    1.198861E-03
                      CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMX       -1.450410E-01   -1.450410E-01    -1.296461E-01   -1.312006E-01     0.000000E+00   -1.312006E-01
+                     CMX       -1.450410E-01   -1.450410E-01    -1.296460E-01   -1.312023E-01     0.000000E+00   -1.312023E-01
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMZ       -8.286429E-04   -8.397872E-04    -5.404968E-04   -5.752973E-04     0.000000E+00   -5.752973E-04
+                     CMZ       -8.286429E-04   -8.397872E-04    -5.402429E-04   -5.794632E-04     0.000000E+00   -5.815826E-04
 
     SIDES            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CY        -1.647900E-01   -1.647900E-01    -1.647899E-01   -1.647896E-01     0.000000E+00   -1.647896E-01
+                     CY        -1.647900E-01   -1.647900E-01    -1.647254E-01   -1.648556E-01     0.000000E+00   -1.648556E-01
                      CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMX       -5.414278E-03   -5.414278E-03    -5.415414E-03   -5.463855E-03     0.000000E+00   -5.463855E-03
+                     CMX       -5.414278E-03   -5.414278E-03    -5.415028E-03   -5.466500E-03     0.000000E+00   -5.466500E-03
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMZ        7.847569E-02    7.953354E-02     7.953349E-02    7.953334E-02     0.000000E+00    7.953334E-02
+                     CMZ        7.847569E-02    7.953354E-02     7.950246E-02    7.956510E-02     0.000000E+00    7.959122E-02
 
     EL               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CY        -1.080216E-02   -1.080216E-02    -1.080232E-02   -1.080063E-02     0.000000E+00   -1.080063E-02
+                     CY        -1.080216E-02   -1.080216E-02    -1.080108E-02   -1.080267E-02     0.000000E+00   -1.080267E-02
                      CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMX       -3.691037E-03   -3.691037E-03    -3.690526E-03   -3.733688E-03     0.000000E+00   -3.733688E-03
+                     CMX       -3.691037E-03   -3.691037E-03    -3.684107E-03   -3.727315E-03     0.000000E+00   -3.727315E-03
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMZ        5.246627E-03    5.264422E-03     5.264500E-03    5.263684E-03     0.000000E+00    5.263684E-03
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    10
+                     CMZ        5.246627E-03    5.264422E-03     5.263911E-03    5.264672E-03     0.000000E+00    5.266351E-03
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    10
                                                                                                                                     
 0                                                                                                                                   
 
@@ -322,47 +324,47 @@
                                    UNSPLINED        SPLINED       RESTRAINED      UNRESTRAINED     RESTRAINED      UNRESTRAINED
 
     ROLL             CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CY         1.327765E-02    1.327765E-02     1.346561E-02    1.376581E-02     0.000000E+00    1.376581E-02
+                     CY         1.327765E-02    1.327765E-02     1.345791E-02    1.380184E-02     0.000000E+00    1.380184E-02
                      CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMX       -5.504614E-01   -5.504614E-01    -5.557004E-01   -5.623647E-01     0.000000E+00   -5.623647E-01
+                     CMX       -5.504614E-01   -5.504614E-01    -5.556966E-01   -5.623684E-01     0.000000E+00   -5.623684E-01
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMZ       -6.351886E-03   -6.403884E-03    -6.494670E-03   -6.639667E-03     0.000000E+00   -6.639667E-03
+                     CMZ       -6.351886E-03   -6.403884E-03    -6.490960E-03   -6.657008E-03     0.000000E+00   -6.667466E-03
 
     RU               CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CY        -8.960567E-02   -8.960567E-02    -8.960563E-02   -8.960526E-02     0.000000E+00   -8.960526E-02
+                     CY        -8.960567E-02   -8.960567E-02    -8.955528E-02   -8.962595E-02     0.000000E+00   -8.962595E-02
                      CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMX       -3.391443E-03   -3.391443E-03    -3.391966E-03   -3.423537E-03     0.000000E+00   -3.423537E-03
+                     CMX       -3.391443E-03   -3.391443E-03    -3.391239E-03   -3.424461E-03     0.000000E+00   -3.424461E-03
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMZ        4.395174E-02    4.387616E-02     4.387614E-02    4.387596E-02     0.000000E+00    4.387596E-02
+                     CMZ        4.395174E-02    4.387616E-02     4.385192E-02    4.388591E-02     0.000000E+00    4.390031E-02
 
     YAW              CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CY         1.653920E-01    1.653920E-01     1.653919E-01    1.653915E-01     0.000000E+00    1.653915E-01
+                     CY         1.653920E-01    1.653920E-01     1.653260E-01    1.654567E-01     0.000000E+00    1.654567E-01
                      CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMX        5.452935E-03    5.452935E-03     5.454070E-03    5.502905E-03     0.000000E+00    5.502905E-03
+                     CMX        5.452935E-03    5.452935E-03     5.453656E-03    5.505533E-03     0.000000E+00    5.505533E-03
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMZ       -7.885187E-02   -7.986813E-02    -7.986808E-02   -7.986793E-02     0.000000E+00   -7.986793E-02
+                     CMZ       -7.885187E-02   -7.986813E-02    -7.983642E-02   -7.989929E-02     0.000000E+00   -7.992552E-02
 
     URDD2            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CY         0.000000E+00    0.000000E+00     3.175325E-21    0.000000E+00     1.285418E+00    0.000000E+00
+                     CY         0.000000E+00    0.000000E+00     3.303186E-05    0.000000E+00     1.285418E+00    0.000000E+00
                      CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMX        0.000000E+00    0.000000E+00     1.851103E-22    0.000000E+00    -1.059774E-04    0.000000E+00
+                     CMX        0.000000E+00    0.000000E+00     7.850972E-07    0.000000E+00    -1.059774E-04    0.000000E+00
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMZ        0.000000E+00    0.000000E+00    -1.575671E-21    0.000000E+00    -2.410714E-03    0.000000E+00
+                     CMZ        0.000000E+00    0.000000E+00    -1.588958E-05    0.000000E+00    -2.410714E-03    0.000000E+00
 
     URDD4            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CY         0.000000E+00    0.000000E+00    -2.207874E-05    0.000000E+00    -2.384491E-04    0.000000E+00
+                     CY         0.000000E+00    0.000000E+00    -2.046024E-05    0.000000E+00    -2.384491E-04    0.000000E+00
                      CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMX        0.000000E+00    0.000000E+00     5.001843E-04    0.000000E+00     4.224856E-02    0.000000E+00
+                     CMX        0.000000E+00    0.000000E+00     5.008550E-04    0.000000E+00     4.224856E-02    0.000000E+00
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMZ        0.000000E+00    0.000000E+00     1.066489E-05    0.000000E+00    -1.878234E-03    0.000000E+00
+                     CMZ        0.000000E+00    0.000000E+00     9.887460E-06    0.000000E+00    -1.878234E-03    0.000000E+00
 
     URDD6            CX         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CY         0.000000E+00    0.000000E+00    -3.493810E-21    0.000000E+00    -5.424106E-03    0.000000E+00
+                     CY         0.000000E+00    0.000000E+00    -4.282581E-05    0.000000E+00    -5.424106E-03    0.000000E+00
                      CZ         0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMX        0.000000E+00    0.000000E+00    -2.036768E-22    0.000000E+00    -1.878234E-03    0.000000E+00
+                     CMX        0.000000E+00    0.000000E+00    -1.000341E-06    0.000000E+00    -1.878234E-03    0.000000E+00
                      CMY        0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00     0.000000E+00    0.000000E+00
-                     CMZ        0.000000E+00    0.000000E+00     1.733710E-21    0.000000E+00     1.068760E-01    0.000000E+00
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    11
+                     CMZ        0.000000E+00    0.000000E+00     2.060087E-05    0.000000E+00     1.059886E-01    0.000000E+00
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    11
                                                                                                                                     
 0                                                                                                                                   
 
@@ -379,78 +381,78 @@
                                                                  RESTRAINED      UNRESTRAINED         RESTRAINED      UNRESTRAINED
               AT REFERENCE         0.000000E+00                 0.000000E+00    0.000000E+00         0.000000E+00    0.000000E+00
               RA                  -7.700972E-01                -7.686792E-01   -7.688746E-01         0.000000E+00    0.000000E+00
-              SIDES                4.123772E-05                 4.110155E-05    3.501975E-05         0.000000E+00    0.000000E+00
-              EL                  -1.076892E-05                -1.073254E-05   -1.615615E-05         0.000000E+00    0.000000E+00
-              ROLL                -1.416460E-01                -1.421687E-01   -1.430062E-01         0.000000E+00    0.000000E+00
-              RU                   1.962546E-05                 1.956247E-05    1.559809E-05         0.000000E+00    0.000000E+00
-              YAW                 -4.122516E-05                -4.108916E-05   -3.495786E-05         0.000000E+00    0.000000E+00
-              URDD2                0.000000E+00                -6.386160E-25    0.000000E+00         0.000000E+00    0.000000E+00
-              URDD4                0.000000E+00                 6.286036E-05    0.000000E+00         0.000000E+00    0.000000E+00
-              URDD6                0.000000E+00                 7.026692E-25    0.000000E+00         0.000000E+00    0.000000E+00
+              SIDES                4.123772E-05                 4.108143E-05    3.504587E-05         0.000000E+00    0.000000E+00
+              EL                  -1.076892E-05                -1.070754E-05   -1.611989E-05         0.000000E+00    0.000000E+00
+              ROLL                -1.416460E-01                -1.421687E-01   -1.430063E-01         0.000000E+00    0.000000E+00
+              RU                   1.962546E-05                 1.954844E-05    1.560992E-05         0.000000E+00    0.000000E+00
+              YAW                 -4.122516E-05                -4.106870E-05   -3.498386E-05         0.000000E+00    0.000000E+00
+              URDD2                0.000000E+00                -7.981021E-09    0.000000E+00         0.000000E+00    0.000000E+00
+              URDD4                0.000000E+00                 6.286247E-05    0.000000E+00         0.000000E+00    0.000000E+00
+              URDD6                0.000000E+00                 1.041684E-08    0.000000E+00         0.000000E+00    0.000000E+00
 
           CONTROL SURFACE = EL           REFERENCE CHORD LENGTH =  2.900000E-02     REFERENCE AREA =  3.086000E-03
 
               TRIM VARIABLE               RIGID                             ELASTIC                            INERTIAL
                                                                  RESTRAINED      UNRESTRAINED         RESTRAINED      UNRESTRAINED
               AT REFERENCE         0.000000E+00                 0.000000E+00    0.000000E+00         0.000000E+00    0.000000E+00
-              RA                  -1.607952E-03                -1.045575E-03   -1.125705E-03         0.000000E+00    0.000000E+00
-              SIDES               -4.270909E-02                -4.271870E-02   -4.272168E-02         0.000000E+00    0.000000E+00
-              EL                  -7.621104E-01                -7.620823E-01   -7.620846E-01         0.000000E+00    0.000000E+00
-              ROLL                -4.923126E-02                -4.936896E-02   -4.971464E-02         0.000000E+00    0.000000E+00
-              RU                  -4.239311E-02                -4.239702E-02   -4.239892E-02         0.000000E+00    0.000000E+00
-              YAW                  4.475176E-02                 4.476134E-02    4.476434E-02         0.000000E+00    0.000000E+00
-              URDD2                0.000000E+00                 5.384362E-22    0.000000E+00         0.000000E+00    0.000000E+00
-              URDD4                0.000000E+00                 2.605660E-05    0.000000E+00         0.000000E+00    0.000000E+00
-              URDD6                0.000000E+00                -5.924414E-22    0.000000E+00         0.000000E+00    0.000000E+00
+              RA                  -1.607952E-03                -1.045549E-03   -1.126110E-03         0.000000E+00    0.000000E+00
+              SIDES               -4.270909E-02                -4.270419E-02   -4.273980E-02         0.000000E+00    0.000000E+00
+              EL                  -7.621104E-01                -7.620731E-01   -7.620763E-01         0.000000E+00    0.000000E+00
+              ROLL                -4.923126E-02                -4.936539E-02   -4.971182E-02         0.000000E+00    0.000000E+00
+              RU                  -4.239311E-02                -4.238511E-02   -4.240477E-02         0.000000E+00    0.000000E+00
+              YAW                  4.475176E-02                 4.474651E-02    4.478226E-02         0.000000E+00    0.000000E+00
+              URDD2                0.000000E+00                 8.241509E-06    0.000000E+00         0.000000E+00    0.000000E+00
+              URDD4                0.000000E+00                 2.733510E-05    0.000000E+00         0.000000E+00    0.000000E+00
+              URDD6                0.000000E+00                -1.066085E-05    0.000000E+00         0.000000E+00    0.000000E+00
 
           CONTROL SURFACE = RU           REFERENCE CHORD LENGTH =  2.700000E-02     REFERENCE AREA =  2.633000E-03
 
               TRIM VARIABLE               RIGID                             ELASTIC                            INERTIAL
                                                                  RESTRAINED      UNRESTRAINED         RESTRAINED      UNRESTRAINED
               AT REFERENCE         0.000000E+00                 0.000000E+00    0.000000E+00         0.000000E+00    0.000000E+00
-              RA                   3.669561E-03                 2.376749E-03    2.527361E-03         0.000000E+00    0.000000E+00
-              SIDES               -3.045230E-01                -3.045226E-01   -3.045218E-01         0.000000E+00    0.000000E+00
-              EL                  -5.810583E-02                -5.810656E-02   -5.810300E-02         0.000000E+00    0.000000E+00
-              ROLL                 3.601214E-02                 3.640143E-02    3.702986E-02         0.000000E+00    0.000000E+00
-              RU                  -9.899233E-01                -9.899231E-01   -9.899222E-01         0.000000E+00    0.000000E+00
-              YAW                  3.544853E-01                 3.544849E-01    3.544840E-01         0.000000E+00    0.000000E+00
-              URDD2                0.000000E+00                 8.933934E-20    0.000000E+00         0.000000E+00    0.000000E+00
-              URDD4                0.000000E+00                -4.627034E-05    0.000000E+00         0.000000E+00    0.000000E+00
-              URDD6                0.000000E+00                -9.830008E-20    0.000000E+00         0.000000E+00    0.000000E+00
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    12
+              RA                   3.669561E-03                 2.375611E-03    2.546016E-03         0.000000E+00    0.000000E+00
+              SIDES               -3.045230E-01                -3.043940E-01   -3.046514E-01         0.000000E+00    0.000000E+00
+              EL                  -5.810583E-02                -5.810939E-02   -5.811227E-02         0.000000E+00    0.000000E+00
+              ROLL                 3.601214E-02                 3.638292E-02    3.710485E-02         0.000000E+00    0.000000E+00
+              RU                  -9.899233E-01                -9.898231E-01   -9.899627E-01         0.000000E+00    0.000000E+00
+              YAW                  3.544853E-01                 3.543537E-01    3.546120E-01         0.000000E+00    0.000000E+00
+              URDD2                0.000000E+00                 6.535490E-05    0.000000E+00         0.000000E+00    0.000000E+00
+              URDD4                0.000000E+00                -4.359183E-05    0.000000E+00         0.000000E+00    0.000000E+00
+              URDD6                0.000000E+00                -8.474717E-05    0.000000E+00         0.000000E+00    0.000000E+00
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    12
                                                                                                                                     
 0                                                                                                                                   
                                                   INTERMEDIATE MATRIX ... HP      
 
 
                                                             COLUMN      2
-     1                                    -3.053392E-05       6.093639E-03       1.072910E-04                                     3
+     1                                    -3.002857E-05       6.104390E-03       1.261577E-04                                     3
 
                                                             COLUMN      3
-     1                                    -8.897842E-07       4.735372E-06      -2.348826E-05                                     3
+     1                                    -1.084849E-04       1.449054E-04      -2.806128E-03                                     3
 
                                                             COLUMN      4
-     1                                    -4.363961E-08       1.301846E-06      -9.872814E-07                                     3
+     1                                    -7.163224E-06       3.975258E-04      -1.232072E-04                                     3
 
                                                             COLUMN      5
-     1                                    -1.008549E-04       2.013491E-02       3.555173E-04                                     3
+     1                                    -9.614806E-05       2.056429E-02       5.526258E-04                                     3
 
                                                             COLUMN      6
-     1                                    -4.922137E-07       3.102358E-06      -1.291896E-05                                     3
+     1                                    -5.937889E-05       1.040690E-04      -1.535076E-03                                     3
 
                                                             COLUMN      7
-     1                                     8.933708E-07      -4.780214E-06       2.357897E-05                                     3
+     1                                     1.088990E-04      -1.464291E-04       2.816882E-03                                     3
 
                                                             COLUMN      8
-     1                                     1.462186E-07      -1.565129E-06       3.738653E-06                                     3
+     1                                     6.885732E-05      -1.036182E-04       1.769619E-03                                     3
 
                                                             COLUMN      9
-     1                                     6.273217E-06      -1.246175E-03      -2.115481E-05                                     3
+     1                                     9.697508E-06      -1.336652E-03       5.481182E-05                                     3
 
                                                             COLUMN     10
-     1                                    -1.606005E-07       1.722017E-06      -4.115757E-06                                     3
+     1                                    -7.428066E-05       1.126580E-04      -1.910047E-03                                     3
 
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    13
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    13
                                                                                                                                     
 0                                                                                                                                   
                                                   INTERMEDIATE MATRIX ... UX      
@@ -459,7 +461,7 @@
                                                             COLUMN      1
      1         1.000000E+00       0.000000E+00       0.000000E+00       0.000000E+00       0.000000E+00       0.000000E+00        6
 
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    14
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    14
                                                                                                                                     
 0                                                                                                                                   
                                                   INTERMEDIATE MATRIX ... UXIFV   
@@ -468,7 +470,7 @@
                                                             COLUMN      1
      1         1.000000E+00       0.000000E+00       0.000000E+00       0.000000E+00       0.000000E+00       0.000000E+00        6
 
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    15
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    15
                                                                                                                                     
 0                                                                                                                                   
 
@@ -505,7 +507,7 @@
               RA             -1.570796E+00    0.000000E+00    1.570796E+00            N/A        0.000000E+00         N/A      
               EL             -1.570796E+00    0.000000E+00    1.570796E+00            N/A        0.000000E+00         N/A      
               RU             -1.570796E+00    0.000000E+00    1.570796E+00            N/A        0.000000E+00         N/A      
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    16
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    16
                                                                                                                                     
 0                                                                                                                                   
 
@@ -568,7 +570,7 @@
     BODY  CMZ         0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
     WIND  CM-YAW      0.000000E+00     0.000000E+00           N/A              N/A        0.000000E+00     0.000000E+00
  
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    17
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    17
                                                                                                                                     
 0                                                                                                                                   
 
@@ -616,7 +618,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    18
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    18
                                                                                                                                     
 0                                                                                                                                   
 
@@ -664,7 +666,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    19
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    19
                                                                                                                                     
 0                                                                                                                                   
 
@@ -712,7 +714,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    20
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    20
                                                                                                                                     
 0                                                                                                                                   
 
@@ -760,7 +762,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    21
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    21
                                                                                                                                     
 0                                                                                                                                   
 
@@ -808,7 +810,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    22
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    22
                                                                                                                                     
 0                                                                                                                                   
 
@@ -856,7 +858,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    23
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    23
                                                                                                                                     
 0                                                                                                                                   
 
@@ -904,7 +906,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    24
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    24
                                                                                                                                     
 0                                                                                                                                   
 
@@ -952,7 +954,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    25
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    25
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1000,7 +1002,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    26
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    26
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1048,7 +1050,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    27
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    27
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1096,7 +1098,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    28
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    28
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1144,7 +1146,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    29
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    29
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1192,7 +1194,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    30
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    30
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1240,7 +1242,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    31
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    31
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1288,7 +1290,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    32
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    32
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1336,7 +1338,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    33
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    33
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1384,7 +1386,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    34
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    34
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1432,7 +1434,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    35
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    35
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1480,7 +1482,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    36
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    36
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1528,7 +1530,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    37
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    37
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1576,7 +1578,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    38
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    38
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1624,7 +1626,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    39
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    39
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1672,7 +1674,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    40
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    40
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1720,7 +1722,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    41
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    41
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1768,7 +1770,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    42
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    42
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1816,7 +1818,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    43
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    43
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1864,7 +1866,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    44
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    44
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1912,7 +1914,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    45
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    45
                                                                                                                                     
 0                                                                                                                                   
 
@@ -1960,7 +1962,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    46
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    46
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2008,7 +2010,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    47
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    47
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2056,7 +2058,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    48
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    48
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2104,7 +2106,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    49
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    49
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2152,7 +2154,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    50
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    50
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2200,7 +2202,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    51
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    51
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2248,7 +2250,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    52
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    52
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2296,7 +2298,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    53
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    53
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2344,7 +2346,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    54
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    54
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2392,7 +2394,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    55
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    55
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2440,7 +2442,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    56
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    56
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2488,7 +2490,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    57
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    57
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2536,7 +2538,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    58
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    58
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2584,7 +2586,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    59
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    59
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2632,7 +2634,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    60
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    60
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2680,7 +2682,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    61
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    61
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2728,7 +2730,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    62
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    62
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2776,7 +2778,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    63
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    63
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2824,7 +2826,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    64
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    64
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2872,7 +2874,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    65
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    65
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2920,7 +2922,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    66
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    66
                                                                                                                                     
 0                                                                                                                                   
 
@@ -2968,7 +2970,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    67
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    67
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3016,7 +3018,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    68
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    68
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3064,7 +3066,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    69
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    69
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3112,7 +3114,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    70
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    70
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3160,7 +3162,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    71
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    71
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3208,7 +3210,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    72
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    72
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3256,7 +3258,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    73
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    73
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3304,7 +3306,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    74
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    74
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3352,7 +3354,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    75
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    75
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3400,7 +3402,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    76
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    76
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3448,7 +3450,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    77
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    77
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3496,7 +3498,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    78
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    78
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3544,7 +3546,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    79
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    79
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3592,7 +3594,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    80
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    80
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3640,7 +3642,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    81
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    81
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3688,7 +3690,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    82
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    82
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3736,7 +3738,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    83
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    83
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3784,7 +3786,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    84
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    84
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3832,7 +3834,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    85
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    85
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3880,7 +3882,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    86
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    86
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3928,7 +3930,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    87
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    87
                                                                                                                                     
 0                                                                                                                                   
 
@@ -3976,7 +3978,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    88
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    88
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4024,7 +4026,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    89
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    89
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4072,7 +4074,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    90
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    90
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4120,7 +4122,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    91
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    91
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4168,7 +4170,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    92
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    92
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4216,7 +4218,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    93
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    93
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4264,7 +4266,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    94
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    94
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4312,7 +4314,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    95
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    95
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4360,7 +4362,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    96
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    96
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4408,7 +4410,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    97
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    97
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4456,7 +4458,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    98
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    98
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4504,7 +4506,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE    99
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE    99
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4552,7 +4554,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   100
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   100
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4600,7 +4602,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   101
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   101
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4648,7 +4650,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   102
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   102
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4696,7 +4698,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   103
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   103
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4744,7 +4746,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   104
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   104
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4792,7 +4794,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   105
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   105
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4840,7 +4842,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   106
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   106
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4888,7 +4890,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   107
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   107
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4936,7 +4938,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   108
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   108
                                                                                                                                     
 0                                                                                                                                   
 
@@ -4984,7 +4986,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   109
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   109
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5032,7 +5034,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   110
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   110
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5066,7 +5068,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZIB = Z INTERFERENCE BODY ELEMENT,  ZSB = Z SLENDER BODY ELEMENT,
                                                         YIB = Y INTERFERENCE BODY ELEMENT,  YSB = Y SLENDER BODY ELEMENT.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   111
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   111
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5114,7 +5116,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   112
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   112
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5161,7 +5163,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   113
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   113
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5208,7 +5210,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   114
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   114
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5255,7 +5257,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   115
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   115
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5302,7 +5304,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   116
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   116
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5349,7 +5351,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   117
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   117
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5396,7 +5398,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   118
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   118
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5443,7 +5445,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   119
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   119
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5490,7 +5492,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   120
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   120
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5537,7 +5539,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   121
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   121
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5584,7 +5586,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   122
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   122
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5631,7 +5633,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   123
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   123
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5678,7 +5680,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   124
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   124
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5725,7 +5727,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   125
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   125
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5772,7 +5774,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   126
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   126
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5819,7 +5821,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   127
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   127
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5866,7 +5868,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   128
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   128
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5913,7 +5915,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   129
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   129
                                                                                                                                     
 0                                                                                                                                   
 
@@ -5960,7 +5962,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   130
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   130
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6007,7 +6009,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   131
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   131
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6054,7 +6056,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   132
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   132
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6101,7 +6103,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   133
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   133
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6148,7 +6150,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   134
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   134
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6195,7 +6197,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   135
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   135
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6242,7 +6244,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   136
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   136
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6289,7 +6291,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   137
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   137
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6336,7 +6338,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   138
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   138
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6383,7 +6385,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   139
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   139
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6430,7 +6432,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   140
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   140
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6477,7 +6479,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   141
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   141
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6524,7 +6526,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   142
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   142
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6571,7 +6573,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   143
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   143
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6618,7 +6620,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   144
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   144
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6665,7 +6667,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   145
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   145
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6712,7 +6714,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   146
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   146
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6759,7 +6761,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   147
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   147
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6806,7 +6808,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   148
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   148
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6853,7 +6855,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   149
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   149
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6900,7 +6902,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   150
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   150
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6947,7 +6949,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   151
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   151
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6994,7 +6996,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   152
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   152
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7041,7 +7043,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   153
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   153
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7088,7 +7090,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   154
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   154
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7135,7 +7137,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   155
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   155
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7182,7 +7184,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   156
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   156
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7229,7 +7231,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   157
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   157
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7276,7 +7278,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   158
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   158
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7323,7 +7325,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   159
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   159
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7370,7 +7372,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   160
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   160
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7417,7 +7419,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   161
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   161
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7464,7 +7466,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   162
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   162
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7511,7 +7513,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   163
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   163
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7558,7 +7560,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   164
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   164
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7605,7 +7607,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   165
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   165
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7652,7 +7654,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   166
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   166
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7699,7 +7701,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   167
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   167
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7746,7 +7748,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   168
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   168
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7793,7 +7795,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   169
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   169
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7840,7 +7842,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   170
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   170
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7887,7 +7889,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   171
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   171
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7934,7 +7936,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   172
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   172
                                                                                                                                     
 0                                                                                                                                   
 
@@ -7981,7 +7983,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   173
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   173
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8028,7 +8030,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   174
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   174
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8075,7 +8077,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   175
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   175
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8122,7 +8124,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   176
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   176
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8169,7 +8171,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   177
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   177
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8216,7 +8218,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   178
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   178
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8263,7 +8265,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   179
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   179
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8310,7 +8312,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   180
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   180
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8357,7 +8359,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   181
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   181
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8404,7 +8406,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   182
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   182
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8451,7 +8453,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   183
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   183
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8498,7 +8500,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   184
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   184
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8545,7 +8547,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   185
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   185
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8592,7 +8594,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   186
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   186
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8639,7 +8641,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   187
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   187
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8686,7 +8688,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   188
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   188
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8733,7 +8735,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   189
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   189
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8780,7 +8782,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   190
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   190
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8827,7 +8829,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   191
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   191
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8874,7 +8876,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   192
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   192
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8921,7 +8923,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   193
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   193
                                                                                                                                     
 0                                                                                                                                   
 
@@ -8968,7 +8970,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   194
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   194
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9015,7 +9017,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   195
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   195
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9062,7 +9064,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   196
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   196
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9109,7 +9111,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   197
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   197
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9156,7 +9158,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   198
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   198
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9203,7 +9205,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   199
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   199
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9250,7 +9252,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   200
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   200
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9297,7 +9299,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   201
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   201
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9344,7 +9346,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   202
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   202
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9391,7 +9393,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   203
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   203
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9438,7 +9440,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   204
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   204
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9470,7 +9472,7 @@
 
           *** LABEL NOTATIONS:  LS = LIFTING SURFACE,   ZSB =  Z SLENDER BODY ELEMENT,  YSB =  Y SLENDER BODY ELEMENT,
                                                        ZYSB = ZY SLENDER BODY ELEMENT, EXTA = EXTERNAL AERO.
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   205
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   205
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9492,7 +9494,7 @@
            CMX    0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
            CMY    0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
            CMZ    0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00     0.000000E+00
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   206
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   206
                                                                                                                                     
 0                                                                                                                                   
 
@@ -9538,7 +9540,7 @@
           AXIS      RIGID AIR       ELASTIC REST.  
           ----    -------------    -------------   
            CMY    0.000000E+00     0.000000E+00
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   207
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   207
                                                                                                                                     
 0                                                                                                                                   
 0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
@@ -9555,7 +9557,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =         216 WORDS.)
            (NUMBER OF FORTRAN RECORDS WRITTEN =          20 RECORDS.)
            (TOTAL DATA WRITTEN FOR DATA BLOCK =         395 WORDS.)
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   208
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   208
                                                                                                                                     
 0                                                                                                                                   
  
@@ -9594,7 +9596,7 @@
                                  (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
                                        (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
                                        (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
-1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   8, 2024  MSC Nastran  3/30/23   PAGE   209
+1    STATIC_LAT_DIR                                     **STUDENT EDITION*    MARCH   9, 2024  MSC Nastran  3/30/23   PAGE   209
                                                                                                                                     
 0                                                                                                                                   
  * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     74
