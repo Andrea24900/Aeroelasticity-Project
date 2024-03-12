@@ -1,0 +1,295 @@
+1
+ 
+ 
+ 
+ 
+                      Warning: This computer program is protected by copyright law and international treaties.       
+                  Unauthorized use, reproduction or distribution of this computer program, or any portion of it, may 
+                                          result in severe civil and criminal penalties.                             
+                         Copyright (C) 2023 Hexagon AB and/or its subsidiaries. All rights reserved.                 
+ 
+ 
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * *                                 * *
+                                              * *           Hexagon AB            * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *      M S C   N a s t r a n      * *
+                                              * *                                 * *
+                                              * *  S T U D E N T   E D I T I O N  * *
+                                              * *                                 * *
+                                              * *     Version 2023.1-CL914096     * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *          MAR 30, 2023           * *
+                                              * *                                 * *
+                                              * *              Intel              * *
+                                              * *MODEL Intel(R) Core(TM) i7-8750H * *
+                                              * *    Windows 10 Home 6.2 9200     * *
+                                              * * Compiled for 8664 (SINGLE Mode) * *
+                                              * *                                 * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+
+ 
+ 
+                                                 This Student Edition version is  
+                                                    valid until MAR 15, 2025.     
+ 
+ 
+                  This program is being distributed as part of the Hexagon AB Student Edition. Use of this program   
+                     or its results at a commercial installation, for commercial purposes, or for production work    
+                                             I S   S T R I C T L Y  P R O H I B I T E D.                             
+                  ==================================== FOR EDUCATIONAL USE ONLY =====================================
+ 
+ 
+1News file - (February 21st, 2023)
+  
+               Welcome to MSC Nastran 2023.1
+  
+   MSC Nastran brings powerful new features and enhancements for engineering
+   solutions in several releases through the year. Key enhancements in
+   Version 2023.1 are summarized below. Addtional details can be found in
+   the MSC Nastran Version 2023.1 Release Guide.
+  
+     MSC Nastran 2023.1 Features and Enhancements
+  
+     HPC
+     - Reduced memory requirements for ACMS when large numbers of RBE3 elements
+       are present in the model
+     - Support for AMD AOCL libraries
+  
+     Documentation
+     - The complete documentation set is provided in a separate installer and
+       when installed is available at: MSC_DOC_DIR/doc/pdf_nastran directory,
+       where MSC_DOC_DIR is the directory where documentation was installed.
+       This help set includes cross references between documents, and links to
+       how-to videos, and example files
+  
+     Individual MSC Nastran documents are available for download from the
+       Simcompanion Website at:
+       http://simcompanion.hexagon.com/
+  
+     These documents were updated for the MSC Nastran 2023.1 Release
+  
+         1.  MSC Nastran 2023.1 Installation and Operations Guide
+         2.  MSC Nastran 2023.1 Quick Reference Guide
+         3.  MSC Nastran 2023.1 Release Guide
+         4.  MSC Nastran 2023.1 Linear Statics Analysis User's Guide
+         5.  MSC Nastran 2023.1 Dynamic Analysis User's Guide
+         6.  MSC Nastran 2023.1 Superelements User's Guide
+         7.  MSC Nastran 2023.1 Rotordynamics User's Guide
+         8.  MSC Nastran 2023.1 Demonstration Problems Manual
+         9.  MSC Nastran 2023.1 Nastran Embedded Fatigue User's Guide
+        10.  MSC Nastran 2023.1 Design Sensitivity and Optimization
+        11.  MSC Nastran 2023.1 Nonlinear User's Guide SOL 400
+        12.  MSC Nastran 2023.1 DMAP Programmer's Guide
+        13.  MSC Nastran 2023.1 High Performance Computing User's Guide
+        14.  MSC Nastran 2023.1 New Verification Manual
+        15.  MSC Nastran 2023.1 DEMATD Guide
+        16.  MSC Nastran 2023.1 Explicit Nonlinear (SOL 700) User's Guide
+        17.  MSC Nastran 2023.1 ACMS User's Guide
+  
+   Please refer to  MSC_DOC_DIR/doc/pdf_nastran/nastran_library.pdf
+   for the complete document set:
+  
+1 
+   Additional information about the release can be found at the MSC Nastran
+   Product Support page: http://simcompanion.hexagon.com
+  
+   The support page provides links to these valuable information:
+      * A searchable Knowledge Base containing examples and answers to thousands
+        of frequently asked questions written by MSC Software subject-matter
+        experts.
+      * Peer-to-peer Discussion Forums enabling you to post questions for your
+        MSC Software products and receive answers from other users worldwide.
+      * A list of known issues with the product and any workarounds.
+      * Instructions on how to contact technical support
+      * A mechanism for sending us product feedback or enhancement requests.
+      * Hardware and software requirements.
+      * Examples and Tutorials
+      * and much more.
+  
+   For information on training, please visit our Training web site
+  
+      https://www.mscsoftware.com/msc-training
+  
+1                                                       **STUDENT EDITION*    MARCH  12, 2024  MSC Nastran  3/30/23   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0
+0
+0
+ 
+ *** USER WARNING MESSAGE 782 (SYSCHK)
+     THE NASTRAN BUFFSIZE PARAMETER CANNOT BE SMALLER THAN MACHINE DEFAULT =      8193
+     USER INFORMATION: NASTRAN BUFFSIZE PARAMETER IGNORED.
+     USER ACTION: USE THE INIT FMS STATEMENT TO SET THE DESIRED BUFFSIZE FOR EACH INDIVIDUAL DBSET.
+     NASTRAN BUFFSIZE=160000000000000000000 $(D:/NASTRAN/NASTRAN/CONF/NAST20231.RCF[2
+     NASTRAN BUFFSIZE=-2147483647 $(D:/NASTRAN/NASTRAN/CONF/NAST20231.RCF[2])        
+     INIT MASTER(S)                                                                  
+     NASTRAN OP2NEW=0,SYSTEM(319)=1                                                  
+1                                                       **STUDENT EDITION*    MARCH  12, 2024  MSC Nastran  3/30/23   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     ID MODEL,FEMAP                                                                          
+     SOL AESTAT                                                                              
+     CEND                                                                                    
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH  12, 2024  MSC Nastran  3/30/23   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1        TITLE = STATIC_LONGITUDINAL                                                           
+                  2        ECHO = NONE                                                                           
+                  3        DISPLACEMENT(PRINT) = ALL                                                             
+                  4        APRES = ALL                                                                           
+                  5        AEROF = ALL                                                                           
+                  6        SPC = 1                                                                               
+                  7        TRIM = 1                                                                              
+                  8      BEGIN BULK                                                                              
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH  12, 2024  MSC Nastran  3/30/23   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+                                              I N P U T   B U L K   D A T A   E C H O                                               
+                 ENTRY                                                                                                              
+                 COUNT        .   1  ..   2  ..   3  ..   4  ..   5  ..   6  ..   7  ..   8  ..   9  ..  10  .                      
+                              $INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_DX.DAT"
+                              $END OF INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_DX.DAT"
+                              $INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_DX.DAT"
+                              $END OF INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_DX.DAT"
+                              $INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_SX.DAT"
+                              $END OF INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_SX.DAT"
+                              $INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_SX.DAT"
+                              $END OF INCLUDE "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_SX.DAT"
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH  12, 2024  MSC Nastran  3/30/23   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+                                        M O D E L   S U M M A R Y          BULK = 0
+                                   ENTRY NAME        NUMBER OF ENTRIES
+                                   ----------        -----------------
+                                       AELIST                        5
+                                        AEROS                        1
+                                       AESTAT                        4
+                                       AESURF                        5
+                                       CAERO1                        5
+                                         CBAR                        6
+                                        CONM2                       52
+                                       CORD2C                        1
+                                       CORD2R                       12
+                                       CORD2S                        1
+                                        GENEL                       14
+                                         GRID                       50
+                                         MAT1                        1
+                                       PAERO1                        1
+                                        PARAM                        6
+                                         PBAR                        1
+                                         RBE2                       21
+                                         SET1                        5
+                                         SPC1                        1
+                                      SPLINE1                        5
+                                       SUPORT                        1
+                                         TRIM                        1
+
+ ^^^     
+ ^^^ >>> IFP OPERATIONS COMPLETE <<< 
+ ^^^     
+ *** USER INFORMATION MESSAGE 4109 (OUTPX2)
+     THE LABEL IS XXXXXXXX FOR FORTRAN UNIT    12
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =          7 WORDS.)
+           (NUMBER OF FORTRAN RECORDS WRITTEN =          8 RECORDS.)
+                (TOTAL DATA WRITTEN FOR LABEL =         17 WORDS.)
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH  12, 2024  MSC Nastran  3/30/23   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+                           O U T P U T   F R O M   G R I D   P O I N T   W E I G H T   G E N E R A T O R
+0                                                     REFERENCE POINT =        0
+                                                                M O
+                      *  5.542984E+00  0.000000E+00  0.000000E+00  0.000000E+00 -1.370364E-02  4.181368E-17 *
+                      *  0.000000E+00  5.542984E+00  0.000000E+00  1.370364E-02  0.000000E+00  7.189259E-01 *
+                      *  0.000000E+00  0.000000E+00  5.542984E+00 -4.181368E-17 -7.189259E-01  0.000000E+00 *
+                      *  0.000000E+00  1.370364E-02 -4.033232E-17  3.878710E-01 -2.400000E-05 -1.512198E-02 *
+                      * -1.370364E-02  0.000000E+00 -7.189259E-01 -2.400000E-05  9.521643E-01 -3.400000E-05 *
+                      *  4.033232E-17  7.189259E-01  0.000000E+00 -1.512198E-02 -3.400000E-05  1.331852E+00 *
+                                                                 S
+                                           *  1.000000E+00  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  1.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  1.000000E+00 *
+                               DIRECTION
+                          MASS AXIS SYSTEM (S)     MASS              X-C.G.        Y-C.G.        Z-C.G.
+                                  X            5.542984E+00      0.000000E+00 -7.543534E-18 -2.472249E-03
+                                  Y            5.542984E+00      1.297002E-01  0.000000E+00 -2.472249E-03
+                                  Z            5.542984E+00      1.297002E-01 -7.543534E-18  0.000000E+00
+                                                                I(S)
+                                           *  3.878371E-01  2.400000E-05  1.689934E-02 *
+                                           *  2.400000E-05  8.588856E-01  3.400000E-05 *
+                                           *  1.689934E-02  3.400000E-05  1.238607E+00 *
+                                                                I(Q)
+                                           *  3.875016E-01                             *
+                                           *                1.238943E+00               *
+                                           *                              8.588856E-01 *
+                                                                 Q
+                                           * -9.998029E-01  1.985185E-02  5.407614E-05 *
+                                           * -5.233574E-05  8.818903E-05 -1.000000E+00 *
+                                           * -1.985185E-02 -9.998029E-01 -8.713269E-05 *
+
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH  12, 2024  MSC Nastran  3/30/23   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+1    STATIC_LONGITUDINAL                                **STUDENT EDITION*    MARCH  12, 2024  MSC Nastran  3/30/23   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+  
+ *** SYSTEM INFORMATION MESSAGE 4159 (DFMSA)
+     THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    1.050822E+04
+ *** USER INFORMATION MESSAGE 3035 (SOLVER)
+                                  FOR DATA BLOCK   KLR     
+    SUPPORT PT.NO.             EPSILON             STRAIN   ENERGY     EPSILONS LARGER THAN 0.001 ARE FLAGGED WITH ASTERISKS
+    User information:
+    One line of output is printed for each component referenced on the
+    SUPORT and SUPORT1 entries.  Large values of either EPSILON or STRAIN
+    ENERGY indicate errors in the constraints.
+                1          2.3181055E-14         -1.1277734E-10                 
+                2          2.3181055E-14         -1.6120794E-10                 
+  
+ *** USER FATAL MESSAGE 6136 (UDSFA)
+     INSUFFICIENT CORE FOR SYMBOLIC PHASE OF SPARSE DECOMPOSITION.
+     USER ACTION: INCREASE CORE BY       7035 K WORDS.
+     User information:
+     If this message is issued in the symbolic phase, the memory estimate
+     is not necessarily conservative and even more memory may be required
+     (although this estimate is fairly accurate for Version 68).  Also,
+     the memory increase required is only for the symbolic phase.  It is
+     not unusual for the decomposition phase to require more memory than
+     the symbolic phase.  To increase the chances for a successful run,
+     increase the memory even more than the amount indicated in this message.
+     After the run is complete, determine the amount of memory actually
+     used and use this as a guideline for similar runs in the future.
+  
+     The user information message is written if SYSTEM(166) = 1 (that is,
+     if there is not enough memory for sparse decomposition, then switch
+     to regular decomposition).
+0FATAL ERROR
+1                                        * * * END OF JOB * * *
+ 
+ 
+ No Symbolic Replacement variables or values were specified.
+
