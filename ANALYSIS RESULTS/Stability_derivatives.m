@@ -1,6 +1,7 @@
 close all; clearvars; clc;
 
 name_file_f06 = 'test_long_15_definitive_cases.f06';
+%name_file_f06 = 'test_fusoliera.f06';
 
 subcases = 6;
 SD = get_stability_derivatives(name_file_f06, subcases);
@@ -9,14 +10,14 @@ SD = get_stability_derivatives(name_file_f06, subcases);
 velocity_vector=[11;13;15;17;19;22];
 
 line_width = 2;
-fontsize_label = 15;
+fontsize_label = 17;
 fontsize_legend = 13;
 
 
 
-% CL_alpha (CL=-CZ)
-C_L_alpha_rigid(:,1)=-SD.anglea(3,2,:);
-C_L_alpha_elastic(:,1)=-SD.anglea(3,4,:);
+% CL_alpha (CL=-CZ) %RIMESSO A CZ !!!!!
+C_L_alpha_rigid(:,1)=SD.anglea(3,2,:);
+C_L_alpha_elastic(:,1)=SD.anglea(3,4,:);
 
 figure
 plot(velocity_vector,C_L_alpha_rigid,'*-','LineWidth', line_width)
@@ -25,21 +26,21 @@ grid on
 hold on
 plot(velocity_vector,C_L_alpha_elastic,'*-','LineWidth', line_width)
 xlabel('$V\,[m/s]$','Interpreter','latex','FontSize', fontsize_label)
-ylabel('$C_{L_{\alpha}}$','Interpreter','latex','FontSize', fontsize_label)
+ylabel('$C_{Z_{\alpha}}$','Interpreter','latex','FontSize', fontsize_label)
 
-XFLR5 = 5.15;
+XFLR5 = -5.15;
 plot(15, XFLR5,'ob','LineWidth',1,'MarkerFaceColor','b','MarkerSize',4)
 text(15 +0.2, XFLR5, '$\textit{XFLR5}$','Interpreter','latex','color','b','FontSize',13)
-Open_VSP = 4.96;
+Open_VSP = -4.96;
 plot(15, Open_VSP,'or','LineWidth',1,'MarkerFaceColor','r','MarkerSize',4)
 text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r','FontSize',13)
 
-legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','northwest')
+legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 
 % CL_deltaE (CL=-CZ)
-C_L_deltaE_rigid(:,1)=-SD.el(3,2,:);
-C_L_deltaE_elastic(:,1)=-SD.el(3,4,:);
+C_L_deltaE_rigid(:,1)=SD.el(3,2,:);
+C_L_deltaE_elastic(:,1)=SD.el(3,4,:);
 
 figure
 plot(velocity_vector,C_L_deltaE_rigid,'*-','LineWidth', line_width)
@@ -48,21 +49,21 @@ grid on
 hold on
 plot(velocity_vector,C_L_deltaE_elastic,'*-','LineWidth', line_width)
 xlabel('$V\,[m/s]$','Interpreter','latex','FontSize', fontsize_label)
-ylabel('$C_{L_{\delta_e}}$','Interpreter','latex','FontSize', fontsize_label)
+ylabel('$C_{Z_{\delta_e}}$','Interpreter','latex','FontSize', fontsize_label)
 
-XFLR5 = 0.321;
+XFLR5 = -0.321;
 plot(15, XFLR5,'ob','LineWidth',1,'MarkerFaceColor','b','MarkerSize',4)
 text(15 +0.2, XFLR5, '$\textit{XFLR5}$','Interpreter','latex','color','b','FontSize',13)
-Open_VSP = 0.300;
+Open_VSP = -0.300;
 plot(15, Open_VSP,'or','LineWidth',1,'MarkerFaceColor','r','MarkerSize',4)
 text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r','FontSize',13)
 
-legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','northwest')
+legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 
 % CL_q (CL=-CZ)
-C_L_q_rigid(:,1)=-SD.pitch(3,2,:);
-C_L_q_elastic(:,1)=-SD.pitch(3,4,:);
+C_L_q_rigid(:,1)=SD.pitch(3,2,:);
+C_L_q_elastic(:,1)=SD.pitch(3,4,:);
 
 figure
 plot(velocity_vector,C_L_q_rigid,'*-','LineWidth', line_width)
@@ -71,16 +72,16 @@ grid on
 hold on
 plot(velocity_vector,C_L_q_elastic,'*-','LineWidth', line_width)
 xlabel('$V\,[m/s]$','Interpreter','latex','FontSize', fontsize_label)
-ylabel('$C_{L_q}$','Interpreter','latex','FontSize', fontsize_label)
+ylabel('$C_{Z_q}$','Interpreter','latex','FontSize', fontsize_label)
 
-XFLR5 = 7.32;
+XFLR5 = -7.32;
 plot(15, XFLR5,'ob','LineWidth',1,'MarkerFaceColor','b','MarkerSize',4)
 text(15 +0.2, XFLR5, '$\textit{XFLR5}$','Interpreter','latex','color','b','FontSize',13)
-Open_VSP = 7.33;
+Open_VSP = -7.33;
 plot(15, Open_VSP,'or','LineWidth',1,'MarkerFaceColor','r','MarkerSize',4)
 text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r','FontSize',13)
 
-legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','northwest')
+legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 
 % CM_alpha
@@ -103,7 +104,7 @@ Open_VSP = -0.463;
 plot(15, Open_VSP,'or','LineWidth',1,'MarkerFaceColor','r','MarkerSize',4)
 text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r','FontSize',13)
 
-legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','northwest')
+legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 
 % CM_deltaE
@@ -126,7 +127,7 @@ Open_VSP = -1.23;
 plot(15, Open_VSP,'or','LineWidth',1,'MarkerFaceColor','r','MarkerSize',4)
 text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r','FontSize',13)
 
-legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','northwest')
+legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 
 % CM_q 
@@ -149,7 +150,7 @@ Open_VSP = -16.2;
 plot(15, Open_VSP,'or','LineWidth',1,'MarkerFaceColor','r','MarkerSize',4)
 text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r','FontSize',13)
 
-legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','northwest')
+legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 
 
