@@ -98,7 +98,7 @@ while ~feof(fid)
 end
 fclose(fid);
 
-fileID = fopen('GENEL_generated.txt', 'w');
+fileID = fopen('GENEL_generated.dat', 'w');
 
 % Verifica se il file è stato aperto correttamente
 if fileID == -1
@@ -169,6 +169,10 @@ end
 
 
 fclose(fileID);
+
+
+save("spostamenti_lam1.mat","spostamenti_verticali");
+save("torsioni_lam1.mat","torsioni");
 
 
 function stringa = converti(numero)

@@ -171,6 +171,12 @@ end
 fclose(fileID);
 
 
+save("spostamenti_lam3.mat","spostamenti_verticali");
+save("torsioni_lam3.mat","torsioni");
+
+
+
+
 function stringa = converti(numero)
 
 posizione = 0;
