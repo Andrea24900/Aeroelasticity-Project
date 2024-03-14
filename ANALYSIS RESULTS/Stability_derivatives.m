@@ -1,13 +1,13 @@
 close all; clearvars; clc;
 
-name_file_f06 = 'test_long_15_definitive_cases.f06';
+name_file_f06 = 'full_long.f06';
 %name_file_f06 = 'test_fusoliera.f06';
 
-subcases = 6;
+subcases = 1;
 SD = get_stability_derivatives(name_file_f06, subcases);
 
 %% PLOTS
-velocity_vector=[11;13;15;17;19;22];
+velocity_vector=[15];
 
 line_width = 2;
 fontsize_label = 17;
@@ -15,16 +15,16 @@ fontsize_legend = 13;
 
 
 
-% CL_alpha (CL=-CZ) %RIMESSO A CZ !!!!!
-C_L_alpha_rigid(:,1)=SD.anglea(3,2,:);
-C_L_alpha_elastic(:,1)=SD.anglea(3,4,:);
+% CZ_alpha
+C_Z_alpha_rigid(:,1)=SD.anglea(3,2,:);
+C_Z_alpha_elastic(:,1)=SD.anglea(3,4,:);
 
 figure
-plot(velocity_vector,C_L_alpha_rigid,'*-','LineWidth', line_width)
+plot(velocity_vector,C_Z_alpha_rigid,'*-','LineWidth', line_width)
 axis padded
 grid on
 hold on
-plot(velocity_vector,C_L_alpha_elastic,'*-','LineWidth', line_width)
+plot(velocity_vector,C_Z_alpha_elastic,'*-','LineWidth', line_width)
 xlabel('$V\,[m/s]$','Interpreter','latex','FontSize', fontsize_label)
 ylabel('$C_{Z_{\alpha}}$','Interpreter','latex','FontSize', fontsize_label)
 
@@ -37,17 +37,19 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
+filename = 'CZ_alpha_vs_V.png';
+print(filename, '-depsc2', '-r300');
 
-% CL_deltaE (CL=-CZ)
-C_L_deltaE_rigid(:,1)=SD.el(3,2,:);
-C_L_deltaE_elastic(:,1)=SD.el(3,4,:);
+% CZ_deltaE
+C_Z_deltaE_rigid(:,1)=SD.el(3,2,:);
+C_Z_deltaE_elastic(:,1)=SD.el(3,4,:);
 
 figure
-plot(velocity_vector,C_L_deltaE_rigid,'*-','LineWidth', line_width)
+plot(velocity_vector,C_Z_deltaE_rigid,'*-','LineWidth', line_width)
 axis padded
 grid on
 hold on
-plot(velocity_vector,C_L_deltaE_elastic,'*-','LineWidth', line_width)
+plot(velocity_vector,C_Z_deltaE_elastic,'*-','LineWidth', line_width)
 xlabel('$V\,[m/s]$','Interpreter','latex','FontSize', fontsize_label)
 ylabel('$C_{Z_{\delta_e}}$','Interpreter','latex','FontSize', fontsize_label)
 
@@ -60,17 +62,19 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
+filename = 'CZ_el_vs_V.png';
+print(filename, '-depsc2', '-r300');
 
-% CL_q (CL=-CZ)
-C_L_q_rigid(:,1)=SD.pitch(3,2,:);
-C_L_q_elastic(:,1)=SD.pitch(3,4,:);
+% CZ_q
+C_Z_q_rigid(:,1)=SD.pitch(3,2,:);
+C_Z_q_elastic(:,1)=SD.pitch(3,4,:);
 
 figure
-plot(velocity_vector,C_L_q_rigid,'*-','LineWidth', line_width)
+plot(velocity_vector,C_Z_q_rigid,'*-','LineWidth', line_width)
 axis padded
 grid on
 hold on
-plot(velocity_vector,C_L_q_elastic,'*-','LineWidth', line_width)
+plot(velocity_vector,C_Z_q_elastic,'*-','LineWidth', line_width)
 xlabel('$V\,[m/s]$','Interpreter','latex','FontSize', fontsize_label)
 ylabel('$C_{Z_q}$','Interpreter','latex','FontSize', fontsize_label)
 
@@ -83,6 +87,8 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
+filename = 'CZ_q_vs_V.png';
+print(filename, '-depsc2', '-r300');
 
 % CM_alpha
 C_M_alpha_rigid(:,1)=SD.anglea(5,2,:);
@@ -106,6 +112,8 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
+filename = 'CM_alpha_vs_V.png';
+print(filename, '-depsc2', '-r300');
 
 % CM_deltaE
 C_M_deltaE_rigid(:,1)=SD.el(5,2,:);
@@ -129,6 +137,8 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
+filename = 'CM_el_vs_V.png';
+print(filename, '-depsc2', '-r300');
 
 % CM_q 
 C_M_q_rigid(:,1)=SD.pitch(5,2,:);
@@ -152,6 +162,8 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
+filename = 'CM_q_vs_V.png';
+print(filename, '-depsc2', '-r300');
 
 
 
