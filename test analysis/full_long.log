@@ -1,9 +1,10 @@
 MSC Nastran V2023.1 (Intel Windows 10 Home 6.2 9200) Control File: 
 ----------------------------------------------------------------- 
-Nastran BUFFSIZE=16385 $(d:/nastran/nastran/conf/nast20231.rcf[2])
+Nastran BUFFSIZE=8139 $(d:/nastran/nastran/conf/nast20231.rcf[2])
+Nastran BUFFSIZE=8193 $(d:/nastran/nastran/conf/nast20231.rcf[2])
 JID='d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/full_long.bdf'
 OUT='./full_long'
-MEM=2048MB      $ 
+MEM=527MB      $ 
 PMEM=0
 MACH='Intel'
 OPER='Windows 10 Home'
@@ -16,8 +17,8 @@ symbol=DELDIR='d:/nastran/nastran/msc20231/nast/del' $(program default)
 symbol=DEMODIR='d:/nastran/nastran/msc20231/nast/demo' $(program default)
 symbol=SSSALTERDIR='d:/nastran/nastran/msc20231/nast/sssalter' $(program default)
 symbol=TPLDIR='d:/nastran/nastran/msc20231/nast/tpl' $(program default)
-SDIR='c:/scratch/full_long.T11100_32'
-DBS='c:/scratch/full_long.T11100_32'
+SDIR='c:/scratch/full_long.T420_29'
+DBS='c:/scratch/full_long.T420_29'
 SCR='yes'
 SMEM=100
 BPOOL=150
@@ -38,7 +39,7 @@ MSC_JIDPATH=
 PATH=d:\nastran\nastran\msc20231\win64i8\nvidia;d:\nastran\nastran\msc20231\win64i8\lib;d:\nastran\nastran\msc20231\win64i8;D:\nastran\Patran\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\matlab2\bin;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Users\ughin\AppData\Local\Microsoft\WindowsApps;C:\Users\ughin\AppData\Local\GitHubDesktop\bin;D:\tex\texlive\2023\bin\windows;C:\Users\ughin\AppData\Local\Programs\Microsoft VS Code\bin;d:\nastran\nastran\msc20231\win64i8\msmpi\bin 
 SCA_SERVICE_CATALOG=d:\nastran\nastran\msc20231\res\SCAServiceCatalog.xml 
 SCA_RESOURCE_DIR=d:\nastran\nastran\msc20231\res 
-Cmd Line:    D:\nastran\Nastran\msc20231\win64i8\nastran.exe JID=D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\full_long.bdf mem=2gb 
+Cmd Line:    D:\nastran\Nastran\msc20231\win64i8\nastran.exe JID=D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\full_long.bdf 
 Current Dir: D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis 
 Time Cmd:    d:\nastran\nastran\msc20231\win64i8\msctime 
 Executable:  d:\nastran\nastran\msc20231\win64i8\analysis.exe 
@@ -48,9 +49,9 @@ FPE:         yes
 ----------------------------------------------------------------- 
 Current resource limits:
  Physical memory:                     8034 MB
- Physical memory available:           3011 MB
+ Physical memory available:           3382 MB
  Paging file size:                   15202 MB
- Paging file size available:          6368 MB
+ Paging file size available:          8609 MB
  Virtual memory:                 134217727 MB
  Virtual memory available:       134213510 MB
 ----------------------------------------------------------------- 
@@ -73,8 +74,8 @@ System configuration:
  Remote shell cmd: "d:/nastran/nastran/msc20231/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
                    <ccs_cmd> (Windows CCS nodes)
 ----------------------------------------------------------------- 
-MSC Nastran started  Tue Mar 12 21:21:33 osG 2024 
- 21:21:37  Beginning Analysis
+MSC Nastran started  Thu Mar 14 10:54:31 osG 2024 
+ 10:54:34  Beginning Analysis
 SCA Kernel 29.0.913034 successfully initialized
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\libimalloc.dll" has been loaded.
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_core.2.dll" has been loaded.
@@ -82,32 +83,32 @@ BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_intel_thread.2.dll" ha
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\mkl_rt.2.dll" has been loaded.
 BLAS/LAPACK .dll "d:\nastran\nastran\msc20231\win64i8\MSCblas.dll" has been loaded.
 
- 21:21:37  MSC Authorization Information - Checkout Successful (1016, 0)
- 21:21:37  -------------------------------------------------------------
- 21:21:37  Acquired 1 license for Student Edition Nastran
+ 10:54:34  MSC Authorization Information - Checkout Successful (1016, 0)
+ 10:54:34  -------------------------------------------------------------
+ 10:54:34  Acquired 1 license for Student Edition Nastran
 
 
 Beginning bulk data processing using the IFPStar component.
 For more information on IFPStar, please see KB article KB8019200
 on our support pages, at http://simcompanion.hexagon.com.
 
- 21:21:38  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_DX.DAT"
- 21:21:38  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_DX.DAT"
- 21:21:38  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_DX.DAT"
- 21:21:38  27 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_DX.DAT"
- 21:21:38  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_SX.DAT"
- 21:21:38  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_SX.DAT"
- 21:21:38  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_SX.DAT"
- 21:21:38  27 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_SX.DAT"
- 21:21:38  322 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/full_long.bdf"
- 21:21:38  A total of 396 records were read from 5 files.
+ 10:54:34  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_DX.DAT"
+ 10:54:34  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_DX.DAT"
+ 10:54:34  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_DX.DAT"
+ 10:54:34  27 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_DX.DAT"
+ 10:54:34  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_SX.DAT"
+ 10:54:34  10 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_ALA_UD_SX.DAT"
+ 10:54:34  Reading INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_SX.DAT"
+ 10:54:34  27 records read from INCLUDE file "D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\test analysis\GENEL_CODA_UD_SX.DAT"
+ 10:54:34  300 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/full_long.bdf"
+ 10:54:34  A total of 374 records were read from 5 files.
 
 Processing of bulk data entries is complete.
 
 
- 21:21:38  MSC Authorization Information - System Attributes (1004, 0)
- 21:21:38  -----------------------------------------------------------
-  Date:          Tue Mar 12 21:21:38 2024
+ 10:54:34  MSC Authorization Information - System Attributes (1004, 0)
+ 10:54:34  -----------------------------------------------------------
+  Date:          Thu Mar 14 10:54:34 2024
   LAPI Version:  LAPI 10.7.8.1 (CL 913879) (FLEXlm 11.16.3.0)
   License Mode:  Student Edition
 
@@ -115,41 +116,36 @@ Processing of bulk data entries is complete.
   * * * * * * * * * * * * * * * * * * * *
   * *                                 * *
   * *   MSC Customer Entitlement ID   * *
-  * *        a64bbae0-G48074F3        * *
+  * *        a64bbae0-GD3285CA        * *
   * *                                 * *
   * * * * * * * * * * * * * * * * * * * *
   * * * * * * * * * * * * * * * * * * * *
 
- 21:21:38  MSC Authorization Information - Checkout Successful (1016, 0)
- 21:21:38  -------------------------------------------------------------
- 21:21:38  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 10:54:34  MSC Authorization Information - Checkout Successful (1016, 0)
+ 10:54:34  -------------------------------------------------------------
+ 10:54:34  Acquired 1 license for Student Edition Nastran Aero - Basic
 
 
- 21:21:43  MSC Authorization Information - Checkout Successful (1016, 0)
- 21:21:43  -------------------------------------------------------------
- 21:21:43  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 10:54:35  MSC Authorization Information - Checkout Successful (1016, 0)
+ 10:54:35  -------------------------------------------------------------
+ 10:54:35  Acquired 1 license for Student Edition Nastran Aero - Basic
 
- 21:21:43  Finite element model generation started.
- 21:21:43  Finite element model generated 300 degrees of freedom.
- 21:21:43  Finite element model generation successfully completed.
- 21:21:43  Application of Loads and Boundary Conditions to the finite element model started.
- 21:21:43  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 10:54:35  Finite element model generation started.
+ 10:54:35  Finite element model generated 300 degrees of freedom.
+ 10:54:35  Finite element model generation successfully completed.
+ 10:54:35  Application of Loads and Boundary Conditions to the finite element model started.
+ 10:54:35  Application of Loads and Boundary Conditions to the finite element model successfully completed.
 
- 21:21:43  MSC Authorization Information - Checkout Successful (1016, 0)
- 21:21:43  -------------------------------------------------------------
- 21:21:43  Acquired 1 license for Student Edition Nastran Aero - Basic
+ 10:54:35  MSC Authorization Information - Checkout Successful (1016, 0)
+ 10:54:35  -------------------------------------------------------------
+ 10:54:35  Acquired 1 license for Student Edition Nastran Aero - Basic
 
- ================================================== 
- Warning/Fatal Message Summary           Occurrence
-         USER FATAL MESSAGE     6136.3          1 
- ================================================== 
- 21:21:53  13 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/full_long.bdf"
- 21:21:53  NSEXIT: EXIT(20)
- 21:21:53  Analysis complete  -20
-20
-Real:       15.748 seconds ( 0:00:15.748)
-User:        8.953 seconds ( 0:00:08.953)
-Sys:         3.171 seconds ( 0:00:03.171)
+ 10:54:36  13 records read from JID file "d:/repositoriesgithub/nuova cartella/aeroelasticity-project/test analysis/full_long.bdf"
+ 10:54:36  NSEXIT: EXIT(0)
+ 10:54:36  Analysis complete  0
+Real:        2.184 seconds ( 0:00:02.184)
+User:        1.578 seconds ( 0:00:01.578)
+Sys:         0.593 seconds ( 0:00:00.593)
  ==================================================
  OS:                           6.2
  OEM ID:                       9
@@ -171,4 +167,4 @@ Sys:         3.171 seconds ( 0:00:03.171)
  Detailed performance information can be found in the 
  "MSC Nastran High Performance Computing User's Guide"
  =====================================================
-MSC Nastran finished Tue Mar 12 21:21:53 osG 2024 
+MSC Nastran finished Thu Mar 14 10:54:37 osG 2024 
