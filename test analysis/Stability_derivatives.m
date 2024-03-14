@@ -1,6 +1,6 @@
 close all; clearvars; clc;
 
-name_file_f06 = 'test_fusoliera.f06';
+name_file_f06 = 'full_long.f06';
 
 subcases = 6;
 SD = get_stability_derivatives(name_file_f06, subcases);
