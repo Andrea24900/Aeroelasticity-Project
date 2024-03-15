@@ -1,16 +1,22 @@
-%close all; clearvars; clc;
+close all; clearvars; clc;
 
 name_file_f06 = 'test_long_15_definitive_cases.f06';
 %name_file_f06 = 'full_long.f06';
 %name_file_f06 = 'test_fusoliera.f06';
+name_file_f06_2 = 'long_lam_2.f06';
+name_file_f06_3 = 'long_lam_3.f06';
+name_file_f06_4 = 'long_lam_4.f06';
 
+subcases = 1;
 
-subcases = 6;
-SD = get_stability_derivatives(name_file_f06, subcases);
+SD = get_stability_derivatives(name_file_f06, 6);
+SD_2 = get_stability_derivatives(name_file_f06_2, subcases);
+SD_3 = get_stability_derivatives(name_file_f06_3, subcases);
+SD_4 = get_stability_derivatives(name_file_f06_4, subcases);
 
 %% PLOTS
 velocity_vector=[11,13,15,17,19,22];
-%velocity_vector=[15];
+velocity_vector_cases=[15];
 
 line_width = 2;
 fontsize_label = 17;
@@ -22,12 +28,19 @@ fontsize_legend = 13;
 C_Z_alpha_rigid(:,1)=SD.anglea(3,2,:);
 C_Z_alpha_elastic(:,1)=SD.anglea(3,4,:);
 
+C_Z_alpha_lam2(:,1)=SD_2.anglea(3,4,:);
+C_Z_alpha_lam3(:,1)=SD_3.anglea(3,4,:);
+C_Z_alpha_lam4(:,1)=SD_4.anglea(3,4,:);
+
 figure
 plot(velocity_vector,C_Z_alpha_rigid,'*-','LineWidth', line_width)
 axis padded
 grid on
 hold on
 plot(velocity_vector,C_Z_alpha_elastic,'*-','LineWidth', line_width)
+plot(velocity_vector_cases,C_Z_alpha_lam2,'*-','LineWidth', line_width)
+plot(velocity_vector_cases,C_Z_alpha_lam3,'*-','LineWidth', line_width)
+plot(velocity_vector_cases,C_Z_alpha_lam4,'*-','LineWidth', line_width)
 xlabel('$V\,[m/s]$','Interpreter','latex','FontSize', fontsize_label)
 ylabel('$C_{Z_{\alpha}}$','Interpreter','latex','FontSize', fontsize_label)
 
@@ -38,7 +51,9 @@ Open_VSP = -4.96;
 plot(15, Open_VSP,'or','LineWidth',1,'MarkerFaceColor','r','MarkerSize',4)
 text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r','FontSize',13)
 
-legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
+legend('\textit{Rigid}','\textit{Elastic Lam. 1}','\textit{Elastic Lam. 2}',...
+    '\textit{Elastic Lam. 3}','\textit{Elastic Lam. 4}',...
+    'interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 filename = 'CZ_alpha_vs_V.png';
 saveas(gcf,filename);
@@ -97,12 +112,19 @@ saveas(gcf,filename);
 C_M_alpha_rigid(:,1)=SD.anglea(5,2,:);
 C_M_alpha_elastic(:,1)=SD.anglea(5,4,:);
 
+C_Z_alpha_lam2(:,1)=SD_2.anglea(5,4,:);
+C_Z_alpha_lam3(:,1)=SD_3.anglea(5,4,:);
+C_Z_alpha_lam4(:,1)=SD_4.anglea(5,4,:);
+
 figure
 plot(velocity_vector,C_M_alpha_rigid,'*-','LineWidth', line_width)
 axis padded
 grid on
 hold on
 plot(velocity_vector,C_M_alpha_elastic,'*-','LineWidth', line_width)
+plot(velocity_vector_cases,C_Z_alpha_lam2,'*-','LineWidth', line_width)
+plot(velocity_vector_cases,C_Z_alpha_lam3,'*-','LineWidth', line_width)
+plot(velocity_vector_cases,C_Z_alpha_lam4,'*-','LineWidth', line_width)
 xlabel('$V\,[m/s]$','Interpreter','latex','FontSize', fontsize_label)
 ylabel('$C_{M_{\alpha}}$','Interpreter','latex','FontSize', fontsize_label)
 
@@ -113,7 +135,10 @@ Open_VSP = -0.463;
 plot(15, Open_VSP,'or','LineWidth',1,'MarkerFaceColor','r','MarkerSize',4)
 text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r','FontSize',13)
 
-legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
+legend('\textit{Rigid}','\textit{Elastic Lam. 1}','\textit{Elastic Lam. 2}',...
+    '\textit{Elastic Lam. 3}','\textit{Elastic Lam. 4}',...
+    'interpreter','latex','fontsize',fontsize_legend,'location','best')
+
 
 filename = 'CM_alpha_vs_V.png';
 saveas(gcf,filename);
