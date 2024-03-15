@@ -39,7 +39,7 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 filename = 'CZ_alpha_vs_V.png';
-print(filename, '-depsc2', '-r300');
+saveas(gcf,filename);
 
 % CZ_deltaE
 C_Z_deltaE_rigid(:,1)=SD.el(3,2,:);
@@ -64,7 +64,7 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 filename = 'CZ_el_vs_V.png';
-print(filename, '-depsc2', '-r300');
+saveas(gcf,filename);
 
 % CZ_q
 C_Z_q_rigid(:,1)=SD.pitch(3,2,:);
@@ -89,7 +89,7 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 filename = 'CZ_q_vs_V.png';
-print(filename, '-depsc2', '-r300');
+saveas(gcf,filename);
 
 % CM_alpha
 C_M_alpha_rigid(:,1)=SD.anglea(5,2,:);
@@ -114,7 +114,7 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 filename = 'CM_alpha_vs_V.png';
-print(filename, '-depsc2', '-r300');
+saveas(gcf,filename);
 
 % CM_deltaE
 C_M_deltaE_rigid(:,1)=SD.el(5,2,:);
@@ -139,7 +139,7 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 filename = 'CM_el_vs_V.png';
-print(filename, '-depsc2', '-r300');
+saveas(gcf,filename);
 
 % CM_q 
 C_M_q_rigid(:,1)=SD.pitch(5,2,:);
@@ -164,7 +164,7 @@ text(15 +0.2, Open_VSP, '$\textit{Open VSP}$','Interpreter','latex','color','r',
 legend('\textit{Rigid}','\textit{Elastic}','interpreter','latex','fontsize',fontsize_legend,'location','best')
 
 filename = 'CM_q_vs_V.png';
-print(filename, '-depsc2', '-r300');
+saveas(gcf,filename);
 
 
 
