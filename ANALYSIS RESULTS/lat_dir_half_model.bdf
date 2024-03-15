@@ -6,8 +6,8 @@ CEND
   TITLE = static_lat_dir
   ECHO = NONE
   DISPLACEMENT(PRINT) = ALL
-  APRES = All
-  AEROF = All
+  APRES = NONE
+  AEROF = NONE
   SPC = 3
   SUBCASE = 1 $ 11 m/s
     TRIM = 1

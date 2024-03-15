@@ -9,7 +9,18 @@ CEND
   APRES = All
   AEROF = All
   SPC = 1
-  TRIM = 1
+  SUBCASE = 1 $ 11 m/s
+    TRIM = 1
+  SUBCASE = 2 $ 13 m/s
+    TRIM = 2
+  SUBCASE = 3 $ 15 m/s
+    TRIM = 3
+  SUBCASE = 4 $ 17 m/s
+    TRIM = 4
+  SUBCASE = 5 $ 19 m/s
+    TRIM = 5
+  SUBCASE = 6 $ 22 m/s
+    TRIM = 6
 BEGIN BULK
 INCLUDE GENEL_ala_ud_dx.dat
 INCLUDE GENEL_coda_ud_dx.dat
@@ -73,10 +84,31 @@ PARAM,AUNITS,.101937
 AESTAT         1  ANGLEA
 AESTAT         2   PITCH
 AESTAT         3   URDD3
-AESTAT         4   URDD5
-TRIM           1.0323529 74.1125   PITCH      0.   URDD3     -1.      1.+       
-+          URDD5      0.      RA      0.      LA      0.      RU      0.+       
-+             LU      0.                                                
+AESTAT         4   URDD5          
+$primo trim a 11 m/s, a=340 m/s
+TRIM           1.0323529 74.1125   PITCH      0.   URDD3     -1.      1.+      
++          URDD5      0.      RA      0.      LA      0.      RU      0.+
++             LU      0.   
+$secondo trim a 13 m/s         
+TRIM           2.0382353103.5125   PITCH      0.   URDD3     -1.      1.+      
++          URDD5      0.      RA      0.      LA      0.      RU      0.+
++             LU      0.   
+$terzo trim a 15 m/s               
+TRIM           30.044118137.8125   PITCH      0.   URDD3     -1.      1.+      
++          URDD5      0.      RA      0.      LA      0.      RU      0.+
++             LU      0.   
+$quarto trim a 17 m/s 
+TRIM           4     .05177.0125   PITCH      0.   URDD3     -1.      1.+       
++          URDD5      0.      RA      0.      LA      0.      RU      0.+
++             LU      0.   
+$quinto trim a 19 m/s 
+TRIM           50.055882221.1125   PITCH      0.   URDD3     -1.      1.+       
++          URDD5      0.      RA      0.      LA      0.      RU      0.+
++             LU      0.   
+$sesto trim a 22 m/s, velocità massima
+TRIM           60.064706  296.45   PITCH      0.   URDD3     -1.      1.+     
++          URDD5      0.      RA      0.      LA      0.      RU      0.+  
++             LU      0.                                  
 AEROS          0       3    .236    2.25    .531       0       0
 $ Femap Aero Control Surface 1 : right_aileron
 AESURF         1      RA    2002       1                             LDW+       

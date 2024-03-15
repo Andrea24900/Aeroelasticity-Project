@@ -4,11 +4,12 @@ name_file_f06 = 'test_long_15_definitive_cases.f06';
 %name_file_f06 = 'full_long.f06';
 %name_file_f06 = 'test_fusoliera.f06';
 
-subcases = 1;
+subcases = 6;
 SD = get_stability_derivatives(name_file_f06, subcases);
 
 %% PLOTS
-velocity_vector=[15];
+velocity_vector=[11,13,15,17,19,22];
+%velocity_vector=[15];
 
 line_width = 2;
 fontsize_label = 17;
