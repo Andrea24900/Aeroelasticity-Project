@@ -7,7 +7,7 @@ name_file_f06_2 = 'long_lam_2.f06';
 name_file_f06_3 = 'long_lam_3.f06';
 name_file_f06_4 = 'long_lam_4.f06';
 
-subcases = 1;
+subcases = 6;
 
 SD = get_stability_derivatives(name_file_f06, 6);
 SD_2 = get_stability_derivatives(name_file_f06_2, subcases);
@@ -16,7 +16,7 @@ SD_4 = get_stability_derivatives(name_file_f06_4, subcases);
 
 %% PLOTS
 velocity_vector=[11,13,15,17,19,22];
-velocity_vector_cases=[15];
+velocity_vector_cases=velocity_vector;
 
 line_width = 2;
 fontsize_label = 17;
