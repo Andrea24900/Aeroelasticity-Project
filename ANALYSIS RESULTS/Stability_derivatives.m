@@ -1,6 +1,7 @@
 close all; clearvars; clc;
 
-name_file_f06 = 'full_long.f06';
+name_file_f06 = 'test_long_15_definitive_cases.f06';
+%name_file_f06 = 'full_long.f06';
 %name_file_f06 = 'test_fusoliera.f06';
 
 subcases = 1;
