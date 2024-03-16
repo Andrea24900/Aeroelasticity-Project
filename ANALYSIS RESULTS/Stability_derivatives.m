@@ -82,18 +82,12 @@ C_Y_deltaR_plot=standard_plot(C_Y_deltaR_rigid,C_Y_deltaR_elastic,...
 
 
 % CY_deltaA_right
-C_Y_deltaA_right_rigid(:,1)=SD.ra(2,2,:);
-C_Y_deltaA_right_elastic(:,1)=SD.ra(2,4,:);
-C_Y_deltaA_right_plot=standard_plot(C_Y_deltaA_right_rigid,C_Y_deltaA_right_elastic,...
+C_Y_deltaA_rigid(:,1)=SD.ra(2,2,:);
+C_Y_deltaA_elastic(:,1)=SD.ra(2,4,:);
+C_Y_deltaA_plot=standard_plot(C_Y_deltaA_rigid,C_Y_deltaA_elastic,...
         velocity_vector,line_width,fontsize_label,fontsize_legend,10, ...
-       -2.12e-3,8.19e-3,'CY_deltaA_right_vs_V.png','$C_{Y_{\delta_a}}$');
+       -2.12e-3,8.19e-3,'CY_deltaA_vs_V.png','$C_{Y_{\delta_a}}$');
 
-% CY_deltaA_left
-C_Y_deltaA_left_rigid(:,1)=SD.la(2,2,:);
-C_Y_deltaA_left_elastic(:,1)=SD.la(2,4,:);
-C_Y_deltaA_left_plot=standard_plot(C_Y_deltaA_left_rigid,C_Y_deltaA_left_elastic,...
-        velocity_vector,line_width,fontsize_label,fontsize_legend,11, ...
-       2.12e-3,8.19e-3,'CY_deltaA_left_vs_V.png','$C_{Y_{\delta_a}}$');
 
 % CY_p
 C_Y_p_rigid(:,1)=SD.roll(2,2,:);
