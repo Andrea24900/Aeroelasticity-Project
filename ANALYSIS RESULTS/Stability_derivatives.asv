@@ -1,10 +1,10 @@
 close all; clearvars; clc;
 
 % name_file_f06 = 'test_long_15_definitive_cases.f06';
-%name_file_f06 = 'full_long.f06';
+name_file_f06 = 'full_long.f06';
 %name_file_f06 = 'test_fusoliera.f06';
 %name_file_f06 = 'lat_dir_half_model.f06'; NON VA
-name_file_f06 = 'full_coupled.f06';
+% name_file_f06 = 'full_coupled.f06';
 
 subcases = 6;
 SD = get_stability_derivatives(name_file_f06, subcases);
@@ -216,19 +216,18 @@ delta_a = [(interp1(velocity_vector,C_Y_deltaA_elastic,15) - (-2.12e-3))/(-2.12e
 p = [(interp1(velocity_vector,C_Y_p_elastic,15) - (0.0313))/(0.0313),...
          (interp1(velocity_vector,C_Y_p_elastic,15) - (0.0323))/(0.0323),...
          (interp1(velocity_vector,C_L_p_elastic,15) - (-0.566))/(-0.566),...
-         (interp1(velocity_vector,C_L_p_elastic,15) - (-0.5))/(),...
-         (interp1(velocity_vector,C_N_p_elastic,15) - ())/(),...
-         (interp1(velocity_vector,C_N_p_elastic,15) - ())/()]'*100;
-r = [(interp1(velocity_vector,C_Y_r_elastic,15) - ())/(),...
-         (interp1(velocity_vector,C_Y_r_elastic,15) - ())/(),...
-         (interp1(velocity_vector,C_L_r_elastic,15) - ())/(),...
-         (interp1(velocity_vector,C_L_r_elastic,15) - ())/(),...
-         (interp1(velocity_vector,C_N_r_elastic,15) - ())/(),...
-         (interp1(velocity_vector,C_N_r_elastic,15) - ())/()]'*100;
+         (interp1(velocity_vector,C_L_p_elastic,15) - (-0.544))/(-0.544),...
+         (interp1(velocity_vector,C_N_p_elastic,15) - (-0.0978))/(-0.0978),...
+         (interp1(velocity_vector,C_N_p_elastic,15) - (-0.0799))/(-0.0799)]'*100;
+r = [(interp1(velocity_vector,C_Y_r_elastic,15) - (0.157))/(0.157),...
+         (interp1(velocity_vector,C_Y_r_elastic,15) - (0.158))/(0.158),...
+         (interp1(velocity_vector,C_L_r_elastic,15) - (0.173))/(0.173),...
+         (interp1(velocity_vector,C_L_r_elastic,15) - (0.170))/(0.170),...
+         (interp1(velocity_vector,C_N_r_elastic,15) - (-0.0677))/(-0.0677),...
+         (interp1(velocity_vector,C_N_r_elastic,15) - (-0.0780))/(-0.0780)]'*100;
 
-LONG = table(Stability_derivative,Software,beta,delta_r,delta_a,p,r);
-filename = 'confronto_con_software.xlsx';
-writetable(LONG,filename,'Sheet',1,'Range','C9');
+LAT_DIR = table(Stability_derivative,Software,beta,delta_r,delta_a,p,r);
+writetable(LAT_DIR,filename,'Sheet',1,'Range','C9');
 
 %% Functions - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function SD = get_stability_derivatives(name_file_f06, subcases)
@@ -262,9 +261,10 @@ while ~feof(file) && n<=subcases
                 SD.ref_coeff(:,:,n) = get_matrix(currentLine,file);
             elseif currentLine(1:23) == '    RA               CX'
                 SD.ra(:,:,n) = get_matrix(currentLine,file);
+                
             elseif currentLine(1:23) == '    EL               CX'
                 SD.el(:,:,n) = get_matrix(currentLine,file);
-                
+                n = n+1;
             elseif currentLine(1:23) == '    ANGLEA           CX'
                 SD.anglea(:,:,n) = get_matrix(currentLine,file);
             elseif currentLine(1:23) == '    PITCH            CX'
@@ -275,7 +275,6 @@ while ~feof(file) && n<=subcases
                 SD.ru(:,:,n) = get_matrix(currentLine,file);
             elseif currentLine(1:23) == '    URDD5            CX'
                 SD.urdd5(:,:,n) = get_matrix(currentLine,file);
-                
             elseif currentLine(1:23) == '    LA               CX'
             SD.la(:,:,n) = get_matrix(currentLine,file);
             elseif currentLine(1:23) == '    LU               CX'
@@ -292,7 +291,6 @@ while ~feof(file) && n<=subcases
             SD.urdd4(:,:,n) = get_matrix(currentLine,file);
             elseif currentLine(1:23) == '    URDD6            CX'
             SD.urdd6(:,:,n) = get_matrix(currentLine,file);
-            n = n+1;
             end
         end
 
