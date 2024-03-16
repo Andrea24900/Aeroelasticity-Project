@@ -3,13 +3,24 @@ NASTRAN SYSTEM(319)=1
 ID model,FEMAP
 SOL AESTAT
 CEND
-  TITLE = static_long
+  TITLE = static_LD
   ECHO = NONE
   DISPLACEMENT(PRINT) = ALL
   APRES = All
   AEROF = All
-  SPC = 7
-  TRIM = 1
+  SPC = 9
+  SUBCASE = 1 $ 11 m/s
+    TRIM = 1
+  SUBCASE = 2 $ 13 m/s
+    TRIM = 2
+  SUBCASE = 3 $ 15 m/s
+    TRIM = 3
+  SUBCASE = 4 $ 17 m/s
+    TRIM = 4
+  SUBCASE = 5 $ 19 m/s
+    TRIM = 5
+  SUBCASE = 6 $ 22 m/s
+    TRIM = 6
 BEGIN BULK
 INCLUDE GENEL_ala_ud_dx.dat
 INCLUDE GENEL_coda_ud_dx.dat
@@ -20,7 +31,7 @@ $   Written by : Femap
 $   Version    : 2021.2.1
 $   Translator : MSC Nastran
 $   From Model : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\model_ridotto.modfem
-$   Date       : Sat Mar 16 15:20:42 2024
+$   Date       : Sat Mar 16 15:26:33 2024
 $   Output To  : D:\repositoriesgithub\Nuova cartella\Aeroelasticity-Project\
 $ ***************************************************************************
 $
@@ -70,12 +81,30 @@ $ Femap Coordinate System 4003 : left_rudder
 CORD2R      4003       0    1.25   -.132    .025    1.25  -1.132    .025+       
 +           2.25   -.132    .025        
 PARAM,AUNITS,.1019368
-AESTAT         1  ANGLEA
-AESTAT         2   PITCH
-AESTAT         3   URDD3
-AESTAT         4   URDD5
-TRIM           1.0323529 74.1125   PITCH      0.   URDD3     -1.      1.+       
-+          URDD5      0.      RU      0.      RA      0.                
+AESTAT         1   SIDES
+AESTAT         2    ROLL
+AESTAT         3     YAW
+AESTAT         4   URDD2
+AESTAT         5   URDD4
+AESTAT         6   URDD6
+$primo trim
+TRIM           1.0323529 74.1125    ROLL      0.     YAW      0.      1.+       
++          URDD2      0.   URDD4      0.   URDD6      0.      EL      0.
+$secondo trim
+TRIM           2.0382353103.5125    ROLL      0.     YAW      0.      1.+  
++          URDD2      0.   URDD4      0.   URDD6      0.      EL      0.
+$terzo trim
+TRIM           30.044118137.8125    ROLL      0.     YAW      0.      1.+  
++          URDD2      0.   URDD4      0.   URDD6      0.      EL      0.
+$quarto trim
+TRIM           4     .05177.0125    ROLL      0.     YAW      0.      1.+  
++          URDD2      0.   URDD4      0.   URDD6      0.      EL      0.
+$quinto trim
+TRIM           50.055882221.1125    ROLL      0.     YAW      0.      1.+  
++          URDD2      0.   URDD4      0.   URDD6      0.      EL      0.
+$sesto trim
+TRIM           60.064706  296.45    ROLL      0.     YAW      0.      1.+  
++          URDD2      0.   URDD4      0.   URDD6      0.      EL      0.
 AEROS          0       3    .236    2.25    .531       0       0
 $ Femap Aero Control Surface 1 : ailerons
 AESURF         1      RA    2002       2    4001       7             LDW+       
@@ -111,10 +140,10 @@ AELIST         6   11039   11040   11041   11049   11050   11051   11059+
 AELIST         7   50299   50300   50309   50310   50319   50320   50329+       
 +          50330   50339   50340   50349   50350   50359   50360   50369+       
 +          50370   50379   50380   50389   50390                        
-$ Femap Constraint Set 7 : long_clamo
-SPC1           7    1246      25
-$ Femap Constraint Set 8 : long_suport
-SUPORT        25      35
+$ Femap Constraint Set 9 : LD_lock
+SPC1           9     135      25
+$ Femap Constraint Set 10 : LD_suport
+SUPORT        25     246
 $ Femap Property 16 : bar_coda
 $ Femap PropShape 16 : 1,0,0.0055,0.1,0.,0.,0.,0.
 $ Femap PropMethod 16 : 1,0,1,0.
