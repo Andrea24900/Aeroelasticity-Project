@@ -2,10 +2,10 @@ close all; clearvars; clc;
 
 % name_file_f06 = 'test_long_15_definitive_cases.f06';
 % name_file_f06 = 'full_long.f06';
-%name_file_f06 = 'test_fusoliera.f06';
+name_file_f06 = 'test_fusoliera.f06';
 %name_file_f06 = 'lat_dir_half_model.f06'; NON VA
 % name_file_f06 = 'full_coupled.f06';
-name_file_f06 = 'full_ld.f06';
+% name_file_f06 = 'full_ld.f06';
 
 subcases = 6;
 SD = get_stability_derivatives(name_file_f06, subcases);
@@ -317,7 +317,6 @@ while ~feof(file) && n<=subcases
                 SD.ra(:,:,n) = -get_matrix(currentLine,file);
             elseif currentLine(1:23) == '    EL               CX'
                 SD.el(:,:,n) = get_matrix(currentLine,file);
-                n = n+1;
             elseif currentLine(1:23) == '    ANGLEA           CX'
                 SD.anglea(:,:,n) = get_matrix(currentLine,file);
             elseif currentLine(1:23) == '    PITCH            CX'
@@ -328,6 +327,7 @@ while ~feof(file) && n<=subcases
                 SD.ru(:,:,n) = -get_matrix(currentLine,file);
             elseif currentLine(1:23) == '    URDD5            CX'
                 SD.urdd5(:,:,n) = get_matrix(currentLine,file);
+                n = n+1;
             elseif currentLine(1:23) == '    LA               CX'
             SD.la(:,:,n) = -get_matrix(currentLine,file);
             elseif currentLine(1:23) == '    LU               CX'
